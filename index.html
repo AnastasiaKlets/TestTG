@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Натяжные потолки за 1 день</title>
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="script/jquery-1.11.3.min.js"></script>
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 </head>
 
@@ -11,7 +12,40 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
-<body>
+
+<body class="root">
+    <!-- адаптива нет!!!!!!!!!!! -->
+    <!-- доделать модалку -->
+    <!-- мерцание на кнопки можно вырвать из лендинга -->
+    <p>
+    <details class="modal-open">
+        <summary class="btn btn-primary">Open modal by summary</summary>
+        <div class="modal show" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary close-modal">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </details>
+    </p>
+    <p>
+        <button class="btn btn-secondary open-modal">Open modal by custom button</button>
+    </p>
+
+    <script src="/script/script.js"></script>
     <header class="headerContainer">
         <div class="headerBlock1">
             <span>
@@ -23,7 +57,7 @@
                 <span>+375 (33) 614-06-14</span>
             </div>
         </div>
-        <button class="headerBtn">
+        <button  class="headerBtn btn btn-secondary open-modal">
             Вызвать замерщика
         </button>
         <div class="headerBlock2">
@@ -49,9 +83,8 @@
                 <span>
                     Есть вопрос? Задайте онлайн
                 </span>
-                <button class="headerBtn">
-                    Вызвать замерщика
-                </button>
+                <button class="btn btn-secondary open-modal headerBtn">Вызвать замерщика</button>
+
             </div>
 
         </div>
@@ -81,6 +114,7 @@
         </div>
     </div>
 </div>
+    <!-- добавить навигацию и кнопки-->
     <div class="content2">
         <div class="content2TextHead">
             <span>Натяжные потолки любых типов, размеров и сложности</span>
@@ -177,6 +211,7 @@
             </div>
         </div>
     </div>
+    <!-- доделать калькулятор -->
     <div class="content3">
         <div class="content3Text">
             Рассчитайте стоимость натяжного потолка <br>
@@ -537,27 +572,23 @@
                 </div>
             </form>
         </div>
-    </div>
-    <script>
-        jQuery(document).ready(function($){
-            $('.next-q').on('click', function(){
-                var $el = $(this),
-                    next = $el.data('show');
-                $el.parent().hide();
-                $('#' + next).show();
+        <script>
+            jQuery(document).ready(function($){
+                $('.next-q').on('click', function(){
+                    var $el = $(this),
+                        next = $el.data('show');
+                    $el.parent().hide();
+                    $('#' + next).show();
+                });
             });
-        });
-    </script>
+        </script>
+    </div>
     <div class="content4">
-        <div class="content4 _InfWindow">
-            <img src="icon/Rectangle%203565.png">
-            <div>
-                <span>Следим за трендами и предлагаем</span>
-                <span>5 вариантов профилей</span>
-            </div>
-            <div>
-                <span>Алюминиевый профиль</span>
-                <span>
+        <div class="content4_InfWindow">
+            <img src="icon/Frame%2012624.png">
+            <div class="content4_img_inf" >
+                <span class="content4_img_inf_title">Алюминиевый профиль</span>
+                <span class="content4_img_inf_text">
                     Надёжнее, красивее и значительно
                     <br>
                     долговечнее профиля из ПВХ
@@ -571,27 +602,39 @@
                         <img src="icon/profile_1.png" alt="1">
                         <div class="prof_var_item_content">
                             <div class="prof_var_item_title">Скрытый профиль</div>
-                            <div class="prof_var_item_text">Самый оптимальный вариант.<br>С его помощью можно создавать конструкцию любой формы, прямую или изогнутую.</div>
+                            <div class="prof_var_item_text">
+                                Самый оптимальный вариант.
+                                <br>
+                                С его помощью можно создавать конструкцию любой формы, прямую или изогнутую.
+                            </div>
                         </div>
                     </div>
                     <div class="prof_var_item">
                         <img src="icon/profile_2.png" alt="2">
                         <div class="prof_var_item_content">
-                            <div class="prof_var_item_title">Скрытый профиль</div>
-                            <div class="prof_var_item_text">Самый оптимальный вариант.<br>С его помощью можно создавать конструкцию любой формы, прямую или изогнутую.</div>
+                            <div class="prof_var_item_title">Парящий профиль</div>
+                            <div class="prof_var_item_text">
+                                Надёжнее, красивее и значительно долговечнее профиля из ПВХ
+                            </div>
                         </div>
                     </div>
                     <div class="prof_var_item">
                         <img src="icon/profile_3.png" alt="3">
                         <div class="prof_var_item_content">
-                            <div class="prof_var_item_title">Скрытый профиль</div>
-                            <div class="prof_var_item_text">Самый оптимальный вариант.<br>С его помощью можно создавать конструкцию любой формы, прямую или изогнутую.</div>
+                            <div class="prof_var_item_title">Теневой профиль</div>
+                            <div class="prof_var_item_text">
+                                Евро краб — это инновационная система крепления контурного потолка,
+                                которая образует чёткий и ровный теневой зазор между стеной и потолком в 6 мм.
+                                Эффект затемнения усиливается чёрным цветом профиля. Подчёркнуто строгий контур и
+                                идеальная геометрия линий создают премиальный внешний вид.
+
+                            </div>
                         </div>
                     </div>
                     <div class="prof_var_item">
                         <img src="icon/profile_4.png" alt="4">
                         <div class="prof_var_item_content">
-                            <div class="prof_var_item_title">Скрытый профиль</div>
+                            <div class="prof_var_item_title">Контурные линии</div>
                             <div class="prof_var_item_text">Самый оптимальный вариант.<br>С его помощью можно создавать конструкцию любой формы, прямую или изогнутую.</div>
                         </div>
                     </div>
@@ -605,7 +648,7 @@
             <div class="content5_list_text">
                 <div class="content5_text">
                     <span class="content5_text_title">NEW ОСТРОВ</span>
-                    <span>
+                    <span class="content5_text_all">
                         С ДИФФУЗНЫМ ОСВЕЩЕНИЕМ
                         <span class="content5_text_color">LUMFER</span>
                     </span>
@@ -641,61 +684,232 @@
             </div>
         </div>
         <div class="content5_img_above">
-            <div class="content5_img_above_cards">
+            <div class="content4_InfWindow content4_InfWindow_dop">
                 <img src="icon/Frame%2012621.png">
-                <div class="card" >
-                    <span class="card_title">Светильники для потолка LumFer</span>
-                    <span class="card_text">
-                        Высокотехнологичное интегрированное в натяжной
+                <div class="content4_img_inf content4_img_inf_dop">
+                    <span class="content4_img_inf_title">Светильники для потолка LumFer</span>
+                    <span class="content4_img_inf_text">
+                    Высокотехнологичное интегрированное в натяжной
                         потолок освещение, не требующее применения
                         дополнительных люстр! Размер и дизайн таких
                         светильников может быть абсолютно любым, согласно
                         дизайнерской концепции и пожеланий.
+                </span>
+                </div>
+            </div>
+            <div class="content4_InfWindow content4_InfWindow_dop">
+                <img src="icon/Frame%2012621(1).png">
+                <div class="content4_img_inf content4_img_inf_dop" >
+                    <span class="content4_img_inf_title ">Парящие линии</span>
+                    <span class="content4_img_inf_text">
+                        это стильное и практичное решение для оформления
+                        интерьера и организации освещения
+                        в нем. Данная конструкция одновременно является и мощной
+                        светополосой, и профилем для закрепления полотен натяжного
+                        потолка, что открывает перед вами массу дизайнерских возможностей.
+                </span>
+                </div>
+            </div>
+            <div class="content4_InfWindow content4_InfWindow_dop">
+                <img src="icon/Frame%2012621(2).png">
+                <div class="content4_img_inf content4_img_inf_dop" >
+                    <span class="content4_img_inf_title">Освещение LumFer</span>
+                    <span class="content4_img_inf_text">
+                        Современное освещение, в котором трековая система монтируется
+                        в натяжной потолок. Благодаря магнитным крепежам можно легко менять
+                        количество светильников и их расположение на треке, что дает возможность
+                        не допустить таких ошибок, как
+                        недостаточное количество света или, наоборот, его избыток.
                     </span>
                 </div>
             </div>
-            <div class="content5_img_above_cards">
-                <img src="icon/Frame%2012621.png">
-                <div class="card" >
-                    <span class="card_title">Светильники для потолка LumFer</span>
-                    <span class="card_text">
-                        Высокотехнологичное интегрированное в натяжной
-                        потолок освещение, не требующее применения
-                        дополнительных люстр! Размер и дизайн таких
-                        светильников может быть абсолютно любым, согласно
-                        дизайнерской концепции и пожеланий.
-                    </span>
-                </div>
-            </div>
-            <div class="content5_img_above_cards">
-                <img src="icon/Frame%2012621.png">
-                <div class="card" >
-                    <span class="card_title">Светильники для потолка LumFer</span>
-                    <span class="card_text">
-                        Высокотехнологичное интегрированное в натяжной
-                        потолок освещение, не требующее применения
-                        дополнительных люстр! Размер и дизайн таких
-                        светильников может быть абсолютно любым, согласно
-                        дизайнерской концепции и пожеланий.
-                    </span>
-                </div>
-            </div>
+
+
         </div>
     </div>
-
-    $ git reset --hard 4e3d6fa7988600e2582a00c00e73417bf2e8a2c9
-    $ git push --force
-
-    <section class="discountBanner container-fluid">
-        <div class="content13">
-            <img class="discountBanner_ImgSale" src="icon/10%25.png">
-            <img class="discountBanner_Img"src="icon/Group%206027.png">
+    <section class="content6 container-fluid">
+        <div class="container6">
+            <span class="container6_title">
+                РАССРОЧКА
+            </span>
+            <span class="container6_text">
+                До 3-х месяцев БЕЗ ПЕРЕПЛАТ!
+            </span>
         </div>
+    </section>
+
+    <!-- сделать секцию 7 -->
+    <section class="content7 container-fluid"></section>
+
+
+
+    <section class="content8 container-fluid">
+        <div class="container8 container-fluid">
+            <span class="container8_title"></span>
+            <div class="container8_cards">
+                <div class="_Card">
+                    <img class="_CardImg" src="icon/container8_cards4.png">
+                    <div class="_CardTextImg">
+                        <div class="_CardText container8_CardText">
+                            <span>Глянцевые натяжные потолки</span>
+                            <span class="_CardText2">
+                                Вы звоните по телефону
+                                +375(33)394-0-500
+                                +375(29)627-5-500
+                                или оставляете заявку через сайт на
+                                бесплатный вызов замерщика
+                            </span>
+                        </div>
+                        <img class="cargImgCalc container8_CardText_imgStep" src="icon/Group%205976.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="content9 container-fluid"></section>
+
+
+
+    <section class="content13 container-fluid">
+        <div class="container13 container-fluid">
+            <div class="container13_cards_title container-fluid">
+                <span class="container13_title">На любой натяжной потолок даем гарантии</span>
+                <div class="container13_cards container-fluid">
+                    <div class="container13_card">
+                        <img src="icon/Frame%2042.png">
+                        <div class="container13_card_text">
+                            <span class="container13_card_text_title">
+                                Фиксированная цена
+                            </span>
+                                <span class="container13_card_text_all">
+                                Гарантируем, что цена
+                                <br>
+                                не изменится после
+                                <br>
+                                проведённых работ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="container13_card">
+                        <img src="icon/Frame%2042(1).png">
+                        <div class="container13_card_text">
+                            <span class="container13_card_text_title">
+                                Составляем договор
+                            </span>
+                            <span class="container13_card_text_all">
+                                Вы защищены
+                                <br>
+                                от срывов сроков
+                                <br>
+                                и некачественного
+                                <br>
+                                монтажа
+                            </span>
+                        </div>
+                    </div>
+                    <div class="container13_card">
+                        <img src="icon/Frame%2042(2).png">
+                        <div class="container13_card_text">
+                            <span class="container13_card_text_title">
+                                Гарантия
+                                <br>
+                                на натяжное полотно
+                                <br>
+                                до 20 лет
+                            </span>
+                            <span class="container13_card_text_all">
+                                Гарантия
+                                <br>
+                                на монтажные работы
+                                <br>
+                                до 3-х лет
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container13_btn_for_order container-fluid">
+                <span class="container13_btn_for_order_title">
+                    Скидка 10% на глянцевые потолки
+                </span>
+                <button class="container13_btn">
+                    Заказать
+                </button>
+            </div>
+            <div class="container13_cards_title container-fluid">
+                <span class="container13_title">Самое главное — Ваша безопасность!</span>
+                <div class="container13_cards container-fluid container13_cards_gap">
+                    <div class="container13_card">
+                        <img src="icon/Frame%2044.png">
+                        <div class="container13_card_text card_text_dop">
+                            <span class="container13_card_text_title _text_title_color">
+                                Используем безопасное
+                                <br>
+                                оборудование
+                            </span>
+                            <span class="container13_card_text_all">
+                                Используем прочные
+                                <br>
+                                композитные баллоны.
+                                <br>
+                                Данные баллоны исключают
+                                <br>
+                                возможность взрыва!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="container13_card">
+                        <img src="icon/Frame%2043.png">
+                        <div class="container13_card_text card_text_dop">
+                            <span class="container13_card_text_title _text_title_color">
+                                Соблюдаем пожарные
+                                <br>
+                                нормы
+                            </span>
+                            <span class="container13_card_text_all">
+                                Все монтажники прошли
+                                <br>
+                                обучение и имеют
+                                <br>
+                                разрешение на работу
+                                <br>
+                                с газовыми баллонами!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="container13_card">
+                        <img src="icon/Frame%2042(3).png">
+                        <div class="container13_card_text card_text_dop">
+                            <span class="container13_card_text_title _text_title_color">
+                                Бережно относимся
+                                <br>
+                                к вашему имуществу
+                            </span>
+                            <span class="container13_card_text_all _text_color">
+                                Вы можете быть уверены, что
+                                <br>
+                                обои и мебель непострадают
+                                <br>
+                                при монтаже натяжных
+                                <br>
+                                потолков
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="discountBanner container-fluid">
+        <img class="discountBanner_Img container-fluid"src="icon/Group%206027.png">
     </section>
     <section class="departure container-fluid">
         <div class="container14">
             <div class="shapes_wrapper">
-                <img class="departure_bg" src="icon/departure_bg.png" alt="departure">
+                <img class="departure_bg" src="icon/Frame%2012623.png" alt="departure">
             </div>
             <div class="departure_content">
                 <div class="departure_content_title">Оставьте заявку на бесплатный выезд замерщика с образцами</div>
