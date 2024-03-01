@@ -152,6 +152,9 @@ input[type="tel"]::-moz-placeholder {
     font-size: 20px;
     color: #fff;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 ._agreement{
     font-family: PFBagueSansProHairline;
@@ -501,11 +504,212 @@ input[type='checkbox'] {
 .mobhead{
  display: none;
 }
+.container {
+    width: 1568px;
+    margin: 0 auto;
+}
+.prof_var_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px 20px;
+}
+.prof_var_item {
+    position: relative;
+    width: 432px;
+    min-height: 285px;
+    border-radius: 20px;
+}
+.prof_var_item img {
+    width: 100%;
+    height: 100%;
+}
+.prof_var_item:hover .prof_var_item_content {
+    height: 118px;
+}
+.prof_var_item:hover .prof_var_item_text {
+    display: block;
+}
+.prof_var_item_content {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 419px;
+    height: 38px;
+    padding: 14px 0 0 13px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 0 0 20px 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #619e2d;
+}
+.prof_var_item_text {
+    display: none;
+    font-weight: 400;
+    color: #000;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content13{
+    display: grid;
+
+
+}
+.container14 {
+    width: 100%;
+    margin: 0 9%;
+    font-family:Geometria;
+}
+.shapes_wrapper {
+    position: relative;
+}
+.departure {
+    padding: 43px 0 0 103px;
+    border-radius: 20px;
+    width: 1568px;
+    min-height: 655px;
+    background: #f4f1f1;
+}
+.departure_bg {
+    position: absolute;
+    z-index: 0;
+    right: -67px;
+    width: 898px;
+    height: 748px;
+}
+.departure_content {
+    width: 681px;
+}
+.departure_content_title {
+    font-family:Geometria;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #000;
+}
+.departure_content_text {
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000;
+}
+.departure_items {
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.departure_item {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.departure_item_text {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 28px;
+    color: #000;
+}
+.departure_form {
+    width: 616px;
+}
+.departure_input {
+    border-radius: 10px;
+    border: none;
+    padding: 12px 22px;
+    width: 272px;
+    height: 56px;
+    background: #faf9fb;
+}
+.departure_input::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.departure_submit {
+    margin-top: 47px;
+    display: flex;
+    gap: 16px 40px;
+}
+.btn_departure {
+    border-radius: 10px;
+    border: none;
+    padding: 12px 22px;
+    width: 304px;
+    height: 56px;
+    background: #619e2d;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+.departure_policy {
+    display: flex;
+    gap: 10px;
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+}
+
+.checkbox-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.checkbox-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    transition: .3s;
+}
+
+.checkbox-icon {
+    opacity: 0;
+    transition: .3s;
+}
+
+.checkbox:checked + .checkbox-view {
+    background-color: #619e2d;
+    border: none;
+}
+
+.checkbox:checked + .checkbox-view .checkbox-icon {
+    opacity: 1;
+}
 
 
 
@@ -515,7 +719,7 @@ input[type='checkbox'] {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, auto);
     width: auto;
-    padding: 0 9%;
+    padding: 180px 9% 0 9%;
 
     iframe{
         width: 100%;
@@ -528,13 +732,13 @@ input[type='checkbox'] {
 }
 ._BlockInf{
     border-radius: 20px;
-    width: 360px;
-    height: 253px;
+    width: max-content;
+    height: auto;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
     background: #fff;
     display: flex;
     flex-direction: column;
-    padding: 9px 29px;
+    padding: 9px 45px 26px 29px;
     gap: 18px;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -548,6 +752,10 @@ input[type='checkbox'] {
         line-height: 167%;
         color: #000;
     }
+}
+._TextImgTel{
+    display: flex;
+    flex-direction: column;
 }
 ._InfTextImg{
     display: flex;
