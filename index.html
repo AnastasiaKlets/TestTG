@@ -75,7 +75,7 @@
         </div>
     </div>
     <div class="content1Text">
-        <span>Натяжные потолки за 1 день</span>
+        <h1>Натяжные потолки за 1 день</h1>
         <div class="content1TextSale">
             <span class="_TextSale">Скидки до</span>
             <span class="_TextNum">-10%</span>
@@ -206,49 +206,61 @@
                             <div class="_ImgCheck">
                                 <img src="icon/Frame%2010(6).png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container container_agreement">Вся квартира/дом
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
                                 <img src="icon/Frame%2010(8).png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Кухня</label>
+                                    <label class="container">Кухня
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
                                 <img src="icon/Frame%2011(3).png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Ванная/Туалет</label>
+                                    <label class="container">Ванная/Туалет
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
                                 <img src="icon/Frame%2011(4).png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Жилая комната</label>
+                                    <label class="container">Жилая комната
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
                                 <img src="icon/Frame%2012(2).png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Коридор</label>
+                                    <label class="container">Коридор
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
                                 <img src="icon/Frame%2012(3).png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable"  for="music">Коммерческое помещение</label>
+                                    <label class="container">Коммерческое помещение
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="imgTextEnd">
-                        <img src="icon/Group%205900.png" alt=""> alt=""
+                        <img src="icon/Group%205900.png" alt="">
                         <span>
                             <b>Выберите вариант ответа и</b>
                             <br>
@@ -257,19 +269,20 @@
                     </div>
                     <button class="next-q" data-show="div-2" type="button">Дальше</button>
                 </div>
-                <div id="div-2" class="my-div">
-                    <div class="formSteps">
-                        <div class="progress ">
-                            <div class="progress-percent"></div>
-                            <div class="progress-line p2">
-                                <div class="done-progress-persent"></div>
+                <div id="div-2" class="my-div"  >
+                    <div class="formSteps formSteps_dop">
+                        <div class="container_progress">
+                            <div class="progress">
+                                <div class="progress-percent"></div>
+                                <div class="progress-line p2">
+                                    <div class="done-progress-persent"></div>
+                                </div>
                             </div>
+                            <div class="formStep formStep_dop"> Шаг 2 <span >из 6</span></div>
+                            <span class="formStepTextH formStepTextH_dop">Укажите примерную площадь монтажа</span>
                         </div>
-                        <div class="formStep"> Шаг 2 <span >из 6</span></div>
-                        <span class="formStepTextH">Укажите примерную площадь монтажа</span>
-
                         <div class="content4">
-                            <div class="slidecontainer">
+                            <div class="slidecontainer slidecontainer_dop">
                                 <img src="icon/img.png" alt="">
                                 <p><span id="demo"></span> м<sup>2</sup></p>
                                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
@@ -278,15 +291,6 @@
                                     <span>500 м<sup>2</sup></span>
                                 </div>
                             </div>
-                            <script>
-                                let slider = document.getElementById("myRange");
-                                let output = document.getElementById("demo");
-                                output.innerHTML = slider.value;
-
-                                slider.oninput = function() {
-                                    output.innerHTML = this.value;
-                                }
-                            </script>
                         </div>
                     </div>
                     <div class="imgTextEnd">
@@ -298,7 +302,7 @@
                         </span>
                     </div>
                     <button class="next-q btn1" data-show="div-1" type="button">Назад</button>
-                    <button class="next-q" data-show="div-3" type="button">Дальше</button>
+                    <button class="next-q next-q_dop" data-show="div-3" type="button">Дальше</button>
 
                 </div>
                 <div id="div-3" class="my-div">
@@ -310,49 +314,60 @@
                             </div>
                         </div>
                         <div class="formStep"> Шаг 3 <span >из 6</span></div>
-                        <span class="formStepTextH">Где требуется установить потолок?</span>
-                        <span class="formStepTextH2">(можно выбрать несколько вариантов)</span>
+                        <span class="formStepTextH">Из какого материала будет потолок?</span>
                         <div class="formCards">
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-36.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Глянцевый
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(8).png" alt="">
+                                <img src="icon/div-35.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Кухня</label>
+                                    <label class="container">Матовый
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2011(3).png" alt="">
+                                <img src="icon/div-34.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Ванная/Туалет</label>
+                                    <label class="container">Сатиновый
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2011(4).png" alt="">
+                                <img src="icon/div-33.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Жилая комната</label>
+                                    <label class="container">Тканевый
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2012(2).png" alt="">
+                                <img src="icon/div-32.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Коридор</label>
+                                    <label class="container">Эксклюзивное полотно
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2012(3).png" alt="">
+                                <img src="icon/div-31.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable"  for="music">Коммерческое помещение</label>
+                                    <label class="container">Пока не знаю
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -369,49 +384,60 @@
                             </div>
                         </div>
                         <div class="formStep"> Шаг 4 <span >из 6</span></div>
-                        <span class="formStepTextH">Где требуется установить потолок?</span>
-                        <span class="formStepTextH2">(можно выбрать несколько вариантов)</span>
+                        <span class="formStepTextH">Какой вид потолка вы хотите установить?</span>
                         <div class="formCards">
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-41.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Обычный
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-42.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Двухуровневый
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-43.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Парящий
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-44.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Перфорированный
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-45.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">С фотопечатью
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-46.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable"  for="music">Вся квартира/дом</label>
+                                    <label class="container">С LED линиями
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -428,52 +454,55 @@
                             </div>
                         </div>
                         <div class="formStep"> Шаг 5 <span >из 6</span></div>
-                        <span class="formStepTextH">Где требуется установить потолок?</span>
-                        <span class="formStepTextH2">(можно выбрать несколько вариантов)</span>
-                        <div class="formCards">
-                            <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
-                                <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
-                                </div>
-                            </div>
-                            <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
-                                <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
-                                </div>
-                            </div>
-                            <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
-                                <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
-                                </div>
-                            </div>
-                            <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
-                                <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
-                                </div>
-                            </div>
-                            <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
-                                <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
-                                </div>
-                            </div>
-                            <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
-                                <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable"  for="music">Вся квартира/дом</label>
+                        <span class="formStepTextH">Укажите количество элементов на потолке</span>
+                    </div>
+
+                    <div class="div-5_container">
+                        <div class="div-5_container_1">
+                            <span class="div-5_container_text">Количество люстр, шт</span>
+                            <div class="div-5_container_slider">
+                                <p><span id="demo"></span></p>
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                <div class="slidecontainerText">
+                                    <span>1</span>
+                                    <span>50</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="div-5_container_1">
+                            <span class="div-5_container_text">Количество люстр, шт</span>
+                            <div class="div-5_container_slider">
+                                <p><span id="demo"></span></p>
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                <div class="slidecontainerText">
+                                    <span>1</span>
+                                    <span>50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-5_container_1">
+                            <span class="div-5_container_text">Количество люстр, шт</span>
+                            <div class="div-5_container_slider">
+                                <p><span id="demo"></span></p>
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                <div class="slidecontainerText">
+                                    <span>1</span>
+                                    <span>50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div-5_container_1">
+                            <span class="div-5_container_text">Количество люстр, шт</span>
+                            <div class="div-5_container_slider">
+                                <p><span id="demo"></span></p>
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                <div class="slidecontainerText">
+                                    <span>1</span>
+                                    <span>50</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <button class="next-q btn1" data-show="div-4" type="button">Назад</button>
                     <button class="next-q" data-show="div-6" type="button">Дальше</button>
@@ -487,55 +516,78 @@
                             </div>
                         </div>
                         <div class="formStep"> Шаг 6 <span >из 6</span></div>
-                        <span class="formStepTextH">Где требуется установить потолок?</span>
+                        <span class="formStepTextH">Выберите дополнительные элементы</span>
                         <span class="formStepTextH2">(можно выбрать несколько вариантов)</span>
                         <div class="formCards">
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-61.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Скрытый карниз
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-62.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Люстры
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-63.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Светильники
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-64.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Led подсветка по периметру
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-65.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable" for="music">Вся квартира/дом</label>
+                                    <label class="container">Световые линии
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                             <div class="_ImgCheck">
-                                <img src="icon/Frame%2010(6).png" alt="">
+                                <img src="icon/div-66.png" alt="">
                                 <div class="_agreement">
-                                    <input type="checkbox" id="music" name="interest" value="text" />
-                                    <label class="_ImgCheckLable"  for="music">Вся квартира/дом</label>
+                                    <label class="container">Ничего не нужно
+                                        <input type="checkbox" checked="checked" class="check-highload">
+                                        <span class="highload2"></span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button class="next-q btn1" data-show="div-5" type="button">Назад</button>
-                    <button class="next-q"  type="submit">Готово</button>
+                    <button class="next-q btn1" data-show="div-4" type="button">Назад</button>
+                    <button class="next-q" data-show="div-7" type="button">Дальше</button>
+                </div>
+                <div id="div-7" class="my-div">
+                    <div class="formSteps">
+                        <div class="progress">
+                            <div class="progress-percent"></div>
+                            <div class="progress-line p6">
+                                <div class="done-progress-persent"></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </form>
         </div>

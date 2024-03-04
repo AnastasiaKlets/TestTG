@@ -62,7 +62,6 @@ body{
 ._Block2Contact{
     display: flex;
     flex-direction: column;
-    gap: 6px;
     font-family: PFBagueSansProHairline;
     font-weight: 700;
     font-size: 22px;
@@ -185,6 +184,12 @@ input[type='checkbox'] {
     padding: 70px 60px;
     gap: 50px;
     position: relative
+}
+h1{
+    color: #000;
+    font-family: Geometria;
+    font-weight: 700;
+    font-size: 96px;
 }
 .content1TextSale{
     display: flex;
@@ -352,6 +357,9 @@ input[type='checkbox'] {
         font-weight: 400;
     }
 }
+.formStep_dop{
+    margin-top: 24px;
+}
 .formSteps{
     display: flex;
     flex-direction: column;
@@ -360,10 +368,20 @@ input[type='checkbox'] {
     font-family: Geometria;
     color: #000;
 }
+.formSteps_dop{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1160px;
+}
 .formStepTextH{
     font-weight: 500;
     font-size: 32px;
     line-height: 125%;
+}
+.formStepTextH_dop{
+    margin-top: 34px;
 }
 .formStepTextH2{
     font-weight: 400;
@@ -404,7 +422,11 @@ input[type='checkbox'] {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width:  365px;
 
+    img{
+        width: 320px;
+    }
 }
 ._agreement{
     font-family: Geometria;
@@ -434,6 +456,18 @@ input[type='checkbox'] {
     font-size: 24px;
     line-height: 167%;
     color: #000;
+}
+.slidecontainer_dop{
+    width: auto;
+    input{
+        width: 1110px;
+    }
+}
+.container_progress{
+    width: 1158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .slider {
     -webkit-appearance: none;
@@ -484,6 +518,14 @@ input[type='checkbox'] {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+.div-5_container{
+    display: flex;
+    flex-direction: column;
+}
+.div-5_container_1{
+    display: flex;
+    flex-direction: row;
 }
 .content4{
     display: flex;
@@ -1469,6 +1511,80 @@ footer{
     left: 40px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+     /* контейнер */
+ .container {
+     display: block;
+     position: relative;
+     padding-left: 35px;
+     margin-bottom: 12px;
+     cursor: pointer;
+     font-size: 22px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+ }
+/* скрываем дефолтный флажок */
+.container .check-highload {
+    position: absolute;
+    opacity: 0;
+}
+/* Создаем кастомный checkbox */
+.highload2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 67px;
+}
+/* При наведении указателя мыши перекрашиваем */
+.container:hover .check-highload ~ .highload2 {
+    background-color: #ccc;
+    border-radius: 67px;
+}
+/* Когда отмечен, то красим в зеленый цвет */
+.container .check-highload:checked ~ .highload2 {
+    background-color: green;
+    border-radius: 67px;
+}
+/* Создаем когда отмечено (не видно, когда не отмечено) */
+.highload2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Показываем когда отмечен */
+.container .check-highload:checked ~ .highload2:after {
+    display: block;
+}
+/* Стили индикатора */
+.container .highload2:after {
+    left: 8px;
+    top: 4px;
+    width: 8px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+
+
 
 
 

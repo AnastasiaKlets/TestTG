@@ -7,6 +7,14 @@ $(document).ready(function($){
     });
 });
 
+let slider = document.getElementById("myRange");
+let output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
 document.querySelectorAll('.close-modal').forEach(el => {
     el.onclick = () => {
         const details = el.closest('details')
