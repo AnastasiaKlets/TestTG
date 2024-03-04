@@ -1,5 +1,6 @@
 body{
     margin: 0;
+
 }
 @font-face {
     font-family: "PFBagueSansProHairline";
@@ -81,8 +82,10 @@ body{
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    margin: 60px 176px 100px 176px;
+    margin: 60px auto 100px auto;
     height: 1010px;
+    width: 1568px;
+    overflow: hidden;
 }
 .content1TextImg{
     display: flex;
@@ -203,7 +206,9 @@ input[type='checkbox'] {
     padding-left: 165px;
 }
 .content2{
-    margin: 0 176px 100px 176px;
+    margin: 0 auto 100px auto;
+    width: 1568px;
+    overflow: hidden;
 }
 .content2TextHead{
     display: flex;
@@ -242,8 +247,8 @@ input[type='checkbox'] {
     color: #000;
     gap: 4px;
     border-radius: 0 0 20px 20px;
-    width: 237px;
-    height: 84px;
+    width: 245px;
+    height: 97px;
     background: rgba(255, 255, 255, 0.88);
     padding: 5px 9px;
     margin-top: 8px;
@@ -272,10 +277,12 @@ input[type='checkbox'] {
 .content3{
     display: flex;
     flex-direction: column;
-    margin: 0 176px 100px 176px;
+    margin: 0 auto 100px auto;
     font-family: Geometria;
     color: #000;
     gap: 25px;
+    width: 1568px;
+    overflow: hidden;
 }
 .content3Text {
     font-weight: 700;
@@ -484,7 +491,8 @@ input[type='checkbox'] {
     padding-bottom: 40px;
     font-family: Geometria;
     overflow:hidden;
-    margin-left: 9%;
+    margin: 0 auto;
+    width: 1568px;
 }
 .content4_InfWindow{
     position: relative;
@@ -585,7 +593,7 @@ input[type='checkbox'] {
     background-image: url('../icon/Group6022.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: auto;
+    width: 1568px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -593,7 +601,8 @@ input[type='checkbox'] {
     color: #000;
     gap: 30px;
     padding: 180px 0 61px 72px;
-    margin: 0 9% 100px 9%;
+    margin: 0 auto 100px auto;
+    overflow: hidden;
 }
 .container6_title{
     font-weight: 700;
@@ -606,29 +615,234 @@ input[type='checkbox'] {
     line-height: 83%;
 
 }
+.rooms_container {
+    width: 1568px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.rooms .rooms_container {
+    padding: 81px 40px 76px 0;
+    min-height: 543px;
+    background: rgba(217, 217, 217, 0.52);
+    border-radius: 20px;
+}
+.rooms_items {
+    display: flex;
+    gap: 27px 82px;
+}
+.rooms_item {
+    position: relative;
+    width: 734px;
+}
+.rooms_item_title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 50px 50px 0;
+    height: 75px;
+    background: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000;
+}
+.rooms_item img.active{
+    width: 100%;
+    height: 100%;
+}
+.rooms_item_subtitles {
+    margin-top: 41px;
+    padding-left: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #2d2c30;
+}
+.rooms_item_subtitle {
+    cursor: pointer;
+}
+.rooms_item_subtitle.active {
+    position: relative;
+    color: #619e2d;
+}
+.rooms_item_subtitle.active:after {
+    content: url('../icon/long_arrow.svg');
+    position: absolute;
+    bottom: -22px;
+    left: -72px;
+}
+.rooms_pictures {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    left: -264px;
+    bottom: -44px;
+}
+.rooms_pictures img {
+    width: 285px;
+    height: 188px;
+}
+.rooms_buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.rooms_btn {
+    width: 105px;
+    height: 97px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    background: #619e2d;
+    cursor: pointer;
+}
+.rotate {
+    transform: rotate(180deg);
+}
 .container8_CardText{
+    position: relative;
+    bottom: 15px;
+    left: 5px;
     width: 237px;
     height: auto;
     background: none;
 
 }
 .container8_CardText_imgStep{
-    height: 200px /* Запрещаем изменять размер */
+    height: 110px;
+    position: relative;
+    top: 58px;
 }
+.container8_CardText_title{
+    font-weight: 700;
+    font-size: 20px;
+    color: #619e2d;
+    line-height: 200%;
+}
+.container8{
+    width: 1568px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+.container8_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.container8_title{
+    font-family: Geometria;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #000;
+}
+.container8_CardText_dop3{
+    bottom: 63px;
+    width: 413px;
+}
+.container8_imgStep_dop3{
+    top: 8px;
+}
+.container8_CardText_dop2{
+    bottom: 8px;
+}
+.container8_CardText_title_dop2{
+    line-height: 100%;
+}
+.container8_imgStep_dop2{
+    top: 58px;
+}
+.container8_CardText_dop4{
+    bottom: -4px;
+    left: 4px;
+    width: 313px;
+}
+.container8_CardText_title_dop4{
+    line-height: 100%;
+}
+.container8_imgStep_dop4{
+    top: 78px;
+}
+.content9{
+    width: 1568px;
+    margin: 0 auto 100px;
+    border-radius: 20px;
+    background: #f4f1f1;
 
+}
+.container9{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 90px;
+}
+.container9_Imgs{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
 
-
-
-
-
+    img{
+        padding: 35px 0;
+    }
+}
+.container9_Text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container9_Text1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Geometria;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+}
+.container9_Title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #619e2d;
+}
+.container9_Title_b{
+    color: #000;
+}
+.container9_lable{
+    border-radius: 50px;
+    width: 706px;
+    height: 75px;
+    background: #619e2d;
+    font-family: Geometria;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 62px;
+    top: 134px;
+}
 .container13{
-    width: 100%;
-    font-family:Geometria;
+    width: 1568px;
+    font-family: Geometria;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 100px
+    gap: 100px;
+    overflow: hidden;
 }
 .container13_cards_title{
     display: flex;
@@ -728,14 +942,20 @@ input[type='checkbox'] {
 
 
 .discountBanner{
-    width: auto;
-    margin: 0 3% 100px 7.8%;
+    width: 1695px;
+    margin: 0 auto 100px auto;
+    overflow: hidden;
+    position: relative;
+    right: -39px;
     overflow: hidden;
 }
 
+.departure{
+    overflow: hidden;
+}
 
 .container14 {
-    width: 100%;
+    width: 1568px;
     margin: 0 9%;
     font-family:Geometria;
 }
@@ -880,8 +1100,9 @@ input[type='checkbox'] {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, auto);
-    width: auto;
-    padding: 180px 9% 0 9%;
+    width: 1568px;
+    margin: 180px auto 0;
+    overflow: hidden;
 
     iframe{
         width: 100%;
@@ -939,16 +1160,18 @@ input[type='checkbox'] {
     }
 }
 .content5{
-    margin: 60px 176px 100px 176px;
-    overflow: hidden
+    margin: 60px auto 100px auto;
+    overflow: hidden;
+    width: 1568px;
 }
 .content5_img_list{
     border-radius: 20px;
-    height: 796px;
+    height: 860px;
     background: rgba(243, 240, 240, 0.92);
     display: flex;
     flex-direction: row;
     padding-bottom: 50px;
+    gap: 32px;
 
     span{
         font-family: Geometria;
@@ -1071,13 +1294,22 @@ input[type='checkbox'] {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
+    top: -42px;
 }
 .content4_img_inf_dop{
     height: auto;
     padding-bottom: 5px;
     background: none;
 }
-
+.content5_img{
+    border-radius: 20px;
+    width: 735px;
+    height: 786px;
+}
+.content5_list_text{
+    height: 630px;
+}
 
 
 
@@ -1111,7 +1343,7 @@ footer{
     margin-right: 144px;
 }
 .FGeoText{
-    font-family: PF Bague Sans Pro;
+    font-family: PFBagueSansProHairline;
     font-weight: 400;
     font-size: 24px;
     line-height: 133%;
@@ -1121,7 +1353,7 @@ footer{
     gap: 1.2%;
 }
 .FNumber{
-    font-family: PF Bague Sans Pro;
+    font-family: PFBagueSansProHairline;
     font-weight: 400;
     font-size: 24px;
     line-height: 133%;
@@ -1136,6 +1368,116 @@ footer{
     align-items: center;
     gap: 16px;
 }
+
+
+
+.modal_back {
+        display: none;
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(80,80,80, 0.5);
+    }
+.modal_window{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 888px;
+        height: 555px;
+        min-height: 461px;
+        background-color: #ffffff;
+        padding: 40px;
+    }
+.modal_close{
+    position: absolute;
+    width: 25px;
+    top: 13px;
+    right: 19px;
+    cursor: pointer;
+    z-index: 100;
+    img {
+        width: 100%;
+    }
+}
+.modal_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Geometria;
+}
+.modal_title{
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #2d2c30;
+}
+.modal_descr_mobile{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #2d2c30;
+}
+.btn_form_modal{
+    border-radius: 10px;
+    padding: 12px 22px;
+    width: 336px;
+    height: 56px;
+    background: #619e2d;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+.modal_form_check{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    height: 40px;
+}
+.modal_check{
+    position: relative;
+    top: 7px;
+}
+.modal_form_num{
+    padding: 12px 22px;
+    width: 336px;
+    height: 56px;
+    background: #faf9fb;
+    border: none;
+}
+
+.modal_content_text{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.modal_form{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.modal_content_img {
+    position: relative;
+    width: 548px;
+    height: 556px;
+    top: -40px;
+    left: 40px;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 480px) {
@@ -1207,6 +1549,7 @@ footer{
         margin-top: 21px;
         width:40px;
         height:39px;
+        position: relative;
     }
     ._CardsGroup{
         display: grid;
@@ -1240,23 +1583,5 @@ footer{
 
 
 
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-    display: none
-}
-/* Убираем стандартный маркер Firefox */
-details > summary {
-    list-style: none;
-}
 
-details[open] .modal {
-    background: rgba(0, 0, 0, 0.2);
-}
 
-.modal.show {
-    display: block;
-}
-
-body {
-    padding: 2rem 5rem;
-}
