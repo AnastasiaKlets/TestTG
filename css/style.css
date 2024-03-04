@@ -23,6 +23,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    overflow: hidden;
 }
 .headerBlock1{
     display: flex;
@@ -125,7 +126,7 @@ body{
 
 ._dialogNumber{
     border-radius: 10px;
-    padding: 0px 22px;
+    padding: 0 22px;
     width: 272px;
     height: 56px;
     background: #faf9fb;
@@ -274,6 +275,7 @@ h1{
     position: absolute;
     z-index: 2;
     width: 360px;
+    overflow: hidden;
 }
 ._CardImg{
     width: 357px;
@@ -369,7 +371,6 @@ h1{
     color: #000;
 }
 .formSteps_dop{
-    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -559,6 +560,89 @@ h1{
 }
 .p6{
     width: 99% ;
+}
+.p7{
+    width: 100%;
+}
+.formSteps_div-7{
+    position: relative;
+    z-index: 1111;
+}
+.div-7_container{
+    display: flex;
+    flex-direction: row;
+    font-family: Geometria;
+    color: #000;
+}
+.div-7_container_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.div-7_container_check_dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 45px 0 15px 0;
+}
+.div-7_container_check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.div-7_check{
+    position: relative;
+    bottom: 10px;
+}
+.div-7_container_img{
+    position: relative;
+    left: 116px;
+}
+.div-7_container_text1{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    padding-bottom: 13px;
+}
+.div-7_container_text2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    padding-bottom: 22px;
+}
+.div-7_container_text3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    padding-bottom: 15px;
+}
+.div-7_container_text_soc{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.div-7_container_check_dialog_dialogNumber{
+    width: 408px;
+    height: 56px;
+}
+.div-7_container_check_dialog_dialogBtn{
+    width: 408px;
+    height: 56px;
+}
+.div-7_container_list{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 108%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 .mobhead{
  display: none;
@@ -989,7 +1073,6 @@ h1{
     overflow: hidden;
     position: relative;
     right: -39px;
-    overflow: hidden;
 }
 
 .departure{
@@ -1005,7 +1088,7 @@ h1{
     position: relative;
 }
 .departure {
-    padding: 43px 0 0 0px;
+    padding: 43px 0 0 0;
     border-radius: 20px;
     width: 1568px;
     min-height: 655px;
@@ -1511,18 +1594,6 @@ footer{
     left: 40px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
      /* контейнер */
  .container {
      display: block;
@@ -1581,9 +1652,42 @@ footer{
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
+/* Стили для кнопки */
+.glare-button {
 
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Добавляем тень для трехмерного эффекта */
+}
 
+/* Стили для создания блика на кнопке */
+.glare-button:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-image: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0) 30%, /* Прозрачность начала блика */ rgba(255, 255, 255, 0.41), /* Цвет блика */
+            rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 4s infinite linear; /* Анимация блика */
+}
 
+/* Ключевые кадры для анимации блика */
+@keyframes shine {
+    0% {
+        left: -100px; /* Начальная позиция блика (левая сторона кнопки) */
+    }
+    20% {
+        left: 100%; /* Позиция блика в конце (правая сторона кнопки) */
+    }
+    100% {
+        left: 100%; /* Завершение анимации */
+    }
+}
 
 
 
@@ -1597,6 +1701,36 @@ footer{
 
 
 @media (max-width: 480px) {
+    .content13{
+        display: none;
+    }
+
+    .discountBanner{
+        display: none;
+    }
+    .content9{
+        display: none;
+    }
+    .container9_lable{
+        display: none;
+    }
+    .content8{
+        display: none;
+    }
+    .rooms{
+        display: none;
+    }
+    .content6{
+        display: none;
+    }
+    .content5{
+        display: none;
+    }
+
+    .content3{
+        display: none;
+    }
+
     .mobhead{
         display: flex;
         flex-direction: row;
@@ -1624,7 +1758,7 @@ footer{
     .headerBtn{
         font-family: Geometria;
         border-radius: 10px;
-        padding: 12px 0px;
+        padding: 12px 0;
         width: 150px;
         height: 32px;
         margin: 4px 0 0 0;
@@ -1634,15 +1768,14 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    .content1{
-        display: none;
-    }
 
     .content2{
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
-        margin: 24px;
+        margin: 10px;
+        width: auto;
+        overflow: hidden;
     }
     ._Card{
         width: 150px;
@@ -1659,30 +1792,48 @@ footer{
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
-
     }
     .cargImgCalc{
         margin-top: 21px;
-        width:40px;
-        height:39px;
+        width:50px;
+        height:50px;
         position: relative;
+        left: 1px;
+        top: 5px;
+    }
+    ._CardTextImg{
+        width:auto;
+        overflow: hidden;
     }
     ._CardsGroup{
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(6, auto);
         gap: 12px;
+        overflow: hidden;
+        justify-items: stretch;
     }
     ._CardText{
-        width: 107px;
-        height: 45px;
+        width: 110px;
+        height: 47px;
         font-size: 10px;
         line-height: 90%;
         margin-top: 10px;
-        padding: 0 0px 8px 8px
+        padding: 0 0 8px 8px;
+        border-radius: 0 0 10px 11px;
+        position: relative;
+        top:13px;
     }
     .content2TextHead{
         margin-bottom: 15px;
+        align-items: flex-start;
+        gap: 7px;
+        ._textHead2{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 187%;
+            text-align: left;
+        }
     }
     ._CardText2{
         font-size: 10px;
@@ -1692,8 +1843,308 @@ footer{
         font-size: 10px;
         line-height: 100%;
     }
-    .content3{
-        display: none;
+
+    .FGeoData{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 11px;
+        padding-top: 100px;
+        position: absolute;
+        left: 70px;
+
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 200%;
+        }
+    }
+    .FLogo {
+        margin: 0;
+        position: relative;
+        top: 241px;
+        right: 126px;
+    }
+    footer{
+        overflow: hidden;
+        height: 296px;
+        padding: 0;
+
+    }
+
+    .content15{
+        width: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        margin-top: 40px;
+        ._BlockInf{
+            width: 264px;
+            height: 186px;
+            padding: 9px 29px 9px 29px;
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+    .content1{
+        margin: 14px;
+        height: 440px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        .content1Text{
+            padding: 0;
+            position: relative;
+            top: -50px;
+
+            .content1TextSale{
+                position: relative;
+                bottom: 180px;
+                left: 25px;
+                width: auto;
+                span{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 286%;
+                    text-align: center;
+                }
+
+                ._TextNum{
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 83%;
+                    text-align: center;
+                    color: #619e2d;
+                    padding: 0;
+                    position: relative;
+                    left: 1px;
+                    top: 8px;
+                }
+
+                ._TextSale{
+                    position: relative;
+                }
+            }
+            h1{
+                font-weight: 700;
+                font-size: 20px;
+                position: relative;
+                top: -127px;
+                left: 26px;
+            }
+        }
+        .content1Dialog{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            border-radius: 20px;
+            width: 298px;
+            backdrop-filter: blur(80px);
+            box-shadow: inset 4px 4px 26px 0 rgba(255, 255, 255, 0.05), inset 0 4px 2px 0 rgba(255, 255, 255, 0.05), inset 0 -4px 2px 0 rgba(0, 0, 0, 0.1);
+
+            padding: 23px 15px;
+            position: relative;
+            top: -165px;
+            left: 20px;
+            span{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                text-align: left;
+            }
+
+            ._dialog{
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+                ._dialogNumber{
+                    font-weight: 400;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    padding: 12px 22px;
+                    width: 194px;
+                    height: 38px;
+                    font-family: Geometria;
+                }
+                ._dialogBtn{
+                    border-radius: 10px;
+                    padding: 12px 22px;
+                    width: 194px;
+                    height: 38px;
+                    font-weight: 500;
+                    font-size: 16px;
+
+                }
+            }
+
+            ._agreement{
+                font-weight: 400;
+                font-size: 12px;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 5px;
+                gap: 10px;
+
+                label{
+                    text-align: left;
+                }
+            }
+        }
+
+
+    }
+    .content4{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .content4_InfWindow{
+            img{
+                height: 277px;
+                width: 312px;
+            }
+            .content4_img_inf{
+                border-radius: 0 0 10px 10px;
+                width: 312px;
+                height: 59px;
+                padding: 4px 0 0 8px;
+                span{
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 107%;
+                }
+                .content4_img_inf_text{
+                    font-weight: 400;
+                }
+            }
+        }
+        .prof_var{
+            .container{
+                width: auto;
+                margin: 0;
+                padding: 0;
+            }
+            .prof_var_items{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                .prof_var_item{
+                    width: 150px;
+                    height: 98px;
+                    min-height: auto;
+
+                    .prof_var_item_content{
+                        border-radius: 0 0 10px 10px;
+                        width: 150px;
+                        height: 35px;
+                        padding: 6px 0 0 10px;
+
+                        .prof_var_item_title{
+                            font-weight: 700;
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    .departure{
+        width: auto;
+        min-height: 860px;
+        margin: 0 24px 0;
+        .container14{
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            .shapes_wrapper{
+                position: relative;
+                top: 593px;
+                left: 174px;
+                z-index: 1111;
+                img{
+                    width: 344px;
+                    height: 278px;
+                }
+            }
+            .departure_content{
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                .departure_content_title{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 125%;
+                }
+                .departure_content_text{
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-top: 6px;
+                }
+                .departure_items{
+                    margin: 0;
+                    gap: 10px;
+                    .departure_item_text{
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-family: Geometria;
+                        line-height: 143%;
+                        color: #000;
+
+                    }
+
+                    img{
+                        width:22px;
+                        height:22px;
+                    }
+                }
+                .departure_form{
+                    width: auto;
+                    height: auto;
+                    .departure_submit{
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+
+                        input{
+                            width: 272px;
+                            height: 48px;
+                            font-family: Geometria;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: rgba(0, 0, 0, 0.6);
+                            padding: 12px 22px;
+                        }
+
+                        button{
+                            border-radius: 10px;
+                            padding: 7px 22px;
+                            width: 272px;
+                            height: 48px;
+                            font-family: Geometria;
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: #fff;
+
+                        }
+                    }
+                    .departure_policy{
+                        .checkbox-label{
+                            font-weight: 400;
+                            font-size: 12px;
+                        }
+                        .checkbox-view{
+                            margin-bottom: 13px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
