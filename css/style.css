@@ -419,6 +419,43 @@ h1{
     font-size: 20px;
     color: #fff;
 }
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
 ._ImgCheck{
     display: flex;
     flex-direction: column;
@@ -523,10 +560,37 @@ h1{
 .div-5_container{
     display: flex;
     flex-direction: column;
+    padding-bottom: 140px;
 }
 .div-5_container_1{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    width: 1100px;
+    align-items: center;
+    justify-items: stretch;
+    .div-5_container_text{
+        font-family: Geometria;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 117%;
+    }
+    .slide{
+        text-align: center;
+        font-family: Geometria;
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+.btnPos{
+    position: relative;
+    left: 910px;
+    top: -38px;
+}
+.btnPos1{
+    position: relative;
+    left: 715px;
+    top: -38px;
 }
 .content4{
     display: flex;
@@ -714,6 +778,9 @@ h1{
 .content4_img_inf_text{
     font-weight: 400;
     color: #000;
+}
+.container6Img{
+    display: none;
 }
 .container6{
     background-image: url('../icon/Group6022.png');
@@ -1041,6 +1108,9 @@ h1{
     gap: 17px;
     height: 285px;
     font-family: Geometria;
+}
+.container13_discountBanner_ImgMob{
+    display: none;
 }
 .container13_btn_for_order_title{
     padding: 0 415px;
@@ -1435,18 +1505,6 @@ h1{
 .content5_list_text{
     height: 630px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     width: 100%;
     height: 168px;
@@ -1689,48 +1747,10 @@ footer{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.discountBanner_ImgMob{
+    display: none;
+}
 @media (max-width: 480px) {
-    .content13{
-        display: none;
-    }
-
-    .discountBanner{
-        display: none;
-    }
-    .content9{
-        display: none;
-    }
-    .container9_lable{
-        display: none;
-    }
-    .content8{
-        display: none;
-    }
-    .rooms{
-        display: none;
-    }
-    .content6{
-        display: none;
-    }
-    .content5{
-        display: none;
-    }
-
-    .content3{
-        display: none;
-    }
-
     .mobhead{
         display: flex;
         flex-direction: row;
@@ -1843,7 +1863,6 @@ footer{
         font-size: 10px;
         line-height: 100%;
     }
-
     .FGeoData{
         margin: 0;
         display: flex;
@@ -1872,7 +1891,6 @@ footer{
         padding: 0;
 
     }
-
     .content15{
         width: auto;
         grid-template-columns: repeat(3, 1fr);
@@ -2057,7 +2075,7 @@ footer{
     .departure{
         width: auto;
         min-height: 860px;
-        margin: 0 24px 0;
+        margin: 0 10px 0;
         .container14{
             display: flex;
             flex-direction: column;
@@ -2146,9 +2164,269 @@ footer{
             }
         }
     }
+    .discountBanner{
+        width: auto;
+        margin: 0 auto 40px auto;
+        right: 0;
+        .discountBanner_Img{
+            display: none;
+        }
+        .discountBanner_ImgMob{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 312px;
+            height: 318px;
+
+            button{
+                position: relative;
+                z-index: 11;
+                top: -72px;
+                border-radius: 10px;
+                padding: 24px 22px;
+                width: 272px;
+                height: 48px;
+                font-family: Geometria;
+                font-weight: 500;
+                font-size: 20px;
+                color: #fff;
+
+            }
+        }
+    }
+    .content6{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+        .container6{
+            display: none;
+        }
+        .container6Img{
+            display:flex;
+            align-items: center;
+        }
+    }
+    .rooms{
+        width: auto;
+        margin :0 10px 60px;
+        .rooms_container{
+            width: auto;
+            min-height: 571px;
+            margin: 0;
+            padding: 0;
+            .rooms_items{
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                .active{
+                    width: auto;
+                    height: auto;
+                }
+                .rooms_item{
+                    width: auto;
+                    img{
+                        width: 279px;
+                        height: 214px;
+                        position: relative;
+                        left: 60px;
+                    }
+                }
+                .rooms_item_title{
+                    font-family: Geometria;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 125%;
+                    border-radius: 50px;
+                    width: 268px;
+                    height: 54px;
+                    position: relative;
+                    left: -35px;
+                    margin-top: 28px;
+                }
+                .rooms_item_subtitles{
+                    font-family: Geometria;
+                    font-weight: 500;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    gap: 10px;
+                    margin-top: 10px;
+                }
+                .rooms_item_subtitle.active:after{
+                    content: url(../icon/Arrow.png);
+                    left: -35px;
+                    bottom: -15px;
+                }
+                .rooms_pictures{
+                    gap: 10px;
+                    left: -28px;
+                    bottom: 15px;
+                    img{
+                        border-radius: 10px;
+                        width: 98px;
+                        height: 65px;
+                        z-index: 11;
+
+                    }
+                }
+                .rooms_buttons{
+                    position: relative;
+                    left: 260px;
+                    top: -35px;
+                   button{
+                       width: 37px;
+                       height: 35px;
+                       border-radius: 10px 0 0 10px;
+                       img{
+                           width: 23px;
+                           height: 8px;
+                           left: 0;
+                           top: -2px;
+                       }
+                   }
+                }
+            }
+        }
+    }
+    .container9_lable{
+        height: 30px;
+        width: 220px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 250%;
+        right: 32px;
+        top: 57px;
+    }
+    .content9{
+        width: auto;
+        margin :0 10px 40px;
+        .container9{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .container9_Imgs{
+                gap: 10px;
+                margin-top: 15px;
+                img{
+                    border-radius: 10px;
+                    width: 142px;
+                    height: 201px;
+                    padding: 0;
+                }
+            }
+            .container9_Text{
+                padding-bottom: 21px;
+                .container9_Text1{
+                    gap: 4px;
+                    .container9_Title{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 100%;
+                    }
+                    .container9_Text_description{
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 122%;
+                    }
+                }
+            }
+
+        }
+    }
+    .content13{
+        width: auto;
+        .container13{
+            width: auto;
+            gap: 0;
+            .container13_cards_title{
+                gap: 15px;
+                .container13_title{
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 125%;
+                    text-align: center;
+                }
+                .container13_cards{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .container13_card{
+                        width: 314px;
+                        height: 184px;
+                        margin: 0;
+                        padding:19px 10px;
+                        gap: 10px;
+                        img{
+                            border-radius: 100px;
+                            width: 76px;
+                            height: 76px;
+                        }
+                        .container13_card_text_title{
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 143%;
+                        }
+                        .container13_card_text_all{
+                            font-weight: 400;
+                            font-size: 12px;
+
+
+                        }
+                        .container13_card_text{
+                            gap: 7px;
+                            br{
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+            .container13_btn_for_order{
+                display: none;
+            }
+            .container13_discountBanner_ImgMob{
+                display: flex;
+                flex-direction: column;
+                padding-top: 100px;
+
+            }
+            .container13_text_image{
+                z-index: 11;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                top: -260px;
+                overflow: hidden;
+                span{
+                    font-family: Geometria;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 94%;
+                    text-align: center;
+                    color: #000;
+                }
+                button{
+                    width: 240px;
+                    height: 48px;
+                }
+
+            }
+        }
+    }
+    .content5{
+
+    }
+
+    .content8{
+        display: none;
+    }
+
+    .content3{
+        display: none;
+    }
 }
-
-
-
-
-

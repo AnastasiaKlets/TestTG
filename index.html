@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <title>Натяжные потолки за 1 день</title>
 </head>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
-
 <body class="root">
-    <!-- адаптива нет!!!!!!!!!!! -->
     <!-- пересмотреть заполнение!!!!!!!!!! -->
     <header class="headerContainer">
         <div class="headerBlock1">
@@ -178,7 +175,6 @@
             </div>
         </div>
     </div>
-
     <div class="content3">
         <div class="content3Text">
             Рассчитайте стоимость натяжного потолка <br>
@@ -267,7 +263,7 @@
                             нажмите кнопку «Далее»
                         </span>
                     </div>
-                    <button class="next-q" data-show="div-2" type="button">Дальше</button>
+                    <button class="next-q btnPos" data-show="div-2" type="button">Дальше</button>
                 </div>
                 <div id="div-2" class="my-div"  >
                     <div class="formSteps formSteps_dop">
@@ -301,8 +297,8 @@
                             нажмите кнопку «Далее»
                         </span>
                     </div>
-                    <button class="next-q btn1" data-show="div-1" type="button">Назад</button>
-                    <button class="next-q next-q_dop" data-show="div-3" type="button">Дальше</button>
+                    <button class="next-q btnPos1 btn1" data-show="div-1" type="button">Назад</button>
+                    <button class="next-q btnPos1 next-q_dop" data-show="div-3" type="button">Дальше</button>
 
                 </div>
                 <div id="div-3" class="my-div">
@@ -372,8 +368,16 @@
                             </div>
                         </div>
                     </div>
-                    <button class="next-q btn1" data-show="div-2" type="button">Назад</button>
-                    <button class="next-q" data-show="div-4" type="button">Дальше</button>
+                    <div class="imgTextEnd">
+                        <img src="icon/Group%205900.png" alt="">
+                        <span>
+                            <b>Выберите вариант ответа и</b>
+                            <br>
+                            нажмите кнопку «Далее»
+                        </span>
+                    </div>
+                    <button class="next-q btnPos1 btn1" data-show="div-2" type="button">Назад</button>
+                    <button class="next-q btnPos1" data-show="div-4" type="button">Дальше</button>
                 </div>
                 <div id="div-4" class="my-div">
                     <div class="formSteps">
@@ -442,8 +446,16 @@
                             </div>
                         </div>
                     </div>
-                    <button class="next-q btn1" data-show="div-3" type="button">Назад</button>
-                    <button class="next-q" data-show="div-5" type="button">Дальше</button>
+                    <div class="imgTextEnd">
+                        <img src="icon/Group%205900.png" alt="">
+                        <span>
+                            <b>Выберите вариант ответа и</b>
+                            <br>
+                            нажмите кнопку «Далее»
+                        </span>
+                    </div>
+                    <button class="next-q btn1 btnPos1" data-show="div-3" type="button">Назад</button>
+                    <button class="next-q btnPos1" data-show="div-5" type="button">Дальше</button>
                 </div>
                 <div id="div-5" class="my-div">
                     <div class="formSteps">
@@ -459,10 +471,10 @@
 
                     <div class="div-5_container">
                         <div class="div-5_container_1">
-                            <span class="div-5_container_text">Количество люстр, шт</span>
-                            <div class="div-5_container_slider">
-                                <p><span id="demo"></span></p>
-                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <span class="div-5_container_text">Количество люстр, шт </span>
+                            <div class="slide">
+                                <p><span class="output"></span></p>
+                                <input type="range" min="1" max="50" value="1" class="slider">
                                 <div class="slidecontainerText">
                                     <span>1</span>
                                     <span>50</span>
@@ -470,10 +482,10 @@
                             </div>
                         </div>
                         <div class="div-5_container_1">
-                            <span class="div-5_container_text">Количество люстр, шт</span>
-                            <div class="div-5_container_slider">
-                                <p><span id="dem"></span></p>
-                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <span class="div-5_container_text">Количество труб в потолке, шт </span>
+                            <div class="slide">
+                                <p><span class="output"></span></p>
+                                <input type="range" min="1" max="50" value="1" class="slider">
                                 <div class="slidecontainerText">
                                     <span>1</span>
                                     <span>50</span>
@@ -481,10 +493,10 @@
                             </div>
                         </div>
                         <div class="div-5_container_1">
-                            <span class="div-5_container_text">Количество люстр, шт</span>
-                            <div class="div-5_container_slider">
-                                <p><span id="demo"></span></p>
-                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <span class="div-5_container_text">Количество углов в помещении, шт </span>
+                            <div class="slide">
+                                <p><span class="output"></span></p>
+                                <input type="range" min="1" max="50" value="1" class="slider">
                                 <div class="slidecontainerText">
                                     <span>1</span>
                                     <span>50</span>
@@ -492,10 +504,10 @@
                             </div>
                         </div>
                         <div class="div-5_container_1">
-                            <span class="div-5_container_text">Количество люстр, шт</span>
-                            <div class="div-5_container_slider">
-                                <p><span id="demo"></span></p>
-                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <span class="div-5_container_text">Количество светильников, шт </span>
+                            <div class="slide">
+                                <p><span class="output"></span></p>
+                                <input type="range" min="1" max="50" value="1" class="slider">
                                 <div class="slidecontainerText">
                                     <span>1</span>
                                     <span>50</span>
@@ -504,8 +516,16 @@
                         </div>
 
                     </div>
-                    <button class="next-q btn1" data-show="div-4" type="button">Назад</button>
-                    <button class="next-q" data-show="div-6" type="button">Дальше</button>
+                    <div class="imgTextEnd">
+                        <img src="icon/Group%205900.png" alt="">
+                        <span>
+                            <b>Выберите вариант ответа и</b>
+                            <br>
+                            нажмите кнопку «Далее»
+                        </span>
+                    </div>
+                    <button class="next-q btn1 btnPos1" data-show="div-4" type="button">Назад</button>
+                    <button class="next-q btnPos btnPos1" data-show="div-6" type="button">Дальше</button>
                 </div>
                 <div id="div-6" class="my-div">
                     <div class="formSteps">
@@ -575,8 +595,16 @@
                             </div>
                         </div>
                     </div>
-                    <button class="next-q btn1" data-show="div-4" type="button">Назад</button>
-                    <button class="next-q" data-show="div-7" type="button">Дальше</button>
+                    <div class="imgTextEnd">
+                        <img src="icon/Group%205900.png" alt="">
+                        <span>
+                            <b>Выберите вариант ответа и</b>
+                            <br>
+                            нажмите кнопку «Далее»
+                        </span>
+                    </div>
+                    <button class="next-q btn1 btnPos1" data-show="div-4" type="button">Назад</button>
+                    <button class="next-q btnPos1" data-show="div-7" type="button">Дальше</button>
                 </div>
                 <div id="div-7" class="my-div">
                     <div class="div-7_container">
@@ -619,7 +647,6 @@
         </div>
 
     </div>
-
     <div class="content4">
         <div class="content4_InfWindow">
             <img src="icon/Frame%2012624.png" alt="">
@@ -773,6 +800,7 @@
                 До 3-х месяцев БЕЗ ПЕРЕПЛАТ!
             </span>
         </div>
+        <img class="container6Img" src="icon/container6.png" alt="">
     </section>
     <section class="rooms ">
         <div class="rooms_container">
@@ -937,9 +965,9 @@
                             </span>
                                 <span class="container13_card_text_all">
                                 Гарантируем, что цена
-                                <br>
+                                <br class="noneBr">
                                 не изменится после
-                                <br>
+                                <br class="noneBr">
                                 проведённых работ
                             </span>
                         </div>
@@ -952,11 +980,11 @@
                             </span>
                             <span class="container13_card_text_all">
                                 Вы защищены
-                                <br>
+                                <br class="noneBr">
                                 от срывов сроков
-                                <br>
+                                <br class="noneBr">
                                 и некачественного
-                                <br>
+                                <br class="noneBr">
                                 монтажа
                             </span>
                         </div>
@@ -966,16 +994,16 @@
                         <div class="container13_card_text">
                             <span class="container13_card_text_title">
                                 Гарантия
-                                <br>
+                                <br class="noneBr">
                                 на натяжное полотно
-                                <br>
+                                <br class="noneBr">
                                 до 20 лет
                             </span>
                             <span class="container13_card_text_all">
                                 Гарантия
-                                <br>
+                                <br class="noneBr">
                                 на монтажные работы
-                                <br>
+                                <br class="noneBr">
                                 до 3-х лет
                             </span>
                         </div>
@@ -989,6 +1017,15 @@
                 <button data-modal="consultation" class="container13_btn glare-button">
                     Заказать
                 </button>
+            </div>
+            <div class=" container13_discountBanner_ImgMob container-fluid">
+                <img  src="icon/container13_discountBanner_ImgMob.png" alt="">
+                <div class="container13_text_image">
+                    <span>Скидка 10% на глянцевые потолки</span>
+                    <button data-modal="consultation" class="headerBtn glare-button">
+                        Заказать
+                    </button>
+                </div>
             </div>
             <div class="container13_cards_title container-fluid">
                 <span class="container13_title">Самое главное — Ваша безопасность!</span>
@@ -1058,6 +1095,14 @@
     </section>
     <section class="discountBanner container-fluid">
         <img class="discountBanner_Img container-fluid" src="icon/Group%206027.png" alt="">
+        <div class="discountBanner_ImgMob container-fluid">
+            <img  src="icon/discountBannerMob.png" alt="">
+            <button data-modal="consultation" class="headerBtn glare-button">
+                Заказать
+            </button>
+        </div>
+
+
     </section>
     <section class="departure container-fluid">
         <div class="container14">
@@ -1224,6 +1269,5 @@
     </div>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 </html>

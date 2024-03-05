@@ -57,6 +57,14 @@ tabsParent.addEventListener('click', function(event) {
     }
 });
 
+const elements = document.querySelectorAll('.slide');
+
+elements.forEach(elem => {
+    elem.querySelector(".output").textContent = document.querySelector(".slider").value;
+    elem.addEventListener("input", (event) => {
+        elem.querySelector(".output").textContent = event.target.value;
+    });
+});
 
 $('[data-modal=consultation]').on('click', function() {
     $('.modal_back, #consultation').fadeIn(1);
