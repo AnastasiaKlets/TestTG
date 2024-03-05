@@ -2234,6 +2234,7 @@ footer{
             display: flex;
             flex-direction: column;
             width: auto;
+            min-width: auto;
             .shapes_wrapper{
                 position: relative;
                 top: 593px;
