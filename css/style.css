@@ -1781,6 +1781,15 @@ footer{
     display: none;
 }
 @media (min-width: 1600px) {
+    .content4{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 40px;
+        overflow:hidden;
+        margin: 0 128px;
+        width: auto;
+    }
+
     .content5{
         margin: 60px auto 100px auto;
         overflow: hidden;
