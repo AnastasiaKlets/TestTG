@@ -117,7 +117,7 @@ $(".form").submit(function (event) {
     var the_form = $(this);
     var data = the_form.serialize();
     $.ajax({
-        url: '/send.php',
+        url: '/TestTG/send.php',
         type: 'POST',
         cache: false,
         data: data,
