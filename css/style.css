@@ -21,17 +21,21 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
 }
 .headerContainer{
     width: 100%;
-    height: 99px;
-    background: #000;
+    height: 5.5vw;
+    background: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
-
-
-
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11111;
+}
+
 .logoOPenDor{
     display: none;
 }
@@ -66,9 +70,14 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
 .headerBlock2{
     display: flex;
     flex-direction: row;
-    margin: 0 170px;
     align-items: center;
     gap: 23px;
+}
+.circle{
+    border-radius: 100%;
+    background: #619e2d;
+    width: 0.4vw;
+    height: 0.4vw;
 }
 ._Block2Contact{
     display: flex;
@@ -83,10 +92,10 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
     font-weight: 400;
     font-size: 14px;
     color: #619e2d;
-    div{
-        border-radius: 100%;
-        fill: #619e2d;
-    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
 }
 .content1{
     display: grid;
@@ -607,6 +616,7 @@ h1{
     display: flex;
     flex-direction: column;
     padding-bottom: 140px;
+    padding-right: 25px;
 }
 .div-5_container_1{
     display: grid;
@@ -647,13 +657,18 @@ h1{
     overflow:hidden;
     width: auto;
 }
+.imgAL{
+    width: 35vw;
+}
 .content4_InfWindow{
     position: relative;
     border-radius: 20px;
-    img{
-        width: 28vw;
-    }
+
 }
+.imgCard{
+    width: 28vw;
+}
+
 .imgTextEnd{
     display: flex;
     flex-direction: row;
@@ -814,7 +829,7 @@ h1{
     bottom: 0;
     display: flex;
     flex-direction: column;
-    width: 28vw;
+    width: 35vw;
     height: 100px;
     padding: 14px 0 0 13px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -825,9 +840,23 @@ h1{
     line-height: 24px;
     color: #619e2d;
 }
+.content5_img_inf{
+    width: 28vw;
+    font-weight: 400;
+    font-size: 0.8vw;
+    line-height: 137%;
+}
+.content5_img_inf_title{
+    font-weight: 500;
+    font-size: 1vw;
+}
 .content4_img_inf_text{
     font-weight: 400;
     color: #000;
+
+}
+.content4_img_inf_text_dop{
+    line-height: 100%;
 }
 .container6Img{
     display: none;
@@ -949,7 +978,7 @@ h1{
 }
 .container8_CardText{
     position: relative;
-    bottom: 15px;
+    bottom: 20px;
     left: 5px;
     width: 237px;
     height: auto;
@@ -966,6 +995,9 @@ h1{
     font-size: 20px;
     color: #619e2d;
     line-height: 200%;
+}
+.container8_CardText_title_dop3{
+    line-height: 100%;
 }
 .container8{
     width: auto;
@@ -994,11 +1026,11 @@ h1{
     padding: 0 0 0 66px;
 }
 .container8_CardText_dop3{
-    bottom: 63px;
-    width: 413px;
+    bottom: 14px;
+    padding-bottom: 37px;
 }
 .container8_imgStep_dop3{
-    top: 8px;
+    top: 57px;
 }
 .container8_CardText_dop2{
     bottom: 8px;
@@ -1580,19 +1612,23 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 214px;
-    margin-right: 144px;
+    width: 100%;
     img{
-        margin-right: 200px;
+        width: 12vw;
+        height: 5.7vw;
     }
 }
 .FLogo{
-    margin-right: 144px;
+    margin-right: 12vw;
+    width: 6.4vw;
+    height: 1.77vw;
 }
 .FGeoText{
     font-family: PFBagueSansProHairline;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.14vw;
     line-height: 133%;
     color: #fff;
     display: flex;
@@ -1602,14 +1638,13 @@ footer{
 .FNumber{
     font-family: PFBagueSansProHairline;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.25vw;
     line-height: 133%;
     color: #fff;
     display: flex;
     flex-direction: column;
 }
 .FNumImgLogo{
-    width: 236px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1626,6 +1661,8 @@ footer{
     width: 100%;
     height: 100%;
     background-color: rgba(80,80,80, 0.5);
+
+
 }
 .modal_window{
     position: absolute;
@@ -1834,8 +1871,6 @@ footer{
     }
     .logoOPenDor{
         display: inline;
-        margin-right: 10%;
-        margin-left: 7%;
     }
     .img_content3{
         display: inline;
