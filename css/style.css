@@ -26,8 +26,14 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     overflow: hidden;
+
+
+
+}
+.logoOPenDor{
+    display: none;
 }
 .headerBlock1{
     display: flex;
@@ -340,15 +346,19 @@ h1{
 .content3FromImg{
     display: flex;
     flex-direction: row;
+
 }
 .my-form .my-div {
     display: none;
+    box-shadow: 0 5px 20px 0 rgba(118, 106, 122, 0.25);
+    border-radius: 20px;
+    padding: 15px 5px 0 25px;
 }
 .my-form .my-div:first-child {
     display: block;
 }
 .progress {
-    width: 100%;
+    width: 99%;
     background: #f2f0f5;
     position: relative;
     border-radius: 50px;
@@ -630,18 +640,19 @@ h1{
 }
 .content4{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-bottom: 40px;
-    font-family: Geometria;
-    overflow:hidden;
-    margin: 0 auto;
-    width: auto;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    overflow:hidden;
+    width: auto;
 }
 .content4_InfWindow{
     position: relative;
     border-radius: 20px;
+    img{
+        width: 34.58vw;
+    }
 }
 .imgTextEnd{
     display: flex;
@@ -754,21 +765,18 @@ h1{
     margin: 0 auto;
 }
 .prof_var_items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 19px 20px;
-    align-items: center;
-    justify-content: center;
 }
 .prof_var_item {
     position: relative;
-    width: 432px;
-    min-height: 285px;
+    width: 22.5vw;
     border-radius: 20px;
 }
 .prof_var_item img {
-    width: 100%;
-    height: 100%;
+    width: 22.5vw;
+    height: 14.84vw;
 }
 .prof_var_item:hover .prof_var_item_content {
     height: auto;
@@ -781,14 +789,14 @@ h1{
     bottom: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 22.5vw;
     height: 55px;
     padding: 14px 0 0 13px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: rgba(255, 255, 255, 0.88);
     border-radius: 0 0 20px 20px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25vw;
     line-height: 24px;
     color: #619e2d;
 }
@@ -804,14 +812,14 @@ h1{
     bottom: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 34.58vw;
     height: 100px;
     padding: 14px 0 0 13px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: rgba(255, 255, 255, 0.88);
     border-radius: 0 0 20px 20px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25vw;
     line-height: 24px;
     color: #619e2d;
 }
@@ -834,7 +842,7 @@ h1{
     color: #000;
     gap: 30px;
     padding: 180px 0 61px 72px;
-    margin: 0px 40px 100px;
+    margin: 0 40px 100px;
     overflow: hidden;
 }
 .container6_title{
@@ -1537,9 +1545,8 @@ h1{
 .content5_img_above{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
-    top: -42px;
     top: -130px;
     width: auto;
 }
@@ -1561,12 +1568,11 @@ h1{
 }
 footer{
     width: 100%;
-    height: 168px;
+    height: 170px;
     background: #2D2C30;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 36px;
     padding: 24px 0 0 0;
 }
 .FGeoData{
@@ -1575,6 +1581,9 @@ footer{
     align-items: center;
     gap: 214px;
     margin-right: 144px;
+    img{
+        margin-right: 200px;
+    }
 }
 .FLogo{
     margin-right: 144px;
@@ -1582,12 +1591,12 @@ footer{
 .FGeoText{
     font-family: PFBagueSansProHairline;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 133%;
     color: #fff;
     display: flex;
     flex-direction: row;
-    gap: 1.2%;
+    gap: 10px;
 }
 .FNumber{
     font-family: PFBagueSansProHairline;
@@ -1817,13 +1826,15 @@ footer{
     animation-duration: 1.5s;
 }
 @media (min-width: 1600px) {
-    .content4{
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 40px;
-        overflow:hidden;
-        margin: 0 128px;
-        width: auto;
+
+    .logoOPenDorImg{
+        display: none;
+
+    }
+    .logoOPenDor{
+        display: inline;
+        margin-right: 10%;
+        margin-left: 7%;
     }
 
     .content5{
@@ -1831,17 +1842,7 @@ footer{
         overflow: hidden;
         width: auto;
     }
-    .content5_img_list{
-        border-radius: 20px;
-        height: 860px;
-        background: rgba(243, 240, 240, 0.92);
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 50px;
-        gap: 32px;
-        margin: 0 50px;
 
-    }
     .content5_text_dop{
         font-size: 20px;
         line-height: 160%;
@@ -1880,11 +1881,7 @@ footer{
     .content4_InfWindow_dop_del{
         display: inline-flex;
     }
-    .prof_var_items {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 19px 20px;
-    }
+
     .content5_img{
         border-radius: 20px;
         width: 735px;
@@ -2774,6 +2771,7 @@ footer{
         .my-form{
             width: 340px;
             padding-bottom: 50px;
+
             .formStep{
                 font-size: 14px;
                 border-radius: 100px;
