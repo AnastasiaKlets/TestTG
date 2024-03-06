@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Натяжные потолки за 1 день</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/jquery-1.11.3.min.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
 <body class="root">
 <!-- посмотреть как делать заявки в тг-->
 <header class="headerContainer" id="navbar">
@@ -1265,9 +1267,10 @@
                     <br>
                     в течение 10 минут
                 </div>
-                <form class="modal_form" action="#">
+                <form class="modal_form form" action="#">
+                    <input type="hidden" name="theme" value="Клиент оставил заявку">
                     <input class="modal_form_num" name="phone" type="text" placeholder="+375 __ ___ __ __">
-                    <button class="btn btn_form btn_form_modal glare-button">Отправить</button>
+                    <button type="submit" class="btn btn_form btn_form_modal glare-button">Отправить</button>
                 </form>
                 <div class="modal_form_check">
                     <input class="modal_check" type="checkbox" id="music" name="interest" value="text" />
@@ -1278,7 +1281,5 @@
         </div>
     </div>
 </div>
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

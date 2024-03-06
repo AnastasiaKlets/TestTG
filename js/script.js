@@ -111,3 +111,25 @@ $('form').submit(function(e) {
     $('form').trigger('reset');
 });
 
+$(".form").submit(function (event) {
+    $('.form button[type="submit"]').attr('disabled', 'disabled');
+    event.preventDefault();
+    var the_form = $(this);
+    var data = the_form.serialize();
+    $.ajax({
+        url: '/send.php',
+        type: 'POST',
+        cache: false,
+        data: data,
+        dataType: 'html',
+        success: function (data) {
+            $('.form button[type="submit"]').removeAttr('disabled');
+            $('form').trigger("reset");
+            $('.modal.questionnaire').fadeOut();
+            $('.modal.thank').fadeIn();
+            setTimeout(()=>{
+                $('.modal.thank').fadeOut();
+            },5000);
+        }
+    });
+});
