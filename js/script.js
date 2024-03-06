@@ -29,33 +29,45 @@ document.querySelectorAll('.open-modal').forEach(el => {
     }
 })
 
-let tabs = document.querySelectorAll('.rooms_item_subtitle'),
-    tabsParent = document.querySelector('.rooms_item_subtitles');
+function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass) {
+    let tabs = document.querySelectorAll(tabsSelector),
+        tabsContent = document.querySelectorAll(tabsContentSelector),
+        tabsParent = document.querySelector(tabsParentSelector);
 
-function hideTabContent() {
-    tabs.forEach(item => {
-        item.classList.remove('active');
+    function hideTabContent() {
+        tabsContent.forEach(item => {
+            item.classList.add('hide');
+            item.classList.remove('show', 'fade');
+        });
+
+        tabs.forEach(item => {
+            item.classList.remove(activeClass);
+        });
+    }
+
+    function showTabContent(i = 0) {
+        tabsContent[i].classList.add('show', 'fade');
+        tabsContent[i].classList.remove('hide');
+        tabs[i].classList.add(activeClass);
+    }
+
+    hideTabContent();
+    showTabContent();
+
+    tabsParent.addEventListener('click', function(event) {
+        const target = event.target;
+        if(target && target.classList.contains(tabsSelector.slice(1))) {
+            tabs.forEach((item, i) => {
+                if (target == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
+        }
     });
 }
 
-function showTabContent(i = 0) {
-    tabs[i].classList.add('active');
-}
-
-hideTabContent();
-showTabContent();
-
-tabsParent.addEventListener('click', function(event) {
-    const target = event.target;
-    if(target && target.classList.contains('rooms_item_subtitle')) {
-        tabs.forEach((item, i) => {
-            if (target == item) {
-                hideTabContent();
-                showTabContent(i);
-            }
-        });
-    }
-});
+tabs('.rooms_item_subtitle', '.rooms_item img.active', '.rooms_item_subtitles', 'active');
 
 const elements = document.querySelectorAll('.slide');
 

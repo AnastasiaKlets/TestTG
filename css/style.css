@@ -246,9 +246,34 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 ._Card_dop{
     display: none;
+}
+._Card_btn{
+    border-radius: 10px;
+    padding: 12px 22px;
+    width: 272px;
+    height: 56px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    background: #619e2d;
+    border: none;
+    font-family: Geometria;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+
+    opacity: 0;
+    position: absolute;
+    left: 45px;
+    transition: opacity .3s;
+    z-index: 10;
+    top: 185px;
+}
+._Card:hover button {
+    opacity: 1;
+    transition: opacity .3s;
 }
 ._CardText{
     display: flex;
@@ -858,6 +883,7 @@ h1{
 .rooms_item img.active{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 .rooms_item_subtitles {
     margin-top: 41px;
@@ -1780,6 +1806,16 @@ footer{
 .modal_close2{
     display: none;
 }
+.show {
+    display:block
+}
+.hide {
+    display:none
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 @media (min-width: 1600px) {
     .content4{
         display: flex;
@@ -1954,7 +1990,7 @@ footer{
         height: 208px;
     }
     ._CardImg{
-        width: 160px;
+        width: 154px;
         height: 208px;
     }
     .content2TextHead{
@@ -2101,10 +2137,10 @@ footer{
             }
             h1{
                 font-weight: 700;
-                font-size: 20px;
+                font-size: 19px;
                 position: relative;
-                top: -127px;
-                left: 26px;
+                top: -126px;
+                left: 17px;
             }
         }
         .content1Dialog{
@@ -2321,7 +2357,7 @@ footer{
     }
     .discountBanner{
         width: auto;
-        margin: 0 auto 40px auto;
+        margin: 40px auto 40px auto;
         right: 0;
         .discountBanner_Img{
             display: none;
@@ -2363,7 +2399,7 @@ footer{
         }
     }
     .rooms{
-        width: auto;
+        width: 100%;
         margin :0 10px 60px;
         .rooms_container{
             width: auto;
@@ -2377,14 +2413,15 @@ footer{
                 .active{
                     width: auto;
                     height: auto;
+                    border-radius: 10px;
                 }
                 .rooms_item{
                     width: auto;
                     img{
-                        width: 279px;
+                        width: 80%;
                         height: 214px;
                         position: relative;
-                        left: 60px;
+                        left: 40px;
                     }
                 }
                 .rooms_item_title{
@@ -2583,6 +2620,7 @@ footer{
     .content5   {
         width: auto;
         margin: 0 10px 40px;
+        overflow: hidden;
         .content5_img_list{
             display: flex;
             align-items: center;
@@ -2765,8 +2803,8 @@ footer{
                 width: 150px;
                 height: 166px;
                 img{
-                    width: 128px;
-                    height: 120px;
+                    width: 150px;
+                    height: 95px;
                 }
             }
             ._agreement{
@@ -2786,12 +2824,17 @@ footer{
                 left: 200px;
                 top: 10px;
             }
+            .slidecontainer_dop{
+                img{
+                    width: 272px;
+                    height: 232px;
+                }
+            }
         }
     }
 
     .content8{
         display: none;
     }
-
 
 }
