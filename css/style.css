@@ -2,17 +2,8 @@ body{
     margin: 0;
 
 }
-@font-face {
-    font-family: "PFBagueSansProHairline";
-url("../fonts/PFBagueSansProLight.woff") format("woff"),
-url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
-}
-@font-face {
-    font-family:'Geometria';
-    src: local("Geometria-Medium"), url("../fonts/FontsFree-Net-Geometria-Medium.ttf") format("truetype");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+a{
+    text-decoration: none
 }
 .root{
     display: flex;
@@ -21,13 +12,13 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
 }
 .headerContainer{
     width: 100%;
-    height: 5.5vw;
     background: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
+    padding: 10px 0;
 }
 .sticky {
     position: fixed;
@@ -43,10 +34,13 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
     display: flex;
     flex-direction: column;
     gap: 11px;
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 16px;
-    color: #fff;
+    color: #fff !important;
+    a{
+        color: #fff !important;
+    }
 
 }
 ._Block1Contact{
@@ -61,7 +55,7 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
     height: 48px;
     background: #619e2d;
     border: none;
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 500;
     font-size: 20px;
     color: #fff;
@@ -73,6 +67,9 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
     align-items: center;
     gap: 23px;
 }
+.container9_Text_description{
+    font-weight: 400;
+}
 .circle{
     border-radius: 100%;
     background: #619e2d;
@@ -82,13 +79,16 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
 ._Block2Contact{
     display: flex;
     flex-direction: column;
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 22px;
     color: #fff;
+    a{
+        color: #fff !important;
+    }
 }
 ._Block2ContactText{
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 14px;
     color: #619e2d;
@@ -123,7 +123,7 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 500;
     font-size: 40px;
     line-height: 150%;
@@ -152,13 +152,13 @@ url("../fonts/PFBagueSansProHairline.ttf") format("truetype");
     border: none;
 }
 input[type="tel"]::-webkit-input-placeholder {
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.6);
 }
 input[type="tel"]::-moz-placeholder {
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.6);
@@ -169,7 +169,7 @@ input[type="tel"]::-moz-placeholder {
     width: 304px;
     height: 56px;
     background: #619e2d;
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 500;
     font-size: 20px;
     color: #fff;
@@ -179,7 +179,7 @@ input[type="tel"]::-moz-placeholder {
     justify-content: center;
 }
 ._agreement{
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 16px;
     color: #000;
@@ -195,7 +195,7 @@ input[type='checkbox'] {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 96px;
     line-height: 62%;
@@ -207,7 +207,7 @@ input[type='checkbox'] {
 }
 h1{
     color: #000;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 96px;
 }
@@ -239,7 +239,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 22px;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
@@ -274,7 +274,7 @@ h1{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
     background: #619e2d;
     border: none;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 20px;
     color: #fff;
@@ -293,7 +293,7 @@ h1{
 ._CardText{
     display: flex;
     flex-direction: column;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 20px;
     line-height: 90%;
@@ -305,6 +305,9 @@ h1{
     background: rgba(255, 255, 255, 0.88);
     padding: 5px 9px;
     margin-top: 8px;
+    a{
+        color: #000 !important;
+    }
 }
 ._CardText2{
     font-weight: 400;
@@ -333,7 +336,7 @@ h1{
     display: flex;
     flex-direction: column;
     margin: 0 auto 100px auto;
-    font-family: Geometria;
+    font-family: 'Geometria';
     color: #000;
     gap: 25px;
     width: auto;
@@ -405,7 +408,7 @@ h1{
     width: 160px;
     height: 40px;
     background: linear-gradient(90deg, #619e2d 0%, #a5de74 100%);
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 20px;
     color: #fff;
@@ -422,7 +425,7 @@ h1{
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    font-family: Geometria;
+    font-family: 'Geometria';
     color: #000;
 }
 .formSteps_dop{
@@ -469,7 +472,7 @@ h1{
     height: 56px;
     background: #619e2d;
     border: none;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 500;
     font-size: 20px;
     color: #fff;
@@ -522,7 +525,7 @@ h1{
     }
 }
 ._agreement{
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
@@ -544,7 +547,7 @@ h1{
     input{
         width: 100%;
     }
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 500;
     font-size: 24px;
     line-height: 167%;
@@ -626,14 +629,14 @@ h1{
     align-items: center;
     justify-items: stretch;
     .div-5_container_text{
-        font-family: Geometria;
+        font-family: 'Geometria';
         font-weight: 400;
         font-size: 24px;
         line-height: 117%;
     }
     .slide{
         text-align: center;
-        font-family: Geometria;
+        font-family: 'Geometria';
         font-weight: 500;
         font-size: 24px;
     }
@@ -699,7 +702,7 @@ h1{
 .div-7_container{
     display: flex;
     flex-direction: row;
-    font-family: Geometria;
+    font-family: 'Geometria';
     color: #000;
 }
 .div-7_container_text{
@@ -901,6 +904,8 @@ h1{
 .rooms_items {
     display: flex;
     gap: 27px 82px;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .rooms_item {
     position: relative;
@@ -1018,7 +1023,7 @@ h1{
     gap: 20px;
 }
 .container8_title{
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 32px;
     line-height: 125%;
@@ -1084,7 +1089,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 100;
     font-size: 24px;
     line-height: 117%;
@@ -1104,7 +1109,7 @@ h1{
     width: 493px;
     height: 53px;
     background: #619e2d;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 700;
     font-size: 30px;
     line-height: 100%;
@@ -1119,7 +1124,7 @@ h1{
 }
 .container13{
     width: auto;
-    font-family: Geometria;
+    font-family: 'Geometria';
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -1197,7 +1202,7 @@ h1{
     align-items: center;
     gap: 17px;
     height: 285px;
-    font-family: Geometria;
+    font-family: 'Geometria';
 }
 .container13_discountBanner_ImgMob{
     display: none;
@@ -1415,7 +1420,7 @@ h1{
     grid-row-end: 4;
     z-index: 100;
     span{
-        font-family: Geometria;
+        font-family: 'Geometria';
         font-weight: 700;
         font-size: 24px;
         line-height: 167%;
@@ -1459,7 +1464,7 @@ h1{
     padding-bottom: 50px;
     margin: 0 50px;
     span{
-        font-family: Geometria;
+        font-family: 'Geometria';
     }
 }
 .content5_text {
@@ -1501,7 +1506,7 @@ h1{
         padding-right: 0;
         list-style-type: none;
         width: 100%;
-        font-family: Geometria;
+        font-family: 'Geometria';
         font-weight: 400;
         font-size: 1.25vw;
         line-height: 133%;
@@ -1524,7 +1529,7 @@ h1{
         width: 2.1vw;
         height: 2.1vw;
         background: #619e2d;
-        font-family: Geometria;
+        font-family: 'Geometria';
         font-weight: 500;
         font-size: 24px;
         line-height: 133%;
@@ -1555,7 +1560,7 @@ h1{
 .card{
     position: absolute;
     z-index: 100;
-    font-family: Geometria;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 16px;
     line-height: 137%;
@@ -1626,7 +1631,7 @@ footer{
     height: 1.77vw;
 }
 .FGeoText{
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 1.14vw;
     line-height: 133%;
@@ -1636,13 +1641,16 @@ footer{
     gap: 10px;
 }
 .FNumber{
-    font-family: PFBagueSansProHairline;
+    font-family: 'Geometria';
     font-weight: 400;
     font-size: 1.25vw;
     line-height: 133%;
-    color: #fff;
+    color: #fff !important;
     display: flex;
     flex-direction: column;
+    a{
+        color: #fff !important;
+    }
 }
 .FNumImgLogo{
     display: flex;
@@ -1691,7 +1699,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: Geometria;
+    font-family: 'Geometria';
 }
 .modal_title{
 
@@ -1915,6 +1923,7 @@ footer{
     }
 
 }
+
 @media (max-width: 480px) {
     .mobhead{
         display: flex;
@@ -1937,11 +1946,11 @@ footer{
         font-weight: 400;
         font-size: 10px;
         color: #fff;
-        font-family: Geometria;
+        font-family: 'Geometria';
         margin: 0 24px 0 12px;
     }
     .headerBtn{
-        font-family: Geometria;
+        font-family: 'Geometria';
         border-radius: 10px;
         padding: 12px 0;
         width: 150px;
@@ -2152,7 +2161,7 @@ footer{
                     padding: 12px 22px;
                     width: 194px;
                     height: 38px;
-                    font-family: Geometria;
+                    font-family: 'Geometria';
                 }
                 ._dialogBtn{
                     border-radius: 10px;
@@ -2278,7 +2287,7 @@ footer{
                     .departure_item_text{
                         font-weight: 400;
                         font-size: 14px;
-                        font-family: Geometria;
+                        font-family: 'Geometria';
                         line-height: 143%;
                         color: #000;
 
@@ -2300,7 +2309,7 @@ footer{
                         input{
                             width: 272px;
                             height: 48px;
-                            font-family: Geometria;
+                            font-family: 'Geometria';
                             font-weight: 400;
                             font-size: 16px;
                             color: rgba(0, 0, 0, 0.6);
@@ -2312,7 +2321,7 @@ footer{
                             padding: 7px 22px;
                             width: 272px;
                             height: 48px;
-                            font-family: Geometria;
+                            font-family: 'Geometria';
                             font-weight: 500;
                             font-size: 20px;
                             color: #fff;
@@ -2354,7 +2363,7 @@ footer{
                 padding: 24px 22px;
                 width: 272px;
                 height: 48px;
-                font-family: Geometria;
+                font-family: 'Geometria';
                 font-weight: 500;
                 font-size: 20px;
                 color: #fff;
@@ -2402,7 +2411,7 @@ footer{
                     }
                 }
                 .rooms_item_title{
-                    font-family: Geometria;
+                    font-family: 'Geometria';
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 125%;
@@ -2414,7 +2423,7 @@ footer{
                     margin-top: 28px;
                 }
                 .rooms_item_subtitles{
-                    font-family: Geometria;
+                    font-family: 'Geometria';
                     font-weight: 500;
                     font-size: 14px;
                     padding-left: 20px;
@@ -2493,15 +2502,16 @@ footer{
                         font-size: 20px;
                         line-height: 100%;
                     }
-                    .container9_Text_description{
-                        font-weight: 400;
-                        font-size: 13px;
-                        line-height: 122%;
-                    }
+
                 }
             }
 
         }
+    }
+    .container9_Text_description{
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 122%;
     }
     .content13{
         width: auto;
@@ -2573,7 +2583,7 @@ footer{
                 top: -260px;
                 overflow: hidden;
                 span{
-                    font-family: Geometria;
+                    font-family: 'Geometria';
                     font-weight: 700;
                     font-size: 30px;
                     line-height: 94%;
