@@ -24,7 +24,7 @@ a{
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
-    z-index: 12;
+    z-index: 20;
 }
 .logoOPenDor{
     display: none;
@@ -698,7 +698,7 @@ h1{
 }
 .formSteps_div-7{
     position: relative;
-    z-index: 1111;
+    z-index: 11;
 }
 .div-7_container{
     display: flex;
@@ -1636,8 +1636,7 @@ footer{
 }
 .FLogo{
     margin-right: 12vw;
-    width: 6.4vw;
-    height: 1.77vw;
+    width: 150px;
 }
 .FGeoText{
     font-family: 'Geometria';
@@ -1954,6 +1953,8 @@ footer{
         display: flex;
         flex-direction: row;
         gap: 10px;
+        align-items: center;
+        padding: 11px;
     }
 
     .mobheadImg {
@@ -2327,7 +2328,7 @@ footer{
                 position: relative;
                 top: 593px;
                 left: 174px;
-                z-index: 1111;
+                z-index: 11;
 
                 img {
                     width: 344px;
@@ -2471,99 +2472,45 @@ footer{
         width: 100%;
         margin: 0 10px 60px;
 
+        .rooms_item_title{
+            font-weight: 700;
+            font-size: 15px;
+            height: 46px;
+            margin-top: 16px;
+            border-radius: 0 ;
+        }
+
         .rooms_container {
             width: auto;
-            min-height: 571px;
+            min-height: 350px;
             margin: 0;
             padding: 0;
-
+            overflow-y: hidden;
             .rooms_items {
-                display: flex;
-                flex-direction: column;
-                width: auto;
 
-                .active {
-                    width: auto;
-                    height: auto;
-                    border-radius: 10px;
-                }
-
-                .rooms_item_dop {
-                    display: flex;
-                    justify-content: center;
-                }
-
-                .rooms_item {
-                    width: auto;
-
-                    img {
-                        width: 80%;
-                        height: 214px;
-                    }
-                }
-
-                .rooms_item_title {
-                    font-family: 'Geometria';
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 125%;
-                    border-radius: 50px;
-                    width: 268px;
-                    height: 54px;
-                    position: relative;
-                    left: -35px;
-                    margin-top: 28px;
-                }
-
-                .rooms_item_subtitles {
-                    font-family: 'Geometria';
+                .rooms_item_subtitle{
                     font-weight: 500;
                     font-size: 14px;
-                    padding-left: 20px;
-                    gap: 10px;
-                    margin-top: 10px;
                 }
-
                 .rooms_item_subtitle.active:after {
                     content: url(../icon/Arrow.png);
                     left: -35px;
                     bottom: -15px;
                 }
-
-                .rooms_pictures {
-                    gap: 10px;
-                    left: -28px;
-                    bottom: 15px;
-
-                    img {
-                        border-radius: 10px;
-                        width: 98px;
-                        height: 65px;
-                        z-index: 11;
-
-                    }
-                }
-
-                .rooms_buttons {
-                    position: relative;
-                    left: 260px;
-                    top: -35px;
-
-                    button {
-                        width: 37px;
-                        height: 35px;
-                        border-radius: 10px 0 0 10px;
-
-                        img {
-                            width: 23px;
-                            height: 8px;
-                            left: 0;
-                            top: -2px;
-                        }
-                    }
+                .rooms_item_subtitles{
+                    margin: 0;
+                    padding: 20px 0 0 20px;
+                    gap: 8px;
                 }
             }
         }
+        .rooms_item_dop{
+            position: absolute;
+            width: 55%;
+            padding-top: 130px;
+            left: 130px;
+        }
+
     }
 
     .container9_lable {
@@ -2625,8 +2572,8 @@ footer{
         .container13 {
             width: auto;
             gap: 0;
-            margin: 0;
-            padding: 0;
+            margin: 0 ;
+            padding: 0 ;
 
             .container13_cards_title {
                 gap: 15px;
@@ -2687,8 +2634,8 @@ footer{
             .container13_discountBanner_ImgMob {
                 display: flex;
                 flex-direction: column;
-                padding-top: 100px;
-
+                padding-top: 40px;
+                margin: 0 0 40px 0;
             }
 
             .container13_text_image {
@@ -2698,9 +2645,9 @@ footer{
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
-                position: relative;
-                top: -260px;
-                overflow: hidden;
+                position: absolute;
+                left: 45px;
+                padding-top: 136px;
 
                 span {
                     width: 77vw;
@@ -3108,6 +3055,10 @@ footer{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
+            img{
+                width: 44vw;
+                height: auto;
+            }
         }
 
         .container8 {
