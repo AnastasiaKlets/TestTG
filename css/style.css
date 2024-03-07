@@ -1008,6 +1008,9 @@ h1{
     flex-direction: column;
     gap: 43px;
 }
+.container8_cardsMob{
+    display: none;
+}
 .container8_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2925,7 +2928,25 @@ footer{
     }
 
     .content8{
-        display: none;
+        .container8_cards{
+            display: none;
+        }
+        .container8_title{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        .container8_cardsMob{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .container8{
+            margin: 0;
+            gap: 10px;
+        }
+
+
     }
     .content5 {
         display: none;
