@@ -12,7 +12,6 @@
     <script defer src="js/script.js"></script>
 </head>
 <body class="root">
-<!-- посмотреть как делать заявки в тг-->
 <header class="headerContainer" id="navbar">
     <img class="logoOPenDor" src="icon/logoOPenDor.svg" alt=""/>
     <img class="logoOPenDorImg" src="icon/OpenDoorImg.svg.svg" alt=""/>
@@ -23,17 +22,17 @@
         <div class="_Block1Contact">
             <a href="https://t.me/+375336260500"><img src="icon/Telegram.png" alt="tg"></a>
             <a href="viber://chat?number=+375336260500"> <img src="icon/Viber.png" alt=""></a>
-            <a href=»tel:++375336140614″><span>+375 (33) 614-06-14</span></a>
+            <a href=tel:+375336140614″><span>+375 (33) 614-06-14</span></a>
         </div>
     </div>
-    <button data-modal="consultation" class="headerBtn glare-button">
+    <button data-modal="consultation" class="headerBtn headerBtn1 glare-button">
         Вызвать замерщика
     </button>
     <div class="headerBlock2">
         <img src="icon/icon.png" alt="">
         <div class="_Block2Contact">
-            <a href=»tel:++375333940500″><span>+375(33)394-0-500</span></a>
-            <a href=»tel:++375296275500″><span>+375(29)627-5-500</span></a>
+            <a href=tel:+375333940500″><span>+375(33)394-0-500</span></a>
+            <a href=tel:+375296275500″><span>+375(29)627-5-500</span></a>
             <div class="_Block2ContactText">
                 <div class="glare-button circle"></div>
                 <span>Звоните, мы работаем 24/7</span>
@@ -41,17 +40,18 @@
         </div>
     </div>
     <div class="mobhead">
+        <img src="icon/logoMini.svg" alt="logo"/>
         <div class="mobheadImg">
             <img src="icon/icon.png" alt="">
-            <img src="icon/Telegram.png" alt="tg">
-            <img src="icon/Viber.png" alt="">
+            <a href="https://t.me/+375336260500"><img src="icon/Telegram.png" alt="tg"></a>
+            <a href="viber://chat?number=+375336260500"> <img src="icon/Viber.png" alt=""></a>
+
         </div>
         <div class="mobheadBtn">
                 <span>
                     Есть вопрос? Задайте онлайн
                 </span>
             <button data-modal="consultation" class="btn btn-secondary open-modal headerBtn glare-button">Вызвать замерщика</button>
-
         </div>
 
     </div>
@@ -69,12 +69,12 @@
     </div>
     <div class="content1Dialog">
         <span>Под ключ без суеты и вашего участия</span>
-        <div class="_dialog">
+        <form class="_dialog from">
             <input class="_dialogNumber" type="tel" name="phone_number" placeholder="+375 __ ___ __ __" pattern="\+375\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
-            <button class="_dialogBtn glare-button">
-                Рассчитать стоимость
+            <button class="_dialogBtn _dialogBtnMob glare-button">
+                <span>Рассчитать стоимость</span>
             </button>
-        </div>
+        </form>
         <div class="_agreement">
             <input type="checkbox" id="music" name="interest" value="text"  checked/>
             <label for="music">Вы соглашаетесь с условиями обработки персональных данных</label>
@@ -197,7 +197,7 @@
     </div>
     <div class="content3FromImg">
         <img class="img_content3" src="icon/Group%206057.png" alt="">
-        <form id="calc" class="my-form">
+        <form id="calc" class="my-form form">
             <div id="div-1" class="my-div">
                 <div class="formSteps">
                     <div class="progress">
@@ -288,7 +288,7 @@
                         <div class="formStep formStep_dop"> Шаг 2 <span >из 6</span></div>
                         <span class="formStepTextH formStepTextH_dop">Укажите примерную площадь монтажа</span>
                     </div>
-                    <div class="content4">
+                    <div class="div-2content">
                         <div class="slidecontainer slidecontainer_dop">
                             <img src="icon/img.png" alt="">
                             <p><span id="demo"></span> м<sup>2</sup></p>
@@ -624,12 +624,12 @@
                         <span class="div-7_container_text2">Мы уже приступили к расчёту стоимости</span>
                         <span class="div-7_container_text3"> Выберите мессенджер на который мы <br> отправим расчет стоимости. За телефоном <br> закрепим скидку</span>
 
-                        <div class="_dialog div-7_container_check_dialog">
+                        <form class="_dialog div-7_container_check_dialog from">
                             <input class="_dialogNumber div-7_container_check_dialog_dialogNumber" type="tel" name="phone_number" placeholder="+375 __ ___ __ __" pattern="\+375\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
                             <button class="_dialogBtn div-7_container_check_dialog_dialogBtn glare-button">
                                 Получить результат + скидку -15%
                             </button>
-                        </div>
+                        </form>
                         <div class="_agreement div-7_container_check">
                             <input class="div-7_check" type="checkbox" id="music" name="interest" value="text"  checked/>
                             <label for="music">Вы соглашаетесь с условиями обработки <br> персональных данных</label>
@@ -824,7 +824,7 @@
                     <div class="rooms_item_subtitle">В офисе</div>
                 </div>
             </div>
-            <div class="rooms_item">
+            <div class="rooms_item rooms_item_dop">
                 <img class="active" src="img/прихожая.jpg" alt="room1">
                 <img class="active" src="img/ванная.jpg" alt="room2">
                 <img class="active" src="img/детская.jpg" alt="room3">
@@ -850,8 +850,8 @@
                                 Вы звоните по телефону
                                 <br>
                                     <b>
-                                        <a href=»tel:++375333940500″>+375(33)394-0-500</a>
-                                        <a href=»tel:++375296275500″>+375(29)627-5-500</a>
+                                        <a href=tel:+375333940500″>+375(33)394-0-500</a>
+                                        <a href=tel:+375296275500″>+375(29)627-5-500</a>
                                     </b>
                                 <br>
                                 или оставляете заявку через сайт на
@@ -1134,7 +1134,7 @@
                     <div class="departure_item_text">Рассчитает точную стоимость потолков и оформит договор</div>
                 </div>
             </div>
-            <form action="#" class="departure_form">
+            <form action="#" class="departure_form form">
                 <div class="departure_submit">
                     <input class="departure_input" name="number" id="number" type="text" placeholder="+375 __ ___ __ __" required>
                     <button  type="submit" class="btn_departure glare-button">Вызвать замерщика</button>
@@ -1170,8 +1170,8 @@
                     <path d="M25.6319 21.3849C25.6319 21.7115 25.5735 22.0499 25.4569 22.3766C25.4219 22.4699 25.3869 22.5632 25.3402 22.6565C25.1419 23.0766 24.8852 23.4732 24.5469 23.8466C23.9752 24.4766 23.3452 24.9316 22.6335 25.2232C22.6219 25.2232 22.6102 25.2349 22.5985 25.2349C21.9102 25.5149 21.1635 25.6665 20.3585 25.6665C19.1685 25.6665 17.8969 25.3866 16.5552 24.8149C15.2135 24.2432 13.8719 23.4732 12.5419 22.5049C12.0869 22.1666 11.6319 21.8282 11.2002 21.4665L15.0152 17.6515C15.3419 17.8965 15.6335 18.0832 15.8785 18.2115C15.9369 18.2349 16.0069 18.2699 16.0885 18.3049C16.1819 18.3399 16.2752 18.3515 16.3802 18.3515C16.5785 18.3515 16.7302 18.2816 16.8585 18.1532L17.7452 17.2782C18.0369 16.9866 18.3169 16.7649 18.5852 16.6249C18.8535 16.4615 19.1219 16.3799 19.4135 16.3799C19.6352 16.3799 19.8685 16.4265 20.1252 16.5315C20.3819 16.6365 20.6502 16.7882 20.9419 16.9866L24.8035 19.7282C25.1069 19.9382 25.3169 20.1832 25.4452 20.4749C25.5619 20.7665 25.6319 21.0582 25.6319 21.3849Z" fill="#619E2D" />
                 </svg>
                 <div class="_TextImgTel">
-                    <a href=»tel:++375333940500″><span>+375(33)394-0-500</span></a>
-                    <a href=»tel:++375296275500″><span>+375(29)627-5-500</span></a>
+                    <a href=tel:+375333940500″><span>+375(33)394-0-500</span></a>
+                    <a href=tel:+375296275500″><span>+375(29)627-5-500</span></a>
                 </div>
             </div>
             <div class="_TextImg Graf">
@@ -1182,11 +1182,12 @@
             </div>
         </div>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.324586894781!2d27.544114!3d53.9082078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfed5f57f769%3A0x8c0adffc755fdfa5!2z0YPQuy4g0JzQtdC70YzQvdC40LrQsNC50YLQtSA4LCDQnNC40L3RgdC6LCDQnNC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sby!4v1709191056232!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.6671387541023!2d29.20069491199896!3d53.17001148778736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d731770113e1f1%3A0x2df8fcd83b94a608!2z0YPQuy4g0JzQuNC90YHQutCw0Y8gMTM1LCDQkdC-0LHRgNGD0LnRgdC6LCDQnNC-0LPQuNC70ZHQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMIDIxMzgyNw!5e0!3m2!1sru!2sby!4v1709733127741!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <footer>
     <div class="FGeoData">
-        <img src="icon/logoOPenDor.svg" alt=""/>
+        <img class="FGeoDatalogo" src="icon/logoOPenDor.svg" alt=""/>
+        <img src="icon/logoOPenDoorMini.svg" alt="">
         <div class="FGeoText">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24.0568 9.85817C22.8318 4.46817 18.1301 2.0415 14.0001 2.0415C14.0001 2.0415 14.0001 2.0415 13.9884 2.0415C9.87011 2.0415 5.15678 4.4565 3.93178 9.8465C2.56678 15.8665 6.25344 20.9648 9.59011 24.1732C10.8268 25.3632 12.4134 25.9582 14.0001 25.9582C15.5868 25.9582 17.1734 25.3632 18.3984 24.1732C21.7351 20.9648 25.4218 15.8782 24.0568 9.85817ZM14.0001 15.7032C11.9701 15.7032 10.3251 14.0582 10.3251 12.0282C10.3251 9.99817 11.9701 8.35317 14.0001 8.35317C16.0301 8.35317 17.6751 9.99817 17.6751 12.0282C17.6751 14.0582 16.0301 15.7032 14.0001 15.7032Z" fill="white" />
@@ -1203,8 +1204,8 @@
                 <path d="M25.6319 21.3849C25.6319 21.7115 25.5735 22.0499 25.4569 22.3766C25.4219 22.4699 25.3869 22.5632 25.3402 22.6565C25.1419 23.0766 24.8852 23.4732 24.5469 23.8466C23.9752 24.4766 23.3452 24.9316 22.6335 25.2232C22.6219 25.2232 22.6102 25.2349 22.5985 25.2349C21.9102 25.5149 21.1635 25.6665 20.3585 25.6665C19.1685 25.6665 17.8969 25.3866 16.5552 24.8149C15.2135 24.2432 13.8719 23.4732 12.5419 22.5049C12.0869 22.1666 11.6319 21.8282 11.2002 21.4665L15.0152 17.6515C15.3419 17.8965 15.6335 18.0832 15.8785 18.2115C15.9369 18.2349 16.0069 18.2699 16.0885 18.3049C16.1819 18.3399 16.2752 18.3515 16.3802 18.3515C16.5785 18.3515 16.7302 18.2816 16.8585 18.1532L17.7452 17.2782C18.0369 16.9866 18.3169 16.7649 18.5852 16.6249C18.8535 16.4615 19.1219 16.3799 19.4135 16.3799C19.6352 16.3799 19.8685 16.4265 20.1252 16.5315C20.3819 16.6365 20.6502 16.7882 20.9419 16.9866L24.8035 19.7282C25.1069 19.9382 25.3169 20.1832 25.4452 20.4749C25.5619 20.7665 25.6319 21.0582 25.6319 21.3849Z" fill="white" />
             </svg>
             <div class="FNumber">
-                <a href=»tel:++375333940500″><span>+375(33)394-0-500</span></a>
-                <a href=»tel:++375296275500″><span>+375(29)627-5-500</span></a>
+                <a href=tel:+375333940500″><span>+375(33)394-0-500</span></a>
+                <a href=tel:+375296275500″><span>+375(29)627-5-500</span></a>
             </div>
         </div>
     </div>
@@ -1271,7 +1272,7 @@
                     <button type="submit" class="btn btn_form btn_form_modal glare-button">Отправить</button>
                 </form>
                 <div class="modal_form_check">
-                    <input class="modal_check" type="checkbox" id="music" name="interest" value="text" />
+                    <input class="modal_check" type="checkbox" id="music" name="interest" value="text"  checked/>
                     <div class="modal_bottom">Вы соглашаетесь с условиями обработки персональных данных</div>
                 </div>
             </div>
@@ -1279,5 +1280,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

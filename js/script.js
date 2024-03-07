@@ -16,6 +16,15 @@ function myFunction() {
     }
 }
 
+const elements = document.querySelectorAll('.slide');
+
+elements.forEach(elem => {
+    elem.querySelector(".output").textContent = document.querySelector(".slider").value;
+    elem.addEventListener("input", (event) => {
+        elem.querySelector(".output").textContent = event.target.value;
+    });
+});
+
 $(document).ready(function($){
     $('.next-q').on('click', function(){
         var $el = $(this),
@@ -87,14 +96,6 @@ function tabs(tabsSelector, tabsContentSelector, tabsParentSelector, activeClass
 
 tabs('.rooms_item_subtitle', '.rooms_item img.active', '.rooms_item_subtitles', 'active');
 
-const elements = document.querySelectorAll('.slide');
-
-elements.forEach(elem => {
-    elem.querySelector(".output").textContent = document.querySelector(".slider").value;
-    elem.addEventListener("input", (event) => {
-        elem.querySelector(".output").textContent = event.target.value;
-    });
-});
 
 $('[data-modal=consultation]').on('click', function() {
     $('.modal_back, #consultation').fadeIn('slow');

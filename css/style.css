@@ -20,13 +20,6 @@ a{
     overflow: hidden;
     padding: 10px 0;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 11111;
-}
-
 .logoOPenDor{
     display: none;
 }
@@ -342,6 +335,8 @@ h1{
     width: auto;
     overflow: hidden;
 }
+
+
 .img_content3{
     display: none;
 }
@@ -365,6 +360,7 @@ h1{
     box-shadow: 0 5px 20px 0 rgba(118, 106, 122, 0.25);
     border-radius: 20px;
     padding: 15px 5px 0 25px;
+    margin-bottom: 25px;
 }
 .my-form .my-div:first-child {
     display: block;
@@ -536,7 +532,6 @@ h1{
     width: 136px;
     height: 56px;
     background: #f2f0f5;
-
 }
 .slidecontainer{
     width: 100%;
@@ -710,6 +705,7 @@ h1{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 16px;
 }
 .div-7_container_check_dialog{
     display: flex;
@@ -763,6 +759,7 @@ h1{
     height: 56px;
 }
 .div-7_container_check_dialog_dialogBtn{
+    padding-top:10px ;
     width: 408px;
     height: 56px;
 }
@@ -1924,11 +1921,24 @@ footer{
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
+    .logoOPenDor{
+        display:none;
+    }
+    .logoOPenDorImg{
+        display: none;
+    }
+    .headerBlock1{
+        display: none;
+    }
+
+    .headerBlock2{
+        display: none;
+    }
     .mobhead{
         display: flex;
         flex-direction: row;
-
+        gap: 10px;
     }
     .mobheadImg{
         display: flex;
@@ -1947,7 +1957,6 @@ footer{
         font-size: 10px;
         color: #fff;
         font-family: 'Geometria';
-        margin: 0 24px 0 12px;
     }
     .headerBtn{
         font-family: 'Geometria';
@@ -1962,22 +1971,23 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .headerBtn1{
+        display: none;
+    }
 
     .content2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
-        margin: 10px;
-        width: auto;
         overflow: hidden;
-    }
-    ._Card{
-        width: 150px;
-        height: 208px;
+        padding: 0;
+        margin: 0 10px 40px ;
     }
     ._CardImg{
-        width: 154px;
-        height: 208px;
+        width: 100%;
     }
     .content2TextHead{
         display: flex;
@@ -1988,15 +1998,12 @@ footer{
         line-height: 100%;
     }
     .cargImgCalc{
-        margin-top: 21px;
-        width:50px;
-        height:50px;
+        width: 15vw;
         position: relative;
-        left: 1px;
-        top: 5px;
+        left: -10px;
+        z-index: 1;
     }
     ._CardTextImg{
-        width:auto;
         overflow: hidden;
     }
     ._CardsGroup{
@@ -2007,19 +2014,21 @@ footer{
         overflow: hidden;
         justify-items: stretch;
     }
+    ._Card_btn{
+        display: none;
+    }
     ._Card_dop{
         display: inline-flex;
     }
     ._CardText{
-        width: 110px;
-        height: 47px;
         font-size: 10px;
         line-height: 90%;
-        margin-top: 10px;
-        padding: 0 0 8px 8px;
-        border-radius: 0 0 10px 11px;
+        margin: 0;
+        padding: 0 5px 0 5px;
+        border-radius: 0 5px 10px 11px;
         position: relative;
-        top:13px;
+        width: 33vw;
+        height: auto;
     }
     .content2TextHead{
         margin-bottom: 15px;
@@ -2040,41 +2049,13 @@ footer{
         font-size: 10px;
         line-height: 100%;
     }
-    .FGeoData{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 11px;
-        padding-top: 100px;
-        position: absolute;
-        left: 70px;
 
-        span{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 200%;
-        }
-    }
-    .FLogo {
-        margin: 0;
-        position: relative;
-        top: 241px;
-        right: 126px;
-    }
-    footer{
-        overflow: hidden;
-        height: 296px;
-        padding: 0;
-    }
     .content15{
         width: auto;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, auto);
         margin-top: 40px;
         ._BlockInf{
-            width: 264px;
-            height: 186px;
             padding: 9px 29px 9px 29px;
             span{
                 font-size: 16px;
@@ -2082,17 +2063,18 @@ footer{
         }
     }
     .content1{
-        margin: 14px;
+        margin: 14px 0 0 0;
         height: 440px;
         width: auto;
         display: flex;
         flex-direction: column;
-        overflow-x: hidden;
+        .content1TextImg{
+            border-radius: 15px;
+        }
         .content1Text{
             padding: 0;
             position: relative;
             top: -50px;
-
             .content1TextSale{
                 position: relative;
                 bottom: 180px;
@@ -2123,9 +2105,9 @@ footer{
             }
             h1{
                 font-weight: 700;
-                font-size: 19px;
+                font-size: 18px;
                 position: relative;
-                top: -126px;
+                top: -121px;
                 left: 17px;
             }
         }
@@ -2134,15 +2116,15 @@ footer{
             flex-direction: column;
             align-items: flex-start;
             height: auto;
-            border-radius: 20px;
-            width: 298px;
+            width: 84vw;
             backdrop-filter: blur(80px);
             box-shadow: inset 4px 4px 26px 0 rgba(255, 255, 255, 0.05), inset 0 4px 2px 0 rgba(255, 255, 255, 0.05), inset 0 -4px 2px 0 rgba(0, 0, 0, 0.1);
-
+            gap: 10px;
             padding: 23px 15px;
             position: relative;
             top: -165px;
             left: 20px;
+            border-radius: 15px;
             span{
                 font-weight: 500;
                 font-size: 14px;
@@ -2159,21 +2141,36 @@ footer{
                     font-size: 16px;
                     border-radius: 10px;
                     padding: 12px 22px;
-                    width: 194px;
+                    width: 55vw;
                     height: 38px;
                     font-family: 'Geometria';
                 }
-                ._dialogBtn{
-                    border-radius: 10px;
-                    padding: 12px 22px;
-                    width: 194px;
-                    height: 38px;
-                    font-weight: 500;
+                input[type="tel"]::-webkit-input-placeholder {
                     font-size: 16px;
+                }
+                input[type="tel"]::-moz-placeholder {
+                    font-size: 16px;
+                }
 
+            }
+            ._dialogBtnMob{
+                border-radius: 10px;
+                padding: 12px 22px;
+                font-weight: 500;
+                font-size: 16px;
+                color: #fff;
+                width: 55vw;
+                height: 6vh;
+                border: none;
+                background: #619e2d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    display: flex;
+                    flex-direction: row;
                 }
             }
-
             ._agreement{
                 font-weight: 400;
                 font-size: 12px;
@@ -2227,6 +2224,10 @@ footer{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
+                .prof_var_item img{
+                    width: 150px;
+                    height: 98px;
+                }
                 .prof_var_item{
                     width: 150px;
                     height: 98px;
@@ -2250,8 +2251,12 @@ footer{
     }
     .departure{
         width: auto;
-        min-height: 860px;
+        min-height: 760px;
         margin: 0 10px 0;
+        .departure_bg {
+            z-index: 0;
+            top: -118px;
+        }
         .container14{
             display: flex;
             flex-direction: column;
@@ -2401,13 +2406,15 @@ footer{
                     height: auto;
                     border-radius: 10px;
                 }
+                .rooms_item_dop{
+                    display: flex;
+                    justify-content: center;
+                }
                 .rooms_item{
                     width: auto;
                     img{
                         width: 80%;
                         height: 214px;
-                        position: relative;
-                        left: 40px;
                     }
                 }
                 .rooms_item_title{
@@ -2468,12 +2475,12 @@ footer{
     }
     .container9_lable{
         height: 30px;
-        width: 220px;
+        width: 60vw;
         font-weight: 700;
         font-size: 16px;
         line-height: 250%;
-        right: 32px;
-        top: 57px;
+        right: 103px;
+        top: 45px;
     }
     .content9{
         width: auto;
@@ -2488,8 +2495,7 @@ footer{
                 margin-top: 15px;
                 img{
                     border-radius: 10px;
-                    width: 142px;
-                    height: 201px;
+                    width: 40vw;
                     padding: 0;
                 }
             }
@@ -2513,8 +2519,8 @@ footer{
           font-size: 13px;
           line-height: 122%;
     }
+
     .content13{
-        width: auto;
         .container13{
             width: auto;
             gap: 0;
@@ -2583,6 +2589,7 @@ footer{
                 top: -260px;
                 overflow: hidden;
                 span{
+                    width: 77vw;
                     font-family: 'Geometria';
                     font-weight: 700;
                     font-size: 30px;
@@ -2604,80 +2611,7 @@ footer{
     .root{
         align-items: center;
     }
-    .content5   {
-        width: auto;
-        margin: 0 10px 40px;
-        overflow: hidden;
-        .content5_img_list{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            .content5_img{
-                border-radius: 20px;
-                width: 276px;
-                height: 297px;
-                padding: 18px;
-            }
-            .content5_list_text{
-                .content5_text{
-                    border-radius:  50px 0 0 50px;
-                    width: 390px;
-                    height: 95px;
-                    padding: 0;
-                    margin: 0;
-                    span{
-                        font-size: 20px;
-                        line-height: 125%;
-                        text-align: end;
-                        padding-right: 30px;
-                    }
-                    .content5_text_color{
-                        padding: 0;
-                    }
-                }
-                .content5_text_dop{
-                    width: auto;
-                    padding: 18px 35px;
-                    gap: 5px;
-                    span{
-                        font-weight: 400;
-                        font-size: 10px;
-                        line-height: 160%;
-                    }
-                    br{
-                        display: none;
-                    }
-                }
-                .content5_list{
-                    gap: 10px;
-                    .custom-counter li::before{
-                        border-radius: 50px;
-                        width: 28px;
-                        height: 28px;
-                        font-weight: 500;
-                        font-size: 12px;
-                        line-height: 267%;
-                        text-align: center;
-                    }
-                    li{
-                        font-weight: 400;
-                        font-size: 12px;
-                        line-height: 267%;
-                        gap: 7px;
-                    }
-                    .custom-counter li {
-                        gap: 2px;
-                    }
-                    .custom-counter {
-                        gap: 7px;
-                    }
 
-                }
-            }
-
-        }
-
-    }
     .modal_back{
 
         .modal_window{
@@ -2758,9 +2692,17 @@ footer{
             padding: 0 30px;
         }
         .my-form{
-            width: 340px;
-            padding-bottom: 50px;
+            width: 94vw;
+            padding: 0;
 
+            .my-div{
+                padding: 15px 0 20px 0;
+                margin-bottom: 40px;
+            }
+
+            .formSteps{
+                gap: 10px;
+            }
             .formStep{
                 font-size: 14px;
                 border-radius: 100px;
@@ -2787,40 +2729,205 @@ footer{
                 gap: 11px;
             }
             ._ImgCheck{
-                width: 150px;
-                height: 166px;
+                width: 41vw;
+                height: 26vh;
                 img{
-                    width: 150px;
-                    height: 95px;
+                    width: 41vw;
+                    height: 15vh;
                 }
             }
             ._agreement{
                 label{
                     font-size: 12px;
                     margin: 0;
-
+                }
+                .highload2{
+                    height: 24px;
+                    width: 24px;
                 }
             }
             .next-q{
                 border-radius: 10px;
                 padding: 12px 22px;
-                width: 128px;
-                height: 48px;
+                width: 37vw;
+                margin: 8px;
             }
             .btnPos{
-                left: 200px;
-                top: 10px;
+                left: 195px;
+                top: 7px;
+                border-radius: 10px;
+                padding: 12px 22px;
+                width: auto;
+                height: auto;
+                font-weight: 500;
+                font-size: 20px;
             }
             .slidecontainer_dop{
+                width: auto;
+                input{
+                    width: 100%;
+                }
+
                 img{
-                    width: 272px;
-                    height: 232px;
+                    width: 80vw;
+                    height: 50vw;
                 }
             }
+            .btnPos1{
+                left: 20px;
+                top:0;
+            }
+            .formSteps_dop{
+                width: auto;
+            }
+            .container_progress{
+                width: 100%;
+            }
+            .slidecontainer{
+                gap: 25px;
+                font-size: 20px;
+            }
+            .div-5_container{
+                margin: 20px 0 0 0;
+                padding: 5px;
+                gap: 25px;
+                .div-5_container_1 {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: space-between;
+                    width: auto;
+
+                    align-items: center;
+                    justify-items: stretch;
+                    .div-5_container_text{
+                        font-size: 20px;
+
+                    }
+                    .slide{
+                        font-size: 20px;
+                        p{
+                            margin: 10px 0 0 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .div-7_container{
+                width: auto;
+                padding: 15px 15px 20px;
+                .div-7_container_text{
+                    gap: 9px;
+                    span{
+                        font-size: 20px;
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                    }
+                    .div-7_container_text1{
+                        font-size: 24px;
+                    }
+
+                }
+                .div-7_container_check_dialog
+                {
+                    width: 75vw;
+                }
+                .div-7_container_check_dialog_dialogNumber
+                {
+                    width: 75vw;
+                }
+                .div-7_container_check_dialog_dialogBtn
+                {
+                    width: 75vw;
+                    font-size: 20px;
+
+                }
+                input[type="tel"]::-webkit-input-placeholder {
+                    font-size: 16px;
+                }
+                .div-7_container_check_dialog {
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .div-7_container_check{
+                    padding: 0;
+                }
+                .div-7_container_list{
+                    span{
+                        font-size: 16px;
+                    }
+                    gap: 10px;
+                    margin: 10px 0 0 0;
+                    padding: 0 0 0 0;
+                    img{
+                        width: 32px;
+                        height:32px;
+                    }
+
+                }
+                .div-7_container_img{
+                    display: none;
+                }
+
+            }
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+
+        .FGeoDatalogo{
+            display: none;
+        }
+
+        .FGeoData{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: flex-start;
+            justify-content: flex-start;;
+            padding: 10px 0 0 35px;
+            img{
+                width: auto;
+                height: auto;
+            }
+            .FGeoText .FNumImgLogo{
+                width: auto;
+                height: auto;
+                font-size: 16px;
+            }
+            .FGeoText {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+               span{
+                   font-size: 16px;
+               }
+            }
+
+            .FNumber{
+                font-size: 16px;
+            }
+
+        }
+        .FLogo{
+            width: 122px;
+            height: 34px;
+            margin: 0;
+            padding: 0;
         }
     }
 
     .content8{
+        display: none;
+    }
+    .content5 {
         display: none;
     }
 
