@@ -3,17 +3,20 @@
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+let navbar = document.getElementById("navbar");
+let content1 = document.getElementById("content1");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+let sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
+        content1.style.marginTop = "171px"
     } else {
         navbar.classList.remove("sticky");
+        content1.style.marginTop = "60px"
     }
 }
 
@@ -28,7 +31,7 @@ elements.forEach(elem => {
 
 $(document).ready(function($){
     $('.next-q').on('click', function(){
-        var $el = $(this),
+        let $el = $(this),
             next = $el.data('show');
         $el.parent().hide();
         $('#' + next).show();
@@ -116,8 +119,8 @@ $('form').submit(function(e) {
 $(".form").submit(function (event) {
     $('.form button[type="submit"]').attr('disabled', 'disabled');
     event.preventDefault();
-    var the_form = $(this);
-    var data = the_form.serialize();
+    let the_form = $(this);
+    let data = the_form.serialize();
     $.ajax({
         url: '/TestTG/send.php',
         type: 'POST',

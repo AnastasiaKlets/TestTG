@@ -98,10 +98,9 @@ a{
 }
 .content1{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     margin: 60px auto 100px auto;
-    height: 1010px;
     width: auto;
     overflow: hidden;
 }
@@ -117,6 +116,7 @@ a{
     width: 100%;
     height: 373px;
     backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(80px);
     box-shadow: inset 4px 4px 26px 0 rgba(255, 255, 255, 0.05), inset 0 4px 2px 0 rgba(255, 255, 255, 0.05), inset 0 -4px 2px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -1879,8 +1879,10 @@ footer{
     animation-name: fade;
     animation-duration: 1.5s;
 }
-@media (min-width: 1600px) {
-
+@media (min-width: 1680px){
+    h1 {
+        font-size: 80px;
+    }
     .logoOPenDorImg{
         display: none;
 
@@ -1931,8 +1933,1293 @@ footer{
     }
 
 }
+@media (max-width: 1580px) {
+    h1 {
+        font-size: 85px;
+    }
+    ._TextNum {
+        font-size: 180px;
+        padding-left: 185px;
+    }
+}
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 78px;
+    }
+}
+@media (max-width: 1280px) {
+    .content1{
+        h1 {
+            font-size: 65px;
+        }
+        ._TextNum {
+            font-size: 150px;
+            padding-left: 195px;
+        }
+        .content1Dialog{
+            font-size: 30px;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        .content1TextImg {
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+    }
+    .content2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0 10px 40px;
+        ._CardsGroup {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+        }
 
-@media (max-width: 680px) {
+    }
+
+}
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+    ._agreement {
+        font-size: 17px;
+    }
+    ._TextNum {
+        font-size: 100px;
+        padding-left: 215px;
+    }
+    ._dialog{
+        gap: 20px;
+    }
+}
+@media (max-width: 960px) {
+    .content1{
+        grid-template-rows: repeat(2, 1fr);
+        h1 {
+            font-size: 45px;
+        }
+        ._TextNum {
+            font-size: 130px;
+            padding-left: 200px;
+        }
+        .content1Dialog{
+            height: 260px;
+        }
+        ._agreement {
+            font-size: 14px;
+        }
+        .content1Dialog {
+            font-size: 25px;
+        }
+        ._dialogNumber {
+            border-radius: 10px;
+            padding: 0 15px;
+            width: 235px;
+            height: 56px;
+        }
+        input[type="tel"]::-webkit-input-placeholder {
+            font-size: 17px;
+        }
+        ._dialogBtn{
+            width: 235px;
+            font-size: 17px;
+        }
+    }
+    .logoOPenDor {
+        display: none;
+    }
+
+    .logoOPenDorImg {
+        display: none;
+    }
+
+    .headerBlock1 {
+        display: none;
+    }
+
+    .headerBlock2 {
+        display: none;
+    }
+
+    .mobhead {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        padding: 11px;
+    }
+
+    .mobheadImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .mobheadBtn {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 13px;
+        color: #fff;
+        font-family: 'Geometria';
+    }
+
+    .headerBtn {
+        font-family: 'Geometria';
+        border-radius: 10px;
+        padding: 20px 0;
+        width: 190px;
+        height: 32px;
+        margin: 4px 0 0 0;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headerBtn1 {
+        display: none;
+    }
+
+    .content2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0 10px 40px;
+    }
+
+    ._CardImg {
+        width: 100%;
+    }
+
+    .content2TextHead {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+    }
+    ._textHead2{
+        font-size: 25px;
+    }
+
+    .cargImgCalc {
+        width: 115px;
+        position: relative;
+        left: -10px;
+        z-index: 1;
+    }
+
+    ._CardTextImg {
+        overflow: hidden;
+    }
+
+    ._CardsGroup {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(6, auto);
+        gap: 12px;
+        overflow: hidden;
+        justify-items: stretch;
+    }
+
+    ._Card_btn {
+        display: none;
+    }
+
+    ._Card_dop {
+        display: inline-flex;
+    }
+
+    ._CardText {
+        font-size: 20px;
+        line-height: 90%;
+        margin: 0;
+        padding: 0 5px 0 5px;
+        border-radius: 0 5px 10px 11px;
+        position: relative;
+        width: 35vw;
+        height: auto;
+    }
+
+    .content2TextHead {
+        align-items: flex-start;
+        gap: 7px;
+        margin:0 10px 15px;
+
+        ._textHead2 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 187%;
+            text-align: left;
+        }
+    }
+
+    ._CardText2 {
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    ._CardText3 {
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .content15 {
+        width: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        margin-top: 40px;
+
+        ._BlockInf {
+            padding: 9px 29px 9px 29px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    .content4 {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .content4_InfWindow {
+            img {
+                height: 277px;
+                width: 312px;
+            }
+
+            .content4_img_inf {
+                border-radius: 0 0 10px 10px;
+                width: 312px;
+                height: 59px;
+                padding: 4px 0 0 8px;
+
+                span {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 107%;
+                }
+
+                .content4_img_inf_text {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .prof_var {
+            .container {
+                width: auto;
+                margin: 0;
+                padding: 0;
+            }
+
+            .prof_var_items {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                .prof_var_item img {
+                    width: 150px;
+                    height: 98px;
+                }
+
+                .prof_var_item {
+                    width: 150px;
+                    height: 98px;
+                    min-height: auto;
+
+                    .prof_var_item_content {
+                        border-radius: 0 0 10px 10px;
+                        width: 150px;
+                        height: 35px;
+                        padding: 6px 0 0 10px;
+
+                        .prof_var_item_title {
+                            font-weight: 700;
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .departure {
+        width: auto;
+        min-height: 760px;
+        margin: 0 10px 0;
+
+        .departure_bg {
+            z-index: 0;
+            top: -118px;
+        }
+
+        .container14 {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            min-width: auto;
+
+            .shapes_wrapper {
+                position: relative;
+                top: 593px;
+                left: 174px;
+                z-index: 11;
+
+                img {
+                    width: 344px;
+                    height: 278px;
+                }
+            }
+
+            .departure_content {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+
+                .departure_content_title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 125%;
+                }
+
+                .departure_content_text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-top: 6px;
+                }
+
+                .departure_items {
+                    margin: 0;
+                    gap: 10px;
+
+                    .departure_item_text {
+                        font-weight: 400;
+                        font-size: 14px;
+                        font-family: 'Geometria';
+                        line-height: 143%;
+                        color: #000;
+
+                    }
+
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+
+                .departure_form {
+                    width: auto;
+                    height: auto;
+
+                    .departure_submit {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+
+                        input {
+                            width: 272px;
+                            height: 48px;
+                            font-family: 'Geometria';
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: rgba(0, 0, 0, 0.6);
+                            padding: 12px 22px;
+                        }
+
+                        button {
+                            border-radius: 10px;
+                            padding: 7px 22px;
+                            width: 272px;
+                            height: 48px;
+                            font-family: 'Geometria';
+                            font-weight: 500;
+                            font-size: 20px;
+                            color: #fff;
+
+                        }
+                    }
+
+                    .departure_policy {
+                        .checkbox-label {
+                            font-weight: 400;
+                            font-size: 12px;
+                        }
+
+                        .checkbox-view {
+                            margin-bottom: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .discountBanner {
+        width: auto;
+        margin: 40px auto 40px auto;
+        right: 0;
+
+        .discountBanner_Img {
+            display: none;
+        }
+
+        .discountBanner_ImgMob {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 312px;
+            height: 318px;
+
+            button {
+                position: relative;
+                z-index: 11;
+                top: -72px;
+                border-radius: 10px;
+                padding: 24px 22px;
+                width: 272px;
+                height: 48px;
+                font-family: 'Geometria';
+                font-weight: 500;
+                font-size: 20px;
+                color: #fff;
+
+            }
+        }
+    }
+
+    .content6 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        .container6 {
+            display: none;
+        }
+
+        .container6Img {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .rooms {
+        width: 100%;
+        margin: 0 10px 60px;
+
+        .rooms_item_title{
+            font-weight: 700;
+            font-size: 15px;
+            height: 46px;
+            margin-top: 16px;
+            border-radius: 0 ;
+        }
+
+        .rooms_container {
+            width: auto;
+            min-height: 380px;
+            margin: 0;
+            padding: 0;
+            overflow-y: hidden;
+            .rooms_items {
+
+                .rooms_item_subtitle{
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                .rooms_item_subtitle.active:after {
+                    content: url(../icon/Arrow.png);
+                    left: -35px;
+                    bottom: -15px;
+                }
+                .rooms_item_subtitles{
+                    margin: 0;
+                    padding: 20px 0 0 20px;
+                    gap: 8px;
+                }
+            }
+        }
+        .rooms_item_dop{
+            position: absolute;
+            width: 55%;
+            padding-top: 130px;
+            left: 130px;
+        }
+
+    }
+
+    .container9_lable {
+        height: 30px;
+        width: 60vw;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 250%;
+        right: 103px;
+        top: 45px;
+    }
+
+    .content9 {
+        width: auto;
+        margin: 0 10px 40px;
+
+        .container9 {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .container9_Imgs {
+                gap: 10px;
+                margin-top: 15px;
+
+                img {
+                    border-radius: 10px;
+                    width: 40vw;
+                    padding: 0;
+                }
+            }
+
+            .container9_Text {
+                padding-bottom: 21px;
+
+                .container9_Text1 {
+                    gap: 4px;
+
+                    .container9_Title {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 100%;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .container9_Text_description {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 122%;
+    }
+
+    .content13 {
+        .container13 {
+            width: auto;
+            gap: 0;
+            margin: 0 ;
+            padding: 0 ;
+
+            .container13_cards_title {
+                gap: 15px;
+
+                .container13_title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 125%;
+                    text-align: center;
+                }
+
+                .container13_cards {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .container13_card {
+                        width: 314px;
+                        height: 184px;
+                        margin: 0;
+                        padding: 19px 10px;
+                        gap: 10px;
+
+                        img {
+                            border-radius: 100px;
+                            width: 76px;
+                            height: 76px;
+                        }
+
+                        .container13_card_text_title {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 143%;
+                        }
+
+                        .container13_card_text_all {
+                            font-weight: 400;
+                            font-size: 12px;
+
+                        }
+
+                        .container13_card_text {
+                            gap: 7px;
+
+                            br {
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .container13_btn_for_order {
+                display: none;
+            }
+
+            .container13_discountBanner_ImgMob {
+                display: flex;
+                flex-direction: column;
+                padding-top: 40px;
+                margin: 0 0 40px 0;
+            }
+
+            .container13_text_image {
+                z-index: 11;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                position: absolute;
+                left: 45px;
+                padding-top: 136px;
+
+                span {
+                    width: 77vw;
+                    font-family: 'Geometria';
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 94%;
+                    text-align: center;
+                    color: #000;
+                }
+
+                button {
+                    width: 240px;
+                    height: 48px;
+                }
+
+            }
+        }
+    }
+
+    .content5_img_above {
+        display: none;
+    }
+
+    .root {
+        align-items: center;
+    }
+
+    .modal_back {
+
+        .modal_window {
+            width: 320px;
+            height: 384px;
+            min-height: 380px;
+        }
+
+        .modal_close {
+            position: relative;
+            width: 22px;
+            height: 22px;
+            top: -26px;
+            left: 239px;
+
+            .modal_close1 {
+                display: none;
+            }
+
+            .modal_close2 {
+                display: flex;
+            }
+        }
+
+        .modal_content_img {
+            display: none;
+        }
+
+        .modal_title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 117%;
+        }
+
+        .modal_descr_mobile {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 137%;
+        }
+
+        .modal_form {
+            input {
+                padding: 12px 22px;
+                width: 272px;
+                height: 48px;
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            button {
+                border-radius: 5px;
+                padding: 12px 22px;
+                width: 272px;
+                height: 48px;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+
+        .modal_form_check {
+            .modal_bottom {
+                font-weight: 400;
+                font-size: 12px;
+            }
+
+        }
+    }
+
+    .imgTextEnd {
+        display: none;
+    }
+
+    .content3 {
+        width: auto;
+        margin: 0 10px;
+
+        .img_content3 {
+            display: none;
+        }
+
+        .content3Text {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 117%;
+            padding: 0 30px;
+        }
+
+        .content3Text2 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 137%;
+            padding: 0 30px;
+        }
+
+        .my-form {
+            width: 94vw;
+            padding: 0;
+
+            .my-div {
+                padding: 15px 0 20px 0;
+                margin-bottom: 40px;
+            }
+
+            .formSteps {
+                gap: 10px;
+            }
+
+            .formStep {
+                font-size: 14px;
+                border-radius: 100px;
+                padding: 12px 22px;
+                width: 120px;
+                height: 30px;
+
+            }
+
+            .formStepTextH {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 110%;
+                text-align: center;
+            }
+
+            .formStepTextH2 {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 143%;
+                text-align: center;
+            }
+
+            .formCards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 11px;
+            }
+
+            ._ImgCheck {
+                width: 41vw;
+                height: 26vh;
+
+                img {
+                    width: 41vw;
+                    height: 15vh;
+                }
+            }
+
+            ._agreement {
+                label {
+                    font-size: 12px;
+                    margin: 0;
+                }
+
+                .highload2 {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+
+            .next-q {
+                border-radius: 10px;
+                padding: 12px 22px;
+                width: 37vw;
+                margin: 8px;
+            }
+
+            .btnPos {
+                left: 195px;
+                top: 7px;
+                border-radius: 10px;
+                padding: 12px 22px;
+                width: auto;
+                height: auto;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+            .slidecontainer_dop {
+                width: auto;
+
+                input {
+                    width: 100%;
+                }
+
+                img {
+                    width: 80vw;
+                    height: 50vw;
+                }
+            }
+
+            .btnPos1 {
+                left: 20px;
+                top: 0;
+            }
+
+            .formSteps_dop {
+                width: auto;
+            }
+
+            .container_progress {
+                width: 100%;
+            }
+
+            .slidecontainer {
+                gap: 25px;
+                font-size: 20px;
+            }
+
+            .div-5_container {
+                margin: 20px 0 0 0;
+                padding: 5px;
+                gap: 25px;
+
+                .div-5_container_1 {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    justify-content: space-between;
+                    width: auto;
+
+                    align-items: center;
+                    justify-items: stretch;
+
+                    .div-5_container_text {
+                        font-size: 20px;
+
+                    }
+
+                    .slide {
+                        font-size: 20px;
+
+                        p {
+                            margin: 10px 0 0 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+
+            .div-7_container {
+                width: auto;
+                padding: 15px 15px 20px;
+
+                .div-7_container_text {
+                    gap: 9px;
+
+                    span {
+                        font-size: 20px;
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    .div-7_container_text1 {
+                        font-size: 24px;
+                    }
+
+                }
+
+                .div-7_container_check_dialog {
+                    width: 75vw;
+                }
+
+                .div-7_container_check_dialog_dialogNumber {
+                    width: 75vw;
+                }
+
+                .div-7_container_check_dialog_dialogBtn {
+                    width: 75vw;
+                    font-size: 20px;
+
+                }
+
+                input[type="tel"]::-webkit-input-placeholder {
+                    font-size: 16px;
+                }
+
+                .div-7_container_check_dialog {
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .div-7_container_check {
+                    padding: 0;
+                }
+
+                .div-7_container_list {
+                    span {
+                        font-size: 16px;
+                    }
+
+                    gap: 10px;
+                    margin: 10px 0 0 0;
+                    padding: 0 0 0 0;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                }
+
+                .div-7_container_img {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+
+        .FGeoDatalogo {
+            display: none;
+        }
+
+        .FGeoData {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: flex-start;
+            justify-content: flex-start;;
+            padding: 10px 0 0 35px;
+
+            img {
+                width: auto;
+                height: auto;
+            }
+
+            .FGeoText .FNumImgLogo {
+                width: auto;
+                height: auto;
+                font-size: 16px;
+            }
+
+            .FGeoText {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .FNumber {
+                font-size: 16px;
+            }
+
+        }
+
+        .FLogo {
+            width: 122px;
+            height: 34px;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .content8 {
+        .container8_cards {
+            display: none;
+        }
+
+        .container8_title {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        .container8_cardsMob {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            img{
+                width: 44vw;
+                height: auto;
+            }
+        }
+
+        .container8 {
+            margin: 0;
+            gap: 10px;
+        }
+
+    }
+    .content5 {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .content1{
+        h1 {
+            font-size: 37px;
+        }
+        .content1Text{
+            gap: 20px;
+        }
+        ._TextSale{
+            font-size: 35px;
+        }
+        ._TextNum {
+            font-size: 110px;
+            padding-left: 155px;
+            padding-top: 38px;
+        }
+        .content1Dialog{
+            height: 260px;
+        }
+        .content1TextImg {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .content1Dialog {
+            font-size: 23px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        ._agreement {
+            font-size: 12px;
+        }
+        ._dialogNumber {
+            border-radius: 10px;
+            padding: 0 15px;
+            width: 210px;
+            height: 56px;
+        }
+        input[type="tel"]::-webkit-input-placeholder {
+            font-size: 15px;
+        }
+        ._dialogBtn{
+            width: 210px;
+            font-size: 15px;
+        }
+    }
+    .content2{
+        .cargImgCalc {
+            width: 115px;
+        }
+    }
+}
+@media (max-width: 676px) {
+    .content1{
+        h1 {
+            font-size: 32px;
+        }
+        .content1Text{
+            gap: 20px;
+        }
+        ._TextSale{
+            font-size: 33px;
+        }
+        ._TextNum {
+            font-size: 85px;
+        }
+        .content1Dialog{
+            height: 240px;
+        }
+        .content1TextImg {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .content1Dialog {
+            font-size: 16px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        ._agreement {
+            display: flex;
+            font-size: 10px;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+        ._dialogNumber {
+            border-radius: 10px;
+            padding: 0 15px;
+            width: 165px;
+            height: 40px;
+        }
+        input[type="tel"]::-webkit-input-placeholder {
+            font-size: 12px;
+        }
+        ._dialogBtn{
+            width: 165px;
+            font-size: 11px;
+            height: 40px;
+        }
+    }
+    .content2{
+        .cargImgCalc {
+            width: 15vw;
+        }
+        ._textHead2 {
+            font-size: 18px;
+        }
+        ._CardText2 {
+            font-size: 16px;
+        }
+        ._CardText3 {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 598px) {
+    .content1{
+        height: 800px;
+        h1 {
+            font-size: 23px;
+        }
+        .content1Text{
+            gap: 10px;
+        }
+        ._TextSale{
+            font-size: 23px;
+        }
+        ._TextNum {
+            font-size: 68px;
+            padding-left: 122px;
+            padding-top: 19px;
+        }
+        .content1Dialog{
+            height: 200px;
+        }
+        .content1TextImg {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .content1Dialog {
+            font-size: 16px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        ._agreement {
+            display: flex;
+            font-size: 8px;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+        }
+        ._dialogNumber {
+            border-radius: 10px;
+            padding: 0 15px;
+            width: 145px;
+            height: 40px;
+        }
+        input[type="tel"]::-webkit-input-placeholder {
+            font-size: 12px;
+        }
+        ._dialogBtn{
+            width: 145px;
+            font-size: 10px;
+            height: 40px;
+            padding: 0;
+        }
+        ._dialog{
+            gap: 10px;
+        }
+    }
+    .content2{
+        .cargImgCalc {
+            width: 15vw;
+        }
+        ._CardText{
+            font-size: 16px;
+            width: 35vw;
+        }
+        ._textHead2 {
+            font-size: 15px;
+        }
+        ._CardText2 {
+            font-size: 15px;
+        }
+        ._CardText3 {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 480px) {
     .logoOPenDor {
         display: none;
     }
@@ -2113,7 +3400,7 @@ footer{
             padding: 0;
             position: relative;
             top: -50px;
-
+            gap: 20px;
             .content1TextSale {
                 position: relative;
                 bottom: 180px;
@@ -2148,8 +3435,8 @@ footer{
                 font-weight: 700;
                 font-size: 18px;
                 position: relative;
-                top: -121px;
-                left: 17px;
+                top: -143px;
+                left: 23px;
             }
         }
 
@@ -2160,6 +3447,7 @@ footer{
             height: auto;
             width: 84vw;
             backdrop-filter: blur(80px);
+            -webkit-backdrop-filter: blur(80px);
             box-shadow: inset 4px 4px 26px 0 rgba(255, 255, 255, 0.05), inset 0 4px 2px 0 rgba(255, 255, 255, 0.05), inset 0 -4px 2px 0 rgba(0, 0, 0, 0.1);
             gap: 10px;
             padding: 23px 15px;
@@ -2482,7 +3770,7 @@ footer{
 
         .rooms_container {
             width: auto;
-            min-height: 350px;
+            min-height: 380px;
             margin: 0;
             padding: 0;
             overflow-y: hidden;
