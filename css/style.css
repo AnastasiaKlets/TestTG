@@ -662,7 +662,7 @@ h1{
     width: auto;
 }
 .imgAL{
-    width: 35vw;
+    width: 42vw;
 }
 .content4_InfWindow{
     position: relative;
@@ -736,6 +736,9 @@ h1{
 .div-7_container_img{
     position: relative;
     left: 116px;
+    img{
+        border-radius: 0 20px 20px 0;
+    }
 }
 .div-7_container_text1{
     font-weight: 500;
@@ -789,6 +792,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 19px 20px;
+    padding-left: 18px;
 }
 .prof_var_item {
     position: relative;
@@ -797,7 +801,7 @@ h1{
 }
 .prof_var_item img {
     width: 22.5vw;
-    height: 14.84vw;
+    height: 16.84vw;
 }
 .prof_var_item:hover .prof_var_item_content {
     height: auto;
@@ -835,7 +839,7 @@ h1{
     bottom: 0;
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 42vw;
     height: 100px;
     padding: 14px 0 0 13px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -846,15 +850,15 @@ h1{
     line-height: 24px;
     color: #619e2d;
 }
-.content5_img_inf{
-    width: 28vw;
+.content5_img_inf {
+    width: 27.9vw;
     font-weight: 400;
-    font-size: 0.8vw;
+    font-size: 1.1vw;
     line-height: 137%;
 }
 .content5_img_inf_title{
     font-weight: 500;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 .content4_img_inf_text{
     font-weight: 400;
@@ -1934,23 +1938,69 @@ footer{
 
 }
 @media (max-width: 1580px) {
-    h1 {
-        font-size: 85px;
+    .content1{
+        .content1Text{
+            gap: 30px;
+        }
+        h1 {
+            font-size: 85px;
+        }
+        ._TextNum {
+            font-size: 180px;
+            padding-left: 185px;
+        }
     }
-    ._TextNum {
-        font-size: 180px;
-        padding-left: 185px;
+    .content4{
+        .content4_img_inf {
+            font-size: 1.7vw;
+        }
+        .prof_var_item_content {
+            font-size: 1.7vw;
+        }
+        .prof_var_item:hover .prof_var_item_text {
+
+            font-size: 1.3vw;
+        }
     }
+
+
 }
-@media (max-width: 1440px) {
-    h1 {
-        font-size: 78px;
+@media (max-width: 1450px) {
+    .content1{
+        .content1Text{
+            gap: 25px;
+        }
+        h1 {
+            font-size: 78px;
+        }
+    }
+    .content5{
+        .content5_img_above{
+            top: -65px;
+        }
+        .content5_text{
+            height: 85px;
+        }
+        .content5_text_dop {
+            font-size: 1.5vw;
+            padding: 13px 0 9px 22px;
+            width: 85%;
+            gap: 0;
+        }
+        .custom-counter {
+            gap: 6px;
+        }
+        .content5_list{
+            .custom-counter li::before {
+                 font-size: 17px;
+             }
+        }
     }
 }
 @media (max-width: 1280px) {
     .content1{
         h1 {
-            font-size: 65px;
+            font-size: 62px;
         }
         ._TextNum {
             font-size: 150px;
@@ -1958,12 +2008,15 @@ footer{
         }
         .content1Dialog{
             font-size: 30px;
-            grid-row-start: 3;
-            grid-row-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
         .content1TextImg {
             grid-row-start: 1;
-            grid-row-end: 4;
+            grid-row-end: 3;
+        }
+        .content1Text{
+            gap: 20px;
         }
     }
     .content2{
@@ -1982,21 +2035,120 @@ footer{
         }
 
     }
+    .content3{
+        .content3FromImg {
+            flex-direction: column;
+        }
+        .formCards {
+            gap: 20px;
+        }
+        ._ImgCheck {
+            width: 325px;
+        }
+        .btnPos {
+            left: 787px;
+        }
+        .div-7_container_img {
+            left: -8px;
+            top: -7px;
+        }
+        .container_progress {
+            width: 97%;
+        }
+        .slidecontainer_dop{
+            input {
+                width: 100%;
+            }
+        }
+        .formSteps_dop {
+            width: 100%;
+        }
+        .btnPos1 {
+            left: 675px;
+        }
+        .div-5_container_1 {
+            width: 100%;
+        }
+    }
+    .content4{
+        .content4_img_inf {
+            font-size: 1.7vw;
+        }
+        .prof_var_item_content {
+            font-size: 1.7vw;
+        }
+        .prof_var_item:hover .prof_var_item_text {
+            display: none;
+        }
+    }
+    .content5{
+        .content5_img_above{
+            top: -5px;
+        }
+        .content5_text_dop {
+            width: 83%;
+        }
+    }
 
 }
 @media (max-width: 1024px) {
-    h1 {
-        font-size: 60px;
+    .content1{
+        height: auto;
+        h1 {
+            font-size: 50px;
+        }
+        ._agreement {
+            font-size: 17px;
+        }
+        ._TextNum {
+            font-size: 100px;
+            padding-left: 215px;
+        }
+        ._dialog{
+            gap: 20px;
+        }
+
     }
-    ._agreement {
-        font-size: 17px;
+    .content3{
+        .content3FromImg {
+            flex-direction: column;
+        }
+        .formCards {
+            gap: 20px;
+        }
+        ._ImgCheck {
+            width: 290px;
+            img{
+                width: 270px;
+            }
+        }
+        .btnPos {
+            left: 680px;
+        }
+        .container {
+            font-size: 18px;
+        }
     }
-    ._TextNum {
-        font-size: 100px;
-        padding-left: 215px;
+    .content5{
+        .content5_img_above{
+            top: 0px;
+        }
     }
-    ._dialog{
-        gap: 20px;
+    .content6 {
+        .container6{
+            gap: 30px;
+            padding: 90px 0 40px 36px;
+            margin: 0 0 40px;
+        }
+        .container6_text {
+            font-size: 35px;
+        }
+        .container6_title {
+            font-size: 60px;
+        }
+        .container6Img {
+            display: none;
+        }
     }
 }
 @media (max-width: 960px) {
@@ -2122,7 +2274,6 @@ footer{
     ._textHead2{
         font-size: 25px;
     }
-
     .cargImgCalc {
         width: 115px;
         position: relative;
@@ -2161,17 +2312,18 @@ footer{
         width: 35vw;
         height: auto;
     }
+    .content2{
+        .content2TextHead {
+            align-items: flex-start;
+            gap: 7px;
+            margin:0 10px 15px;
 
-    .content2TextHead {
-        align-items: flex-start;
-        gap: 7px;
-        margin:0 10px 15px;
-
-        ._textHead2 {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 187%;
-            text-align: left;
+            ._textHead2 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 187%;
+                text-align: left;
+            }
         }
     }
 
@@ -2207,13 +2359,13 @@ footer{
 
         .content4_InfWindow {
             img {
-                height: 277px;
-                width: 312px;
+                height: 76.944vw;
+                width: 86.667vw;
             }
 
             .content4_img_inf {
                 border-radius: 0 0 10px 10px;
-                width: 312px;
+                width: 86.667vw;
                 height: 59px;
                 padding: 4px 0 0 8px;
 
@@ -2237,23 +2389,24 @@ footer{
             }
 
             .prof_var_items {
+                padding: 0;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
 
                 .prof_var_item img {
-                    width: 150px;
-                    height: 98px;
+                    width: 40vw;
+                    height: 27.222vw;
                 }
 
                 .prof_var_item {
-                    width: 150px;
-                    height: 98px;
+                    width: 40vw;
+                    height: 27.222vw;
                     min-height: auto;
 
                     .prof_var_item_content {
                         border-radius: 0 0 10px 10px;
-                        width: 150px;
+                        width: 40vw;
                         height: 35px;
                         padding: 6px 0 0 10px;
 
@@ -2413,18 +2566,19 @@ footer{
     }
 
     .content6 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 40px;
-
-        .container6 {
-            display: none;
+        .container6{
+            gap: 30px;
+            padding: 53px 0 50px 36px;
+            margin: 0 0 40px;
         }
-
+        .container6_text {
+            font-size: 23px;
+        }
+        .container6_title {
+            font-size: 45px;
+        }
         .container6Img {
-            display: flex;
-            align-items: center;
+            display: none;
         }
     }
 
@@ -2769,22 +2923,20 @@ footer{
             .formCards {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 11px;
+                gap: 20px;
             }
 
             ._ImgCheck {
                 width: 41vw;
-                height: 26vh;
 
                 img {
                     width: 41vw;
-                    height: 15vh;
                 }
             }
 
             ._agreement {
                 label {
-                    font-size: 12px;
+                    font-size: 16px;
                     margin: 0;
                 }
 
@@ -2797,19 +2949,19 @@ footer{
             .next-q {
                 border-radius: 10px;
                 padding: 12px 22px;
-                width: 37vw;
+                width:40vw;
                 margin: 8px;
             }
 
             .btnPos {
-                left: 195px;
-                top: 7px;
+                left: 442px;
+                top: 15px;
                 border-radius: 10px;
-                padding: 12px 22px;
+                padding: 9px 22px;
                 width: auto;
                 height: auto;
                 font-weight: 500;
-                font-size: 20px;
+                font-size: 16px;
             }
 
             .slidecontainer_dop {
@@ -2826,8 +2978,8 @@ footer{
             }
 
             .btnPos1 {
-                left: 20px;
-                top: 0;
+                left: 35px;
+                top: 10px;
             }
 
             .formSteps_dop {
@@ -3027,9 +3179,7 @@ footer{
         }
 
     }
-    .content5 {
-        display: none;
-    }
+
 }
 @media (max-width: 768px) {
     .content1{
@@ -3079,6 +3229,38 @@ footer{
     .content2{
         .cargImgCalc {
             width: 115px;
+        }
+    }
+    .content3{
+        .my-form{
+            .btnPos {
+                left: 330px;
+                top: 15px;
+                border-radius: 10px;
+                padding: 9px 22px;
+                width: auto;
+                height: auto;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+    }
+    .content6 {
+        .container6{
+            gap: 19px;
+            padding: 53px 0 50px 36px;
+            margin: 0 0 40px;
+            width: 100vw;
+        }
+
+        .container6_text {
+            font-size: 23px;
+        }
+        .container6_title {
+            font-size: 40px;
+        }
+        .container6Img {
+            display: none;
         }
     }
 }
@@ -3144,10 +3326,28 @@ footer{
             font-size: 18px;
         }
     }
+    .content6 {
+        .container6{
+            gap: 19px;
+            padding: 53px 0 38px 36px;
+            margin: 0 0 40px;
+            width: 100vw;
+        }
+
+        .container6_text {
+            font-size: 20px;
+        }
+        .container6_title {
+            font-size: 38px;
+        }
+        .container6Img {
+            display: none;
+        }
+    }
 }
 @media (max-width: 598px) {
     .content1{
-        height: 800px;
+        height: auto;
         h1 {
             font-size: 23px;
         }
@@ -3205,17 +3405,30 @@ footer{
             width: 15vw;
         }
         ._CardText{
-            font-size: 16px;
+            font-size: 14px;
             width: 35vw;
         }
         ._textHead2 {
-            font-size: 15px;
+            font-size: 13px;
         }
         ._CardText2 {
-            font-size: 15px;
+            font-size: 13px;
         }
         ._CardText3 {
-            font-size: 16px;
+            font-size: 14px;
+        }
+    }
+    .content5 {
+        display: none;
+    }
+    .content6 {
+        .container6 {
+            display: none;
+        }
+        .container6Img {
+            display: inline;
+            width: 83vw;
+            height: 60vw;
         }
     }
 }
@@ -3293,6 +3506,24 @@ footer{
         overflow: hidden;
         padding: 0;
         margin: 0 10px 40px;
+    }
+    .content2{
+        .cargImgCalc {
+            width: 15vw;
+        }
+        ._CardText{
+            font-size: 11px;
+            width: 35vw;
+        }
+        ._textHead2 {
+            font-size: 10px;
+        }
+        ._CardText2 {
+            font-size: 10px;
+        }
+        ._CardText3 {
+            font-size: 11px;
+        }
     }
 
     ._CardImg {
@@ -3751,6 +3982,8 @@ footer{
         }
 
         .container6Img {
+            width: 75vw;
+            height: 55vw;
             display: flex;
             align-items: center;
         }
@@ -4356,6 +4589,7 @@ footer{
 
     }
     .content5 {
+
         display: none;
     }
 }
