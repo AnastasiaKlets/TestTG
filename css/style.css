@@ -99,7 +99,7 @@ a{
 .content1{
     width: 95%;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
     margin: 60px auto 100px auto;
     overflow: hidden;
