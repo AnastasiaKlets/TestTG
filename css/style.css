@@ -1023,7 +1023,7 @@ h1{
 }
 .container8_cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -1962,8 +1962,35 @@ footer{
             font-size: 1.3vw;
         }
     }
-
-
+    .rooms{
+        .rooms_item_title {
+            font-size: 28px;
+        }
+        .rooms_item_subtitles {
+            padding-left: 42px;
+            font-size: 28px;
+        }
+    }
+    .container8{
+        .container8_cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+    .content9{
+        .container9_Imgs {
+            img{
+                width: 25vw;
+            }
+        }
+        .container9_Title {
+            font-size: 30px;
+        }
+        .container9_Text1 {
+            font-size: 23px;
+        }
+    }
 }
 @media (max-width: 1450px) {
     .content1{
@@ -1996,9 +2023,45 @@ footer{
              }
         }
     }
+    .rooms{
+        .rooms_item_title {
+            font-size: 25px;
+        }
+        .rooms_item_subtitles {
+            padding-left: 35px;
+            font-size: 25px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -109px;
+        }
+        .rooms_items {
+            gap: 17px 25px;
+        }
+    }
+    .container8{
+        .container8_cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+    }
+    .content9{
+        .container9_Imgs {
+            img{
+                width: 25vw;
+            }
+        }
+        .container9_Title {
+            font-size: 30px;
+        }
+        .container9_Text1 {
+            font-size: 23px;
+        }
+    }
 }
 @media (max-width: 1280px) {
     .content1{
+            grid-template-rows: repeat(2, 1fr);
         h1 {
             font-size: 62px;
         }
@@ -2089,9 +2152,50 @@ footer{
             width: 83%;
         }
     }
-
+    .rooms{
+        .rooms_item_title {
+            font-size: 21px;
+        }
+        .rooms_item_subtitles {
+            padding-left: 25px;
+            font-size: 22px;
+            margin-top: 25px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -139px;
+        }
+    }
+    .container9_lable {
+        width: 364px;
+        height: 40px;
+        font-weight: 700;
+        font-size: 25px;
+        right: 19px;
+        top: 87px;
+    }
+    .content9{
+        .container9_Imgs {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            img{
+                width: 23vw;
+            }
+        }
+        .container9_Title {
+            font-size: 25px;
+        }
+        .container9_Text1 {
+            font-size: 19px;
+        }
+    }
+    .content13{
+        .container13_btn_for_order_title{
+            padding: 0 249px;
+        }
+    }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1060px) {
     .content1{
         height: auto;
         h1 {
@@ -2138,7 +2242,7 @@ footer{
         .container6{
             gap: 30px;
             padding: 90px 0 40px 36px;
-            margin: 0 0 40px;
+            margin: 20px 50px;
         }
         .container6_text {
             font-size: 35px;
@@ -2148,6 +2252,91 @@ footer{
         }
         .container6Img {
             display: none;
+        }
+    }
+    .rooms{
+        .rooms_item {
+            position: relative;
+            padding-top: 10px;
+        }
+        margin: 20px 0;
+        .rooms_item_title {
+            font-size: 17px;
+        }
+        .rooms_item_subtitles {
+            padding-left: 25px;
+            font-size: 17px;
+            margin-top: 25px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -139px;
+        }
+        .rooms_container {
+            padding: 36px 17px 0 0;
+        }
+    }
+    .content8{
+        .container8_cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        ._CardImg {
+            width: 28vw;
+        }
+        ._CardTextImg {
+            width: 28vw;
+        }
+        .container8_CardText_title {
+            font-size: 16px;
+        }
+        ._CardText2 {
+            font-size: 13px;
+            line-height: 107%;
+        }
+        .container8_CardText_imgStep {
+            height: 82px;
+        }
+        .container8_CardText_imgStep {
+            top: 53px;
+            left: -5px;
+        }
+        .container8_imgStep_dop2 {
+            top: 50px;
+        }
+        .container8_imgStep_dop3 {
+            top: 44px;
+        }
+        .container8_imgStep_dop4 {
+            top: 69px;
+        }
+
+    }
+    .container9_lable {
+        width: 364px;
+        height: 40px;
+        font-weight: 700;
+        font-size: 25px;
+        right: 19px;
+        top: 87px;
+    }
+    .content9{
+        .container9_Imgs {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            img{
+                width: 22vw;
+            }
+        }
+        .container9_Title {
+            font-size: 25px;
+        }
+        .container9_Text1 {
+            font-size: 15px;
+        }
+    }
+    .content13{
+        .container13_btn_for_order_title{
+            padding: 0 211px;
         }
     }
 }
@@ -2187,19 +2376,15 @@ footer{
     .logoOPenDor {
         display: none;
     }
-
     .logoOPenDorImg {
         display: none;
     }
-
     .headerBlock1 {
         display: none;
     }
-
     .headerBlock2 {
         display: none;
     }
-
     .mobhead {
         display: flex;
         flex-direction: row;
@@ -2207,7 +2392,6 @@ footer{
         align-items: center;
         padding: 11px;
     }
-
     .mobheadImg {
         display: flex;
         flex-direction: row;
@@ -2219,7 +2403,6 @@ footer{
             height: 24px;
         }
     }
-
     .mobheadBtn {
         display: flex;
         flex-direction: column;
@@ -2228,7 +2411,6 @@ footer{
         color: #fff;
         font-family: 'Geometria';
     }
-
     .headerBtn {
         font-family: 'Geometria';
         border-radius: 10px;
@@ -2242,11 +2424,9 @@ footer{
         align-items: center;
         justify-content: center;
     }
-
     .headerBtn1 {
         display: none;
     }
-
     .content2 {
         display: flex;
         align-items: center;
@@ -2258,11 +2438,9 @@ footer{
         padding: 0;
         margin: 0 10px 40px;
     }
-
     ._CardImg {
         width: 100%;
     }
-
     .content2TextHead {
         display: flex;
         flex-direction: column;
@@ -2280,11 +2458,9 @@ footer{
         left: -10px;
         z-index: 1;
     }
-
     ._CardTextImg {
         overflow: hidden;
     }
-
     ._CardsGroup {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -2293,15 +2469,12 @@ footer{
         overflow: hidden;
         justify-items: stretch;
     }
-
     ._Card_btn {
         display: none;
     }
-
     ._Card_dop {
         display: inline-flex;
     }
-
     ._CardText {
         font-size: 20px;
         line-height: 90%;
@@ -2326,12 +2499,10 @@ footer{
             }
         }
     }
-
     ._CardText2 {
         font-size: 18px;
         line-height: 100%;
     }
-
     ._CardText3 {
         font-size: 20px;
         line-height: 100%;
@@ -2420,7 +2591,6 @@ footer{
             }
         }
     }
-
     .departure {
         width: auto;
         min-height: 760px;
@@ -2531,40 +2701,6 @@ footer{
             }
         }
     }
-
-    .discountBanner {
-        width: auto;
-        margin: 40px auto 40px auto;
-        right: 0;
-
-        .discountBanner_Img {
-            display: none;
-        }
-
-        .discountBanner_ImgMob {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 312px;
-            height: 318px;
-
-            button {
-                position: relative;
-                z-index: 11;
-                top: -72px;
-                border-radius: 10px;
-                padding: 24px 22px;
-                width: 272px;
-                height: 48px;
-                font-family: 'Geometria';
-                font-weight: 500;
-                font-size: 20px;
-                color: #fff;
-
-            }
-        }
-    }
-
     .content6 {
         .container6{
             gap: 30px;
@@ -2581,215 +2717,26 @@ footer{
             display: none;
         }
     }
-
-    .rooms {
-        width: 100%;
-        margin: 0 10px 60px;
-
-        .rooms_item_title{
-            font-weight: 700;
-            font-size: 15px;
-            height: 46px;
-            margin-top: 16px;
-            border-radius: 0 ;
-        }
-
-        .rooms_container {
-            width: auto;
-            min-height: 380px;
-            margin: 0;
-            padding: 0;
-            overflow-y: hidden;
-            .rooms_items {
-
-                .rooms_item_subtitle{
-                    font-weight: 500;
-                    font-size: 14px;
-                }
-                .rooms_item_subtitle.active:after {
-                    content: url(../icon/Arrow.png);
-                    left: -35px;
-                    bottom: -15px;
-                }
-                .rooms_item_subtitles{
-                    margin: 0;
-                    padding: 20px 0 0 20px;
-                    gap: 8px;
-                }
-            }
-        }
-        .rooms_item_dop{
-            position: absolute;
-            width: 55%;
-            padding-top: 130px;
-            left: 130px;
-        }
-
-    }
-
     .container9_lable {
         height: 30px;
-        width: 60vw;
+        width: 47vw;
         font-weight: 700;
         font-size: 16px;
         line-height: 250%;
-        right: 103px;
-        top: 45px;
+        right: 316px;
+        top: 53px;
     }
-
-    .content9 {
-        width: auto;
-        margin: 0 10px 40px;
-
-        .container9 {
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-
-            .container9_Imgs {
-                gap: 10px;
-                margin-top: 15px;
-
-                img {
-                    border-radius: 10px;
-                    width: 40vw;
-                    padding: 0;
-                }
-            }
-
-            .container9_Text {
-                padding-bottom: 21px;
-
-                .container9_Text1 {
-                    gap: 4px;
-
-                    .container9_Title {
-                        font-weight: 700;
-                        font-size: 20px;
-                        line-height: 100%;
-                    }
-
-                }
-            }
-
-        }
-    }
-
     .container9_Text_description {
         font-weight: 400;
         font-size: 13px;
         line-height: 122%;
     }
-
-    .content13 {
-        .container13 {
-            width: auto;
-            gap: 0;
-            margin: 0 ;
-            padding: 0 ;
-
-            .container13_cards_title {
-                gap: 15px;
-
-                .container13_title {
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 125%;
-                    text-align: center;
-                }
-
-                .container13_cards {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-
-                    .container13_card {
-                        width: 314px;
-                        height: 184px;
-                        margin: 0;
-                        padding: 19px 10px;
-                        gap: 10px;
-
-                        img {
-                            border-radius: 100px;
-                            width: 76px;
-                            height: 76px;
-                        }
-
-                        .container13_card_text_title {
-                            font-weight: 700;
-                            font-size: 14px;
-                            line-height: 143%;
-                        }
-
-                        .container13_card_text_all {
-                            font-weight: 400;
-                            font-size: 12px;
-
-                        }
-
-                        .container13_card_text {
-                            gap: 7px;
-
-                            br {
-                                display: none;
-                            }
-                        }
-
-                    }
-                }
-            }
-
-            .container13_btn_for_order {
-                display: none;
-            }
-
-            .container13_discountBanner_ImgMob {
-                display: flex;
-                flex-direction: column;
-                padding-top: 40px;
-                margin: 0 0 40px 0;
-            }
-
-            .container13_text_image {
-                z-index: 11;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                position: absolute;
-                left: 45px;
-                padding-top: 136px;
-
-                span {
-                    width: 77vw;
-                    font-family: 'Geometria';
-                    font-weight: 700;
-                    font-size: 30px;
-                    line-height: 94%;
-                    text-align: center;
-                    color: #000;
-                }
-
-                button {
-                    width: 240px;
-                    height: 48px;
-                }
-
-            }
-        }
-    }
-
     .content5_img_above {
         display: none;
     }
-
     .root {
         align-items: center;
     }
-
     .modal_back {
 
         .modal_window {
@@ -2857,11 +2804,9 @@ footer{
 
         }
     }
-
     .imgTextEnd {
         display: none;
     }
-
     .content3 {
         width: auto;
         margin: 0 10px;
@@ -3096,7 +3041,6 @@ footer{
             }
         }
     }
-
     footer {
         display: flex;
         flex-direction: column;
@@ -3151,11 +3095,11 @@ footer{
             padding: 0;
         }
     }
-
     .content8 {
         .container8_cards {
             display: none;
         }
+
 
         .container8_title {
             margin: 0;
@@ -3165,23 +3109,56 @@ footer{
 
         .container8_cardsMob {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             img{
-                width: 44vw;
+                width: 30vw;
                 height: auto;
             }
         }
-
         .container8 {
             margin: 0;
             gap: 10px;
         }
 
     }
+    .rooms{
+        .rooms_item {
+            position: relative;
+            padding-top: 10px;
+        }
+        margin: 20px 0;
+        .rooms_item_title {
+            font-size: 17px;
+        }
+        .rooms_item_subtitles {
+            padding-left: 25px;
+            font-size: 17px;
+            margin-top: 25px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -175px;
+        }
+        .rooms_container {
+            margin: 0 ;
+            padding: 36px 17px 0 0;
+        }
+    }
+    .container13{
+        .container13_card_text_title {
+            font-size: 17px;
+        }
+        .container13_card_text_all {
+            font-size: 15px;
+        }
 
+        .container13_card {
+            padding-top: 20px;
+            gap: 28px;
+        }
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 775px) {
     .content1{
         h1 {
             font-size: 37px;
@@ -3263,6 +3240,45 @@ footer{
             display: none;
         }
     }
+    .rooms{
+        .rooms_item {
+            padding-top: 10px;
+            width: auto;
+        }
+            margin: 20px 0;
+        .rooms_item_title {
+            font-size: 19px;
+            line-height: 30px;
+        }
+        .rooms_item_subtitles {
+            font-size: 19px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -165px;
+        }
+    }
+    .container9_lable {
+        height: 30px;
+        width: 33vw;
+        right: 281px;
+    }
+    .content9{
+        .container9_Imgs {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            img{
+                width: 22vw;
+            }
+        }
+        .container9_Title {
+            font-size: 18px;
+        }
+        .container9_Text1 {
+            font-size: 15px;
+        }
+    }
+
 }
 @media (max-width: 676px) {
     .content1{
@@ -3344,6 +3360,206 @@ footer{
             display: none;
         }
     }
+    .rooms{
+        .rooms_item {
+            padding-top: 10px;
+            width: 56vw;
+        }
+        .rooms_items {
+            gap: 17px 4px;
+        }
+        margin: 20px 0;
+        .rooms_item_title {
+            font-size: 15px;
+            line-height: 20px;
+            height: 60px;
+        }
+        .rooms_item_subtitles {
+            font-size: 15px;
+            gap: 7px;
+            margin-top: 14px;
+            padding-left: 15px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -190px;
+            bottom: -16px;
+        }
+        .rooms_container {
+            min-height: 340px;
+            padding: 0 10px 0 0;
+        }
+
+    }
+    .container9_lable {
+        right: 193px;
+    }
+    .content9{
+        .container9{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .container9_Imgs {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            img{
+                padding: 10px 0;
+                width: 40vw;
+            }
+        }
+        .container9_Title {
+            font-size: 25px;
+        }
+        .container9_Text {
+            gap: 10px;
+            padding-bottom: 20px;
+        }
+        .container9_Text1 {
+            font-size: 15px;
+        }
+        .container9_Text_description {
+            font-size: 18px;
+        }
+    }
+    .content13 {
+        .container13 {
+            width: auto;
+            gap: 0;
+            margin: 0 ;
+            padding: 0 ;
+            .container13_cards_title {
+                gap: 15px;
+                .container13_title {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 125%;
+                    text-align: center;
+                }
+                .container13_cards {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .container13_card {
+                        width: 314px;
+                        height: 184px;
+                        margin: 0;
+                        padding: 19px 10px;
+                        gap: 10px;
+
+                        img {
+                            border-radius: 100px;
+                            width: 76px;
+                            height: 76px;
+                        }
+
+                        .container13_card_text_title {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 143%;
+                        }
+
+                        .container13_card_text_all {
+                            font-weight: 400;
+                            font-size: 12px;
+
+                        }
+
+                        .container13_card_text {
+                            gap: 7px;
+
+                            br {
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+            .container13_btn_for_order {
+                display: none;
+            }
+            .container13_discountBanner_ImgMob {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(60px, auto));
+                grid-template-rows: repeat(1, 1fr);
+                align-items: center;
+                padding-top: 40px;
+                margin: 0 0 40px 0;
+                img{
+                    display: flex;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+            }
+
+            .container13_text_image {
+                display: flex;
+                z-index: 11;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                gap: 10px;
+                position: relative;
+                left: 0;
+                padding-top: 0;
+                flex-direction: column;
+                align-items: center;
+                span {
+                    width: 77vw;
+                    font-family: 'Geometria';
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 94%;
+                    text-align: center;
+                    color: #000;
+                }
+                button {
+                    width: 240px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+
+    .discountBanner {
+        width: auto;
+        margin: 40px auto 40px auto;
+        right: 0;
+
+        .discountBanner_Img {
+            display: none;
+        }
+
+        .discountBanner_ImgMob {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 312px;
+            height: 318px;
+
+            button {
+                position: relative;
+                z-index: 11;
+                top: -72px;
+                border-radius: 10px;
+                padding: 24px 22px;
+                width: 272px;
+                height: 48px;
+                font-family: 'Geometria';
+                font-weight: 500;
+                font-size: 20px;
+                color: #fff;
+
+            }
+        }
+    }
+
 }
 @media (max-width: 598px) {
     .content1{
@@ -3431,8 +3647,93 @@ footer{
             height: 60vw;
         }
     }
+    .rooms{
+        .rooms_container {
+            min-height: 297px;
+            padding: 0 10px 0 0;
+        }
+    }
+    .container9_lable {
+        height: 35px;
+        width: 61vw;
+        right: 150px;
+        top: 45px;
+    }
+    .content13 {
+        .container13 {
+            width: auto;
+            gap: 0;
+            margin: 0 ;
+            padding: 0 ;
+
+
+            .container13_btn_for_order {
+                display: none;
+            }
+
+            .container13_discountBanner_ImgMob {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                padding-top: 40px;
+                margin: 0 0 40px 0;
+                img{
+                    display: flex;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+            }
+
+            .container13_text_image {
+                z-index: 11;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                gap: 10px;
+                position: relative;
+                left: 0;
+                padding-top: 0;
+
+
+
+            }
+        }
+    }
 }
 @media (max-width: 480px) {
+    .rooms{
+        .rooms_item {
+            padding-top: 10px;
+            width: 56vw;
+        }
+        .rooms_items {
+            gap: 17px 4px;
+        }
+        margin: 20px 0;
+        .rooms_item_title {
+            font-size: 14px;
+            line-height: 20px;
+            height: 40px;
+        }
+        .rooms_item_subtitles {
+            font-size: 14px;
+            gap: 2px;
+            margin-top: 14px;
+            padding-left: 8px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -190px;
+            bottom: -16px;
+        }
+        .rooms_container {
+            min-height: 240px;
+            padding: 0 10px 0 0;
+        }
+
+    }
     .logoOPenDor {
         display: none;
     }
@@ -3989,58 +4290,14 @@ footer{
         }
     }
 
-    .rooms {
-        width: 100%;
-        margin: 0 10px 60px;
-
-        .rooms_item_title{
-            font-weight: 700;
-            font-size: 15px;
-            height: 46px;
-            margin-top: 16px;
-            border-radius: 0 ;
-        }
-
-        .rooms_container {
-            width: auto;
-            min-height: 380px;
-            margin: 0;
-            padding: 0;
-            overflow-y: hidden;
-            .rooms_items {
-
-                .rooms_item_subtitle{
-                    font-weight: 500;
-                    font-size: 14px;
-                }
-                .rooms_item_subtitle.active:after {
-                    content: url(../icon/Arrow.png);
-                    left: -35px;
-                    bottom: -15px;
-                }
-                .rooms_item_subtitles{
-                    margin: 0;
-                    padding: 20px 0 0 20px;
-                    gap: 8px;
-                }
-            }
-        }
-        .rooms_item_dop{
-            position: absolute;
-            width: 55%;
-            padding-top: 130px;
-            left: 130px;
-        }
-
-    }
 
     .container9_lable {
         height: 30px;
-        width: 60vw;
+        width: 61vw;
         font-weight: 700;
         font-size: 16px;
         line-height: 250%;
-        right: 103px;
+        right: 84px;
         top: 45px;
     }
 
@@ -4153,22 +4410,30 @@ footer{
             }
 
             .container13_discountBanner_ImgMob {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
                 padding-top: 40px;
                 margin: 0 0 40px 0;
+                img{
+                    display: flex;
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
             }
 
             .container13_text_image {
                 z-index: 11;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
                 gap: 10px;
-                position: absolute;
-                left: 45px;
-                padding-top: 136px;
+                position: relative;
+                left: 0;
+                padding-top: 0;
 
                 span {
                     width: 77vw;
