@@ -97,11 +97,11 @@ a{
     gap: 4px;
 }
 .content1{
+    width: 95%;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     margin: 60px auto 100px auto;
-    width: auto;
     overflow: hidden;
 }
 .content1TextImg{
@@ -902,7 +902,11 @@ h1{
     margin: 0 50px;
     overflow: hidden;
 }
+.rooms{
+    width: 95%;
+}
 .rooms .rooms_container {
+
     padding: 81px 40px 76px 0;
     min-height: 543px;
     background: rgba(217, 217, 217, 0.52);
@@ -1401,7 +1405,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, auto);
-    width: auto;
+    width: 95%;
     margin: 180px auto 0;
     overflow: hidden;
 
@@ -1963,6 +1967,7 @@ footer{
         }
     }
     .rooms{
+
         .rooms_item_title {
             font-size: 28px;
         }
@@ -2023,6 +2028,9 @@ footer{
             .custom-counter li::before {
                  font-size: 17px;
              }
+        }
+        .content5_text {
+            height: 62px;
         }
     }
     .rooms{
@@ -2376,7 +2384,7 @@ footer{
             font-size: 45px;
         }
         ._TextNum {
-            font-size: 130px;
+            font-size: 110px;
             padding-left: 200px;
         }
         .content1Dialog{
@@ -2622,6 +2630,7 @@ footer{
     }
 
     .content6 {
+        width: 95%;
         .container6{
             gap: 30px;
             padding: 53px 0 50px 36px;
