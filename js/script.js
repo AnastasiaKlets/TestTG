@@ -13,10 +13,10 @@ let sticky = navbar.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        content1.style.marginTop = "171px"
+        content1.style.marginTop = "120px"
     } else {
         navbar.classList.remove("sticky");
-        content1.style.marginTop = "60px"
+        content1.style.marginTop = "30px"
     }
 }
 

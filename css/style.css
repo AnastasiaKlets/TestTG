@@ -15,7 +15,10 @@ a{
     flex-direction: column;
     justify-content: center;
 }
-
+.container{
+    width: 100%;
+    max-width: 100%;
+}
 .headerContainer{
     width: 100%;
     background: rgb(0, 0, 0);
@@ -49,6 +52,8 @@ a{
     gap: 20px;
 }
 .headerBtn{
+    display: flex;
+    align-items: center;
     border-radius: 10px;
     padding: 12px 22px;
     height: 48px;
@@ -66,7 +71,7 @@ a{
     align-items: center;
     gap: 23px;
 }
-.container9_Text_description{
+.history_Text_description{
     font-weight: 400;
 }
 .circle{
@@ -96,7 +101,7 @@ a{
     align-items: center;
     gap: 4px;
 }
-.content1{
+.banner{
     width: 95%;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -104,14 +109,14 @@ a{
     margin: 60px auto 100px auto;
     overflow: hidden;
 }
-.content1TextImg{
+.bannerTextImg{
     display: flex;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 5;
 }
-.content1Dialog{
+.bannerDialog{
     border-radius: 20px;
     width: 100%;
     height: 373px;
@@ -186,7 +191,7 @@ input[type="tel"]::-moz-placeholder {
 input[type='checkbox'] {
     accent-color:  #619e2d;
 }
-.content1Text{
+.bannerText{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -210,7 +215,7 @@ h1{
     font-weight: 700;
     font-size: 96px;
 }
-.content1TextSale{
+.bannerTextSale{
     display: flex;
 }
 ._TextSale{
@@ -229,12 +234,12 @@ h1{
     z-index: 2;
     padding-left: 165px;
 }
-.content2{
+.cardProduct{
     margin: 0 auto 100px auto;
     width: auto;
     overflow: hidden;
 }
-.content2TextHead{
+.cardProductTextHead{
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -331,7 +336,7 @@ h1{
     width: 357px;
     z-index: 1;
 }
-.content3{
+.quiz{
     display: flex;
     flex-direction: column;
     margin: 0 auto 100px auto;
@@ -343,20 +348,20 @@ h1{
 }
 
 
-.img_content3{
+.img_quiz{
     display: none;
 }
-.content3Text {
+.quizText {
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
 }
-.content3Text2{
+.quizText2{
     font-weight: 400;
     font-size: 24px;
     line-height: 125%;
 }
-.content3FromImg{
+.quizFromImg{
     display: flex;
     flex-direction: row;
 
@@ -652,7 +657,7 @@ h1{
     left: 715px;
     top: -38px;
 }
-.content4{
+.descriptionFastenings{
     display: flex;
     flex-direction: row;
     padding-bottom: 40px;
@@ -664,7 +669,7 @@ h1{
 .imgAL{
     width: 42vw;
 }
-.content4_InfWindow{
+.descriptionFastenings_InfWindow{
     position: relative;
     border-radius: 20px;
 
@@ -834,7 +839,7 @@ h1{
     padding: 8px;
 }
 
-.content4_img_inf{
+.descriptionFastenings_img_inf{
     position: absolute;
     bottom: 0;
     display: flex;
@@ -850,25 +855,25 @@ h1{
     line-height: 24px;
     color: #619e2d;
 }
-.content5_img_inf {
+.LUMFER_img_inf {
     width: 27.9vw;
     font-weight: 400;
     font-size: 1.1vw;
     line-height: 137%;
 }
-.content5_img_inf_title{
+.LUMFER_img_inf_title{
     font-weight: 500;
     font-size: 1.5vw;
 }
-.content4_img_inf_text{
+.descriptionFastenings_img_inf_text{
     font-weight: 400;
     color: #000;
 
 }
-.content4_img_inf_text_dop{
+.descriptionFastenings_img_inf_text_dop{
     line-height: 100%;
 }
-.container6Img{
+.installmentPlanImg{
     display: none;
 }
 .container6{
@@ -886,12 +891,12 @@ h1{
     margin: 0 40px 100px;
     overflow: hidden;
 }
-.container6_title{
+.installmentPlan_title{
     font-weight: 700;
     font-size: 96px;
     line-height: 42%;
 }
-.container6_text{
+.installmentPlan_text{
     font-weight: 500;
     font-size: 48px;
     line-height: 83%;
@@ -992,7 +997,7 @@ h1{
 .rotate {
     transform: rotate(180deg);
 }
-.container8_CardText{
+.shiagaOrder_CardText{
     position: relative;
     bottom: 20px;
     left: 5px;
@@ -1001,18 +1006,18 @@ h1{
     background: none;
 
 }
-.container8_CardText_imgStep{
+.shiagaOrder_CardText_imgStep{
     height: 110px;
     position: relative;
     top: 58px;
 }
-.container8_CardText_title{
+.shiagaOrder_CardText_title{
     font-weight: 700;
     font-size: 20px;
     color: #619e2d;
     line-height: 200%;
 }
-.container8_CardText_title_dop3{
+.shiagaOrder_CardText_title_dop3{
     line-height: 100%;
 }
 .container8{
@@ -1022,10 +1027,10 @@ h1{
     flex-direction: column;
     gap: 43px;
 }
-.container8_cardsMob{
+.shiagaOrder_cardsMob{
     display: none;
 }
-.container8_cards {
+.shiagaOrder_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
@@ -1036,7 +1041,7 @@ h1{
     align-content: space-between;
     gap: 20px;
 }
-.container8_title{
+.shiagaOrder_title{
     font-family: 'Geometria';
     font-weight: 700;
     font-size: 32px;
@@ -1044,34 +1049,34 @@ h1{
     color: #000;
     padding: 0 0 0 66px;
 }
-.container8_CardText_dop3{
+.shiagaOrder_CardText_dop3{
     bottom: 14px;
     padding-bottom: 37px;
 }
-.container8_imgStep_dop3{
+.shiagaOrder_imgStep_dop3{
     top: 57px;
 }
-.container8_CardText_dop2{
+.shiagaOrder_CardText_dop2{
     bottom: 8px;
 }
-.container8_CardText_title_dop2{
+.shiagaOrder_CardText_title_dop2{
     line-height: 100%;
 }
-.container8_imgStep_dop2{
+.shiagaOrder_imgStep_dop2{
     top: 58px;
 }
-.container8_CardText_dop4{
+.shiagaOrder_CardText_dop4{
     bottom: -4px;
     left: 4px;
     width: 313px;
 }
-.container8_CardText_title_dop4{
+.shiagaOrder_CardText_title_dop4{
     line-height: 100%;
 }
-.container8_imgStep_dop4{
+.shiagaOrder_imgStep_dop4{
     top: 78px;
 }
-.content9{
+.history{
     width: auto;
     margin: 0 auto 100px;
     border-radius: 20px;
@@ -1084,7 +1089,7 @@ h1{
     align-items: center;
     gap: 40px;
 }
-.container9_Imgs{
+.history_Imgs{
     display: flex;
     flex-direction: row;
     gap: 35px;
@@ -1094,12 +1099,12 @@ h1{
         width: 323px;
     }
 }
-.container9_Text{
+.history_Text{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.container9_Text1{
+.history_Text1{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1109,16 +1114,16 @@ h1{
     line-height: 117%;
     color: #000;
 }
-.container9_Title{
+.history_Title{
     font-weight: 700;
     font-size: 32px;
     line-height: 125%;
     color: #619e2d;
 }
-.container9_Title_b{
+.history_Title_b{
     color: #000;
 }
-.container9_lable{
+.history_lable{
     border-radius: 50px;
     width: 493px;
     height: 53px;
@@ -1146,26 +1151,26 @@ h1{
     gap: 100px;
     overflow: hidden;
 }
-.container13_cards_title{
+.history_cards_title{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
 }
-.container13_cards{
+.history_cards{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 9%;
 }
-.container13_title{
+.history_title{
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
     color: #000;
 }
-.container13_card{
+.history_card{
     border-radius: 10px;
     width: 344px;
     height: 415px;
@@ -1177,7 +1182,7 @@ h1{
     padding-top: 70px;
     gap: 28px;
 }
-.container13_card_text{
+.history_card_text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1186,12 +1191,12 @@ h1{
         text-align: center;
     }
 }
-.container13_card_text_title{
+.history_card_text_title{
     font-weight: 700;
     font-size: 22px;
     color: #000;
 }
-.container13_card_text_all{
+.history_card_text_all{
     font-weight: 400;
     font-size: 18px;
     color: #000;
@@ -1202,10 +1207,10 @@ h1{
 .card_text_dop{
     gap: 18px;
 }
-.container13_cards_gap{
+.history_cards_gap{
     gap: 5%
 }
-.container13_btn_for_order{
+.history_btn_for_order{
     background-image: url('../icon/Group6023.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1218,10 +1223,10 @@ h1{
     height: 285px;
     font-family: 'Geometria';
 }
-.container13_discountBanner_ImgMob{
+.history_discountBanner_ImgMob{
     display: none;
 }
-.container13_btn_for_order_title{
+.history_btn_for_order_title{
     padding: 0 415px;
     font-weight: 700;
     font-size: 30px;
@@ -1230,7 +1235,7 @@ h1{
     color: #000;
 
 }
-.container13_btn{
+.history_btn{
     border-radius: 10px;
     padding: 12px 22px;
     width: 304px;
@@ -1401,7 +1406,7 @@ h1{
 
 
 
-.content15{
+.map{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, auto);
@@ -1464,12 +1469,12 @@ h1{
 
     }
 }
-.content5{
+.LUMFER{
     margin: 60px auto 100px auto;
     overflow: hidden;
     gap: 30px;
 }
-.content5_img_list {
+.LUMFER_img_list {
     border-radius: 20px;
     height: 48vw;
     background: rgba(243, 240, 240, 0.92);
@@ -1481,7 +1486,7 @@ h1{
         font-family: 'Geometria';
     }
 }
-.content5_text {
+.LUMFER_text {
     display: flex;
     flex-direction: column;
     border-radius:  50px 0 0 50px ;
@@ -1495,16 +1500,16 @@ h1{
     color: #000;
     padding: 14px 40px 0 36px ;
 
-    .content5_text_title{
+    .LUMFER_text_title{
         font-weight: 700;
     }
 
-    .content5_text_color{
+    .LUMFER_text_color{
         font-weight: 600;
         color: #619e2d;
     }
 }
-.content5_text_dop {
+.LUMFER_text_dop {
     font-size: 1vw;
     line-height: 160%;
     color: #000;
@@ -1514,7 +1519,7 @@ h1{
     width: 70%;
 }
 
-.content5_list{
+.LUMFER_list{
     .custom-counter {
         margin-left: 0;
         padding-right: 0;
@@ -1595,7 +1600,7 @@ h1{
 .card_text{
     width: 474px;
 }
-.content5_img_above{
+.LUMFER_img_above{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -1604,18 +1609,18 @@ h1{
     width: auto;
 }
 
-.content4_img_inf_dop{
+.LUMFER_img_inf_dop{
     height: auto;
     padding-bottom: 5px;
     background: none;
 }
-.content5_img{
+.LUMFER_img{
     border-radius: 20px;
     width: 60vw;
     height: 39vw;
     padding: 30px 0 0 30px;
 }
-.content5_list_text{
+.LUMFER_list_text{
     padding-left: 30px;
 }
 footer{
@@ -1889,7 +1894,7 @@ footer{
 }
 @media (min-width: 1680px){
     h1 {
-        font-size: 80px;
+        font-size: 96px;
     }
     .logoOPenDorImg{
         display: none;
@@ -1898,25 +1903,25 @@ footer{
     .logoOPenDor{
         display: inline;
     }
-    .img_content3{
+    .img_quiz{
         display: inline;
     }
     .container14 {
         width: 1568px;
     }
 
-    .container13_btn_for_order_title{
+    .history_btn_for_order_title{
         font-size: 40px;
     }
     .container9{
         gap: 90px;
     }
-    .container9_Imgs{
+    .history_Imgs{
         img{
             width: 445px;
         }
     }
-    .container9_lable{
+    .history_lable{
         border-radius: 50px;
         width: 706px;
         height: 75px;
@@ -1929,7 +1934,7 @@ footer{
     ._Card_dop{
         display: inline-flex;
     }
-    .container8_cards {
+    .shiagaOrder_cards {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -1942,8 +1947,8 @@ footer{
 
 }
 @media (max-width: 1580px) {
-    .content1{
-        .content1Text{
+    .banner{
+        .bannerText{
             gap: 30px;
         }
         h1 {
@@ -1954,8 +1959,8 @@ footer{
             padding-left: 185px;
         }
     }
-    .content4{
-        .content4_img_inf {
+    .descriptionFastenings{
+        .descriptionFastenings_img_inf {
             font-size: 1.7vw;
         }
         .prof_var_item_content {
@@ -1977,45 +1982,45 @@ footer{
         }
     }
     .container8{
-        .container8_cards {
+        .shiagaOrder_cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
     }
-    .content9{
-        .container9_Imgs {
+    .history{
+        .history_Imgs {
             img{
                 width: 25vw;
             }
         }
-        .container9_Title {
+        .history_Title {
             font-size: 30px;
         }
-        .container9_Text1 {
+        .history_Text1 {
             font-size: 23px;
         }
     }
 
 }
 @media (max-width: 1450px) {
-    .content1{
-        .content1Text{
+    .banner{
+        .bannerText{
             gap: 25px;
         }
         h1 {
             font-size: 78px;
         }
     }
-    .content5{
+    .LUMFER{
         margin: 60px auto 100px auto;
-        .content5_img_above{
+        .LUMFER_img_above{
             top: -65px;
         }
-        .content5_text{
+        .LUMFER_text{
             height: 85px;
         }
-        .content5_text_dop {
+        .LUMFER_text_dop {
             font-size: 1.5vw;
             padding: 13px 0 9px 22px;
             width: 85%;
@@ -2024,12 +2029,12 @@ footer{
         .custom-counter {
             gap: 6px;
         }
-        .content5_list{
+        .LUMFER_list{
             .custom-counter li::before {
                  font-size: 17px;
              }
         }
-        .content5_text {
+        .LUMFER_text {
             height: 62px;
         }
     }
@@ -2049,22 +2054,22 @@ footer{
         }
     }
     .container8{
-        .container8_cards {
+        .shiagaOrder_cards {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 5px;
         }
     }
-    .content9{
-        .container9_Imgs {
+    .history{
+        .history_Imgs {
             img{
                 width: 25vw;
             }
         }
-        .container9_Title {
+        .history_Title {
             font-size: 30px;
         }
-        .container9_Text1 {
+        .history_Text1 {
             font-size: 23px;
         }
     }
@@ -2083,7 +2088,7 @@ footer{
     }
 }
 @media (max-width: 1280px) {
-    .content1{
+    .banner{
             grid-template-rows: repeat(2, 1fr);
         h1 {
             font-size: 62px;
@@ -2092,20 +2097,20 @@ footer{
             font-size: 150px;
             padding-left: 195px;
         }
-        .content1Dialog{
+        .bannerDialog{
             font-size: 30px;
             grid-row-start: 2;
             grid-row-end: 3;
         }
-        .content1TextImg {
+        .bannerTextImg {
             grid-row-start: 1;
             grid-row-end: 3;
         }
-        .content1Text{
+        .bannerText{
             gap: 20px;
         }
     }
-    .content2{
+    .cardProduct{
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -2121,8 +2126,8 @@ footer{
         }
 
     }
-    .content3{
-        .content3FromImg {
+    .quiz{
+        .quizFromImg {
             flex-direction: column;
         }
         .formCards {
@@ -2156,8 +2161,8 @@ footer{
             width: 100%;
         }
     }
-    .content4{
-        .content4_img_inf {
+    .descriptionFastenings{
+        .descriptionFastenings_img_inf {
             font-size: 1.7vw;
         }
         .prof_var_item_content {
@@ -2167,11 +2172,11 @@ footer{
             display: none;
         }
     }
-    .content5{
-        .content5_img_above{
+    .LUMFER{
+        .LUMFER_img_above{
             top: -5px;
         }
-        .content5_text_dop {
+        .LUMFER_text_dop {
             width: 83%;
         }
     }
@@ -2188,7 +2193,7 @@ footer{
             left: -139px;
         }
     }
-    .container9_lable {
+    .history_lable {
         width: 364px;
         height: 40px;
         font-weight: 700;
@@ -2196,8 +2201,8 @@ footer{
         right: 19px;
         top: 87px;
     }
-    .content9{
-        .container9_Imgs {
+    .history{
+        .history_Imgs {
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -2205,15 +2210,15 @@ footer{
                 width: 23vw;
             }
         }
-        .container9_Title {
+        .history_Title {
             font-size: 25px;
         }
-        .container9_Text1 {
+        .history_Text1 {
             font-size: 19px;
         }
     }
-    .content13{
-        .container13_btn_for_order_title{
+    .sale{
+        .history_btn_for_order_title{
             padding: 0 249px;
         }
     }
@@ -2233,7 +2238,7 @@ footer{
     }
 }
 @media (max-width: 1060px) {
-    .content1{
+    .banner{
         height: auto;
         h1 {
             font-size: 50px;
@@ -2250,8 +2255,8 @@ footer{
         }
 
     }
-    .content3{
-        .content3FromImg {
+    .quiz{
+        .quizFromImg {
             flex-direction: column;
         }
         .formCards {
@@ -2270,24 +2275,24 @@ footer{
             font-size: 18px;
         }
     }
-    .content5{
-        .content5_img_above{
+    .LUMFER{
+        .LUMFER_img_above{
             top: 0px;
         }
     }
-    .content6 {
+    .installmentPlan {
         .container6{
             gap: 30px;
             padding: 90px 0 40px 36px;
             margin: 20px 50px;
         }
-        .container6_text {
+        .installmentPlan_text {
             font-size: 35px;
         }
-        .container6_title {
+        .installmentPlan_title {
             font-size: 60px;
         }
-        .container6Img {
+        .installmentPlanImg {
             display: none;
         }
     }
@@ -2312,8 +2317,8 @@ footer{
             padding: 36px 17px 0 0;
         }
     }
-    .content8{
-        .container8_cards {
+    .shiagaOrder{
+        .shiagaOrder_cards {
             grid-template-columns: repeat(3, 1fr);
         }
         ._CardImg {
@@ -2322,32 +2327,32 @@ footer{
         ._CardTextImg {
             width: 28vw;
         }
-        .container8_CardText_title {
+        .shiagaOrder_CardText_title {
             font-size: 16px;
         }
         ._CardText2 {
             font-size: 13px;
             line-height: 107%;
         }
-        .container8_CardText_imgStep {
+        .shiagaOrder_CardText_imgStep {
             height: 82px;
         }
-        .container8_CardText_imgStep {
+        .shiagaOrder_CardText_imgStep {
             top: 53px;
             left: -5px;
         }
-        .container8_imgStep_dop2 {
+        .shiagaOrder_imgStep_dop2 {
             top: 50px;
         }
-        .container8_imgStep_dop3 {
+        .shiagaOrder_imgStep_dop3 {
             top: 44px;
         }
-        .container8_imgStep_dop4 {
+        .shiagaOrder_imgStep_dop4 {
             top: 69px;
         }
 
     }
-    .container9_lable {
+    .history_lable {
         width: 364px;
         height: 40px;
         font-weight: 700;
@@ -2355,8 +2360,8 @@ footer{
         right: 19px;
         top: 87px;
     }
-    .content9{
-        .container9_Imgs {
+    .history{
+        .history_Imgs {
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -2364,21 +2369,21 @@ footer{
                 width: 22vw;
             }
         }
-        .container9_Title {
+        .history_Title {
             font-size: 25px;
         }
-        .container9_Text1 {
+        .history_Text1 {
             font-size: 15px;
         }
     }
-    .content13{
-        .container13_btn_for_order_title{
+    .sale{
+        .history_btn_for_order_title{
             padding: 0 211px;
         }
     }
 }
 @media (max-width: 960px) {
-    .content1{
+    .banner{
         grid-template-rows: repeat(2, 1fr);
         h1 {
             font-size: 45px;
@@ -2387,13 +2392,13 @@ footer{
             font-size: 110px;
             padding-left: 200px;
         }
-        .content1Dialog{
+        .bannerDialog{
             height: 260px;
         }
         ._agreement {
             font-size: 14px;
         }
-        .content1Dialog {
+        .bannerDialog {
             font-size: 25px;
         }
         ._dialogNumber {
@@ -2464,7 +2469,7 @@ footer{
     .headerBtn1 {
         display: none;
     }
-    .content2 {
+    .cardProduct {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -2478,7 +2483,7 @@ footer{
     ._CardImg {
         width: 100%;
     }
-    .content2TextHead {
+    .cardProductTextHead {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2522,8 +2527,8 @@ footer{
         width: 35vw;
         height: auto;
     }
-    .content2{
-        .content2TextHead {
+    .cardProduct{
+        .cardProductTextHead {
             align-items: flex-start;
             gap: 7px;
             margin:0 10px 15px;
@@ -2544,7 +2549,7 @@ footer{
         font-size: 20px;
         line-height: 100%;
     }
-    .content15 {
+    .map {
         width: auto;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, auto);
@@ -2558,20 +2563,20 @@ footer{
             }
         }
     }
-    .content4 {
+    .descriptionFastenings {
         width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
 
-        .content4_InfWindow {
+        .descriptionFastenings_InfWindow {
             img {
                 height: 76.944vw;
                 width: 86.667vw;
             }
 
-            .content4_img_inf {
+            .descriptionFastenings_img_inf {
                 border-radius: 0 0 10px 10px;
                 width: 86.667vw;
                 height: 59px;
@@ -2583,7 +2588,7 @@ footer{
                     line-height: 107%;
                 }
 
-                .content4_img_inf_text {
+                .descriptionFastenings_img_inf_text {
                     font-weight: 400;
                 }
             }
@@ -2629,24 +2634,24 @@ footer{
         }
     }
 
-    .content6 {
+    .installmentPlan {
         width: 95%;
         .container6{
             gap: 30px;
             padding: 53px 0 50px 36px;
             margin: 0 0 40px;
         }
-        .container6_text {
+        .installmentPlan_text {
             font-size: 23px;
         }
-        .container6_title {
+        .installmentPlan_title {
             font-size: 45px;
         }
-        .container6Img {
+        .installmentPlanImg {
             display: none;
         }
     }
-    .container9_lable {
+    .history_lable {
         height: 30px;
         width: 47vw;
         font-weight: 700;
@@ -2655,12 +2660,12 @@ footer{
         right: 316px;
         top: 53px;
     }
-    .container9_Text_description {
+    .history_Text_description {
         font-weight: 400;
         font-size: 13px;
         line-height: 122%;
     }
-    .content5_img_above {
+    .LUMFER_img_above {
         display: none;
     }
     .root {
@@ -2736,22 +2741,22 @@ footer{
     .imgTextEnd {
         display: none;
     }
-    .content3 {
+    .quiz {
         width: auto;
         margin: 0 10px;
 
-        .img_content3 {
+        .img_quiz {
             display: none;
         }
 
-        .content3Text {
+        .quizText {
             font-weight: 700;
             font-size: 24px;
             line-height: 117%;
             padding: 0 30px;
         }
 
-        .content3Text2 {
+        .quizText2 {
             font-weight: 400;
             font-size: 16px;
             line-height: 137%;
@@ -3024,19 +3029,19 @@ footer{
             padding: 0;
         }
     }
-    .content8 {
-        .container8_cards {
+    .shiagaOrder {
+        .shiagaOrder_cards {
             display: none;
         }
 
 
-        .container8_title {
+        .shiagaOrder_title {
             margin: 0;
             padding: 0;
             font-size: 18px;
         }
 
-        .container8_cardsMob {
+        .shiagaOrder_cardsMob {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
@@ -3074,14 +3079,14 @@ footer{
         }
     }
     .container13{
-        .container13_card_text_title {
+        .history_card_text_title {
             font-size: 17px;
         }
-        .container13_card_text_all {
+        .history_card_text_all {
             font-size: 15px;
         }
 
-        .container13_card {
+        .history_card {
             padding-top: 20px;
             gap: 28px;
         }
@@ -3091,11 +3096,11 @@ footer{
     }
 }
 @media (max-width: 775px) {
-    .content1{
+    .banner{
         h1 {
             font-size: 37px;
         }
-        .content1Text{
+        .bannerText{
             gap: 20px;
         }
         ._TextSale{
@@ -3106,14 +3111,14 @@ footer{
             padding-left: 155px;
             padding-top: 38px;
         }
-        .content1Dialog{
+        .bannerDialog{
             height: 260px;
         }
-        .content1TextImg {
+        .bannerTextImg {
             grid-row-start: 1;
             grid-row-end: 3;
         }
-        .content1Dialog {
+        .bannerDialog {
             font-size: 23px;
             grid-row-start: 2;
             grid-row-end: 3;
@@ -3135,12 +3140,12 @@ footer{
             font-size: 15px;
         }
     }
-    .content2{
+    .cardProduct{
         .cargImgCalc {
             width: 115px;
         }
     }
-    .content3{
+    .quiz{
         .my-form{
             .btnPos {
                 left: 330px;
@@ -3154,7 +3159,7 @@ footer{
             }
         }
     }
-    .content6 {
+    .installmentPlan {
         .container6{
             gap: 19px;
             padding: 53px 0 50px 36px;
@@ -3162,13 +3167,13 @@ footer{
             width: 100vw;
         }
 
-        .container6_text {
+        .installmentPlan_text {
             font-size: 23px;
         }
-        .container6_title {
+        .installmentPlan_title {
             font-size: 40px;
         }
-        .container6Img {
+        .installmentPlanImg {
             display: none;
         }
     }
@@ -3189,13 +3194,13 @@ footer{
             left: -165px;
         }
     }
-    .container9_lable {
+    .history_lable {
         height: 30px;
         width: 33vw;
         right: 281px;
     }
-    .content9{
-        .container9_Imgs {
+    .history{
+        .history_Imgs {
             display: flex;
             flex-direction: row;
             gap: 20px;
@@ -3203,10 +3208,10 @@ footer{
                 width: 22vw;
             }
         }
-        .container9_Title {
+        .history_Title {
             font-size: 18px;
         }
-        .container9_Text1 {
+        .history_Text1 {
             font-size: 15px;
         }
     }
@@ -3324,11 +3329,11 @@ footer{
 }
 }
 @media (max-width: 676px) {
-.content1{
+.banner{
     h1 {
         font-size: 32px;
     }
-    .content1Text{
+    .bannerText{
         gap: 20px;
     }
     ._TextSale{
@@ -3337,14 +3342,14 @@ footer{
     ._TextNum {
         font-size: 85px;
     }
-    .content1Dialog{
+    .bannerDialog{
         height: 240px;
     }
-    .content1TextImg {
+    .bannerTextImg {
         grid-row-start: 1;
         grid-row-end: 3;
     }
-    .content1Dialog {
+    .bannerDialog {
         font-size: 16px;
         grid-row-start: 2;
         grid-row-end: 3;
@@ -3371,7 +3376,7 @@ footer{
         height: 40px;
     }
 }
-.content2{
+.cardProduct{
     .cargImgCalc {
         width: 15vw;
     }
@@ -3385,7 +3390,7 @@ footer{
         font-size: 18px;
     }
 }
-.content6 {
+.installmentPlan {
     .container6{
         gap: 19px;
         padding: 53px 0 38px 36px;
@@ -3393,13 +3398,13 @@ footer{
         width: 100vw;
     }
 
-    .container6_text {
+    .installmentPlan_text {
         font-size: 20px;
     }
-    .container6_title {
+    .installmentPlan_title {
         font-size: 38px;
     }
-    .container6Img {
+    .installmentPlanImg {
         display: none;
     }
 }
@@ -3433,17 +3438,17 @@ footer{
     }
 
 }
-.container9_lable {
+.history_lable {
     right: 193px;
 }
-.content9{
+.history{
     .container9{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    .container9_Imgs {
+    .history_Imgs {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -3452,40 +3457,40 @@ footer{
             width: 40vw;
         }
     }
-    .container9_Title {
+    .history_Title {
         font-size: 25px;
     }
-    .container9_Text {
+    .history_Text {
         gap: 10px;
         padding-bottom: 20px;
     }
-    .container9_Text1 {
+    .history_Text1 {
         font-size: 15px;
     }
-    .container9_Text_description {
+    .history_Text_description {
         font-size: 18px;
     }
 }
-.content13 {
+.sale {
     .container13 {
         width: auto;
         gap: 0;
         margin: 0 ;
         padding: 0 ;
-        .container13_cards_title {
+        .history_cards_title {
             gap: 15px;
-            .container13_title {
+            .history_title {
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 125%;
                 text-align: center;
             }
-            .container13_cards {
+            .history_cards {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
 
-                .container13_card {
+                .history_card {
                     width: 314px;
                     height: 184px;
                     margin: 0;
@@ -3498,19 +3503,19 @@ footer{
                         height: 76px;
                     }
 
-                    .container13_card_text_title {
+                    .history_card_text_title {
                         font-weight: 700;
                         font-size: 14px;
                         line-height: 143%;
                     }
 
-                    .container13_card_text_all {
+                    .history_card_text_all {
                         font-weight: 400;
                         font-size: 12px;
 
                     }
 
-                    .container13_card_text {
+                    .history_card_text {
                         gap: 7px;
 
                         br {
@@ -3521,10 +3526,10 @@ footer{
                 }
             }
         }
-        .container13_btn_for_order {
+        .history_btn_for_order {
             display: none;
         }
-        .container13_discountBanner_ImgMob {
+        .history_discountBanner_ImgMob {
             display: grid;
             grid-template-columns: repeat(3, minmax(60px, auto));
             grid-template-rows: repeat(1, 1fr);
@@ -3541,7 +3546,7 @@ footer{
             }
         }
 
-        .container13_text_image {
+        .history_text_image {
             display: flex;
             z-index: 11;
             grid-column-start: 2;
@@ -3582,7 +3587,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 0;
         width: 90%;
         button {
             position: relative;
@@ -3602,12 +3607,12 @@ footer{
 
 }
 @media (max-width: 598px) {
-.content1{
+.banner{
     height: auto;
     h1 {
         font-size: 23px;
     }
-    .content1Text{
+    .bannerText{
         gap: 10px;
     }
     ._TextSale{
@@ -3618,14 +3623,14 @@ footer{
         padding-left: 122px;
         padding-top: 19px;
     }
-    .content1Dialog{
+    .bannerDialog{
         height: 200px;
     }
-    .content1TextImg {
+    .bannerTextImg {
         grid-row-start: 1;
         grid-row-end: 3;
     }
-    .content1Dialog {
+    .bannerDialog {
         font-size: 16px;
         grid-row-start: 2;
         grid-row-end: 3;
@@ -3656,7 +3661,7 @@ footer{
         gap: 10px;
     }
 }
-.content2{
+.cardProduct{
     .cargImgCalc {
         width: 15vw;
     }
@@ -3674,14 +3679,14 @@ footer{
         font-size: 14px;
     }
 }
-.content5 {
+.LUMFER {
     display: none;
 }
-.content6 {
+.installmentPlan {
     .container6 {
         display: none;
     }
-    .container6Img {
+    .installmentPlanImg {
         display: inline;
         width: 83vw;
         height: 60vw;
@@ -3693,13 +3698,13 @@ footer{
         padding: 0 10px 0 0;
     }
 }
-.container9_lable {
+.history_lable {
     height: 35px;
     width: 61vw;
     right: 150px;
     top: 45px;
 }
-.content13 {
+.sale {
     .container13 {
         width: auto;
         gap: 0;
@@ -3707,11 +3712,11 @@ footer{
         padding: 0 ;
 
 
-        .container13_btn_for_order {
+        .history_btn_for_order {
             display: none;
         }
 
-        .container13_discountBanner_ImgMob {
+        .history_discountBanner_ImgMob {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, 1fr);
@@ -3727,7 +3732,7 @@ footer{
             }
         }
 
-        .container13_text_image {
+        .history_text_image {
             z-index: 11;
             grid-column-start: 2;
             grid-column-end: 3;
@@ -3838,7 +3843,7 @@ footer{
     display: none;
 }
 
-.content2 {
+.cardProduct {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -3849,7 +3854,7 @@ footer{
     padding: 0;
     margin: 0 10px 40px;
 }
-.content2{
+.cardProduct{
     .cargImgCalc {
         width: 15vw;
     }
@@ -3872,7 +3877,7 @@ footer{
     width: 100%;
 }
 
-.content2TextHead {
+.cardProductTextHead {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3920,7 +3925,7 @@ footer{
     height: auto;
 }
 
-.content2TextHead {
+.cardProductTextHead {
     margin-bottom: 15px;
     align-items: flex-start;
     gap: 7px;
@@ -3943,7 +3948,7 @@ footer{
     line-height: 100%;
 }
 
-.content15 {
+.map {
     width: auto;
     grid-template-columns: repeat(3, minmax(60px, auto));
     grid-template-rows: repeat(3, auto);
@@ -3958,23 +3963,23 @@ footer{
     }
 }
 
-.content1 {
+.banner {
     margin: 14px 0 0 0;
     height: 440px;
     width: auto;
     display: flex;
     flex-direction: column;
 
-    .content1TextImg {
+    .bannerTextImg {
         border-radius: 15px;
     }
 
-    .content1Text {
+    .bannerText {
         padding: 0;
         position: relative;
         top: -50px;
         gap: 20px;
-        .content1TextSale {
+        .bannerTextSale {
             position: relative;
             bottom: 180px;
             left: 25px;
@@ -4013,7 +4018,7 @@ footer{
         }
     }
 
-    .content1Dialog {
+    .bannerDialog {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -4098,20 +4103,20 @@ footer{
 
 
 }
-.content4 {
+.descriptionFastenings {
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 
-    .content4_InfWindow {
+    .descriptionFastenings_InfWindow {
         img {
             height: 277px;
             width: 312px;
         }
 
-        .content4_img_inf {
+        .descriptionFastenings_img_inf {
             border-radius: 0 0 10px 10px;
             width: 312px;
             height: 59px;
@@ -4123,7 +4128,7 @@ footer{
                 line-height: 107%;
             }
 
-            .content4_img_inf_text {
+            .descriptionFastenings_img_inf_text {
                 font-weight: 400;
             }
         }
@@ -4305,7 +4310,7 @@ footer{
         }
     }
 }
-.content6 {
+.installmentPlan {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4315,14 +4320,14 @@ footer{
         display: none;
     }
 
-    .container6Img {
+    .installmentPlanImg {
         width: 75vw;
         height: 55vw;
         display: flex;
         align-items: center;
     }
 }
-.container9_lable {
+.history_lable {
     height: 30px;
     width: 61vw;
     font-weight: 700;
@@ -4331,7 +4336,7 @@ footer{
     right: 84px;
     top: 45px;
 }
-.content9 {
+.history {
     width: auto;
     margin: 0 10px 40px;
 
@@ -4341,7 +4346,7 @@ footer{
         flex-direction: column;
         gap: 24px;
 
-        .container9_Imgs {
+        .history_Imgs {
             gap: 10px;
             margin-top: 15px;
 
@@ -4352,13 +4357,13 @@ footer{
             }
         }
 
-        .container9_Text {
+        .history_Text {
             padding-bottom: 21px;
 
-            .container9_Text1 {
+            .history_Text1 {
                 gap: 4px;
 
-                .container9_Title {
+                .history_Title {
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 100%;
@@ -4369,34 +4374,34 @@ footer{
 
     }
 }
-.container9_Text_description {
+.history_Text_description {
     font-weight: 400;
     font-size: 13px;
     line-height: 122%;
 }
-.content13 {
+.sale {
     .container13 {
         width: auto;
         gap: 0;
         margin: 0 ;
-        padding: 0 ;
+        padding: 0 0 20px;
 
-        .container13_cards_title {
+        .history_cards_title {
             gap: 15px;
 
-            .container13_title {
+            .history_title {
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 125%;
                 text-align: center;
             }
 
-            .container13_cards {
+            .history_cards {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
 
-                .container13_card {
+                .history_card {
                     width: 314px;
                     height: 184px;
                     margin: 0;
@@ -4409,19 +4414,19 @@ footer{
                         height: 76px;
                     }
 
-                    .container13_card_text_title {
+                    .history_card_text_title {
                         font-weight: 700;
                         font-size: 14px;
                         line-height: 143%;
                     }
 
-                    .container13_card_text_all {
+                    .history_card_text_all {
                         font-weight: 400;
                         font-size: 12px;
 
                     }
 
-                    .container13_card_text {
+                    .history_card_text {
                         gap: 7px;
 
                         br {
@@ -4433,11 +4438,11 @@ footer{
             }
         }
 
-        .container13_btn_for_order {
+        .history_btn_for_order {
             display: none;
         }
 
-        .container13_discountBanner_ImgMob {
+        .history_discountBanner_ImgMob {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(1, 1fr);
@@ -4453,7 +4458,7 @@ footer{
             }
         }
 
-        .container13_text_image {
+        .history_text_image {
             z-index: 11;
             grid-column-start: 2;
             grid-column-end: 3;
@@ -4482,7 +4487,7 @@ footer{
         }
     }
 }
-.content5_img_above {
+.LUMFER_img_above {
     display: none;
 }
 
@@ -4562,22 +4567,22 @@ footer{
     display: none;
 }
 
-.content3 {
+.quiz {
     width: auto;
     margin: 0 10px;
 
-    .img_content3 {
+    .img_quiz {
         display: none;
     }
 
-    .content3Text {
+    .quizText {
         font-weight: 700;
         font-size: 24px;
         line-height: 117%;
         padding: 0 30px;
     }
 
-    .content3Text2 {
+    .quizText2 {
         font-weight: 400;
         font-size: 16px;
         line-height: 137%;
@@ -4757,7 +4762,7 @@ footer{
 
             .div-7_container_check_dialog_dialogBtn {
                 width: 75vw;
-                font-size: 20px;
+                font-size: 15px;
 
             }
 
@@ -4854,18 +4859,18 @@ footer {
     }
 }
 
-.content8 {
-    .container8_cards {
+.shiagaOrder {
+    .shiagaOrder_cards {
         display: none;
     }
 
-    .container8_title {
+    .shiagaOrder_title {
         margin: 0;
         padding: 0;
         font-size: 18px;
     }
 
-    .container8_cardsMob {
+    .shiagaOrder_cardsMob {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -4881,7 +4886,7 @@ footer {
     }
 
 }
-.content5 {
+.LUMFER {
 
     display: none;
 }
