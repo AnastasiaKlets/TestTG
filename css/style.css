@@ -395,13 +395,12 @@ h1{
     display: none;
     box-shadow: 0 5px 20px 0 rgba(118, 106, 122, 0.25);
     border-radius: 20px;
-    padding: 15px 5px 0 25px;
 }
 .my-form .my-div:first-child {
     display: block;
 }
 .progress {
-    width: 99%;
+    width: 90%;
     background: #f2f0f5;
     position: relative;
     border-radius: 50px;
@@ -458,6 +457,7 @@ h1{
     gap: 24px;
     font-family: 'Geometria';
     color: #000;
+    padding: 32px 0 0 0;
 }
 .formSteps_dop{
     display: flex;
@@ -481,9 +481,9 @@ h1{
 }
 .formCards{
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    margin: 0 64px;
 }
 .fromTextBtnEnd{
     display: flex;
@@ -649,8 +649,7 @@ h1{
 .div-5_container{
     display: flex;
     flex-direction: column;
-    padding-bottom: 140px;
-    padding-right: 25px;
+    align-items: center;
 }
 .div-5_container_1{
     display: grid;
@@ -674,13 +673,13 @@ h1{
 }
 .btnPos{
     position: relative;
-    left: 815px;
-    top: -38px;
+    left: 849px;
+    top: -49px
 }
 .btnPos1{
     position: relative;
-    left: 620px;
-    top: -38px;
+    left: 673px;
+    top: -46px;
 }
 .descriptionFastenings{
     width: 100%;
@@ -712,7 +711,9 @@ h1{
 .imgTextEnd{
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: 6px;
+    align-items: center;
+    margin: 64px 64px 0;
 }
 .p2{
     width: 33.3%;
@@ -748,6 +749,7 @@ h1{
     align-items: flex-start;
     justify-content: center;
     gap: 16px;
+    margin: 0 0 0 70px;
 }
 .div-7_container_check_dialog{
     display: flex;
@@ -770,8 +772,6 @@ h1{
     bottom: 10px;
 }
 .div-7_container_img{
-    position: relative;
-    top: -8px;
     img{
         border-radius: 0 20px 20px 0;
     }
@@ -1035,13 +1035,18 @@ h1{
         margin: 0;
         padding: 11px;
     }
-    ._CardText2{
+    ._CardText21{
+        gap: 10px;
+    }
+    ._CardText22{
         padding: 2px 0px 1px 1px;
     }
-    ._CardText3{
+    ._CardText23{
         padding: 2px 0px 50px 6px;
+        gap: 20px;
     }
-    ._CardText4{
+    ._CardText24{
+        gap: 0;
         padding: 0;
     }
 
@@ -1926,7 +1931,7 @@ footer{
         }
 
         .shiagaOrder_cards {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
 
         }
 
@@ -1984,6 +1989,77 @@ footer{
     }
     .FNumber{
         font-size: 22px;
+    }
+    .quiz{
+        .formSteps {
+            gap: 15px;
+            padding: 20px 0 0 0;
+        }
+        .formStepTextH {
+            font-size: 30px;
+        }
+        .container_agreement{
+            font-size: 19px;
+        }
+        .formStepTextH2 {
+            font-size: 18px;
+        }
+        .imgTextEnd {
+            margin: 34px 64px 0;
+        }
+        .btnPos {
+            position: relative;
+            left: 687px;
+            top: -52px;
+        }
+        .formStep {
+            font-size: 18px;
+        }
+        .slidecontainer_dop{
+            img{
+                width: 100%;
+            }
+        }
+        .div-2content{
+            margin: 0 64px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btnPos1 {
+            position: relative;
+            left: 498px;
+            top: -46px;
+        }
+        .div-5_container_1 {
+            width: 100%;
+        }
+        .div-5_container {
+            margin: 0 64px;
+        }
+        .div-5_container_text {
+            font-size: 22px;
+        }
+        .div-7_container {
+            margin: 0 0 0 20px;
+        }
+        ._dialogBtn {
+            font-size: 19px;
+        }
+        .div-7_container_text2 {
+            font-size: 22px;
+        }
+        .div-7_container_text1 {
+            font-size: 36px;
+        }
+        .div-7_container_list {
+            font-size: 22px;
+        }
+        .div-7_container_img{
+            img{
+                width: 100%;
+            }
+        }
     }
 
 }
@@ -2348,7 +2424,7 @@ footer{
     }
     .shiaga{
         .shiagaOrder_cards {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
         }
 
@@ -2517,865 +2593,14 @@ footer{
     }
 }
 @media (max-width: 960px) {
-    .container{
-        max-width: 770px;
-    }
-    .banner{
-        grid-template-rows: repeat(2, 1fr);
-        h1 {
-            font-size: 45px;
-        }
-        ._TextNum {
-            font-size: 110px;
-            padding-left: 200px;
-        }
-        .bannerDialog{
-            height: 260px;
-        }
-        ._agreement {
-            font-size: 14px;
-        }
-        .bannerDialog {
-            font-size: 25px;
-        }
-        ._dialogNumber {
-            border-radius: 10px;
-            padding: 0 15px;
-            width: 235px;
-            height: 56px;
-        }
-        input[type="tel"]::-webkit-input-placeholder {
-            font-size: 17px;
-        }
-        ._dialogBtn{
-            width: 235px;
-            font-size: 17px;
-        }
-    }
-    .logoOPenDor {
-        display: none;
-    }
-    .logoOPenDorImg {
-        display: none;
-    }
-    .headerBlock1 {
-        display: none;
-    }
-    .headerBlock2 {
-        display: none;
-    }
-    .mobhead {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        align-items: center;
-        padding: 11px;
-    }
-    .mobheadImg {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
 
-        img {
-            width: 24px;
-            height: 24px;
-        }
-    }
-    .mobheadBtn {
-        display: flex;
-        flex-direction: column;
-        font-weight: 400;
-        font-size: 13px;
-        color: #fff;
-        font-family: 'Geometria';
-    }
-    .headerBtn {
-        font-family: 'Geometria';
-        border-radius: 10px;
-        padding: 20px 0;
-        width: 190px;
-        height: 32px;
-        margin: 4px 0 0 0;
-        font-weight: 500;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .headerBtn1 {
-        display: none;
-    }
-    .cardProduct {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 100%;
-        overflow: hidden;
-        padding: 0;
-        margin: 0 10px 40px;
-    }
-    ._CardImg {
-        width: 100%;
-    }
-    .cardProductTextHead {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 100%;
-    }
-    ._textHead2{
-        font-size: 25px;
-    }
-
-    ._CardTextImg {
-        overflow: hidden;
-    }
-    ._CardsGroup {
-        grid-template-columns: repeat(3, auto);
-
-    }
-
-
-
-    .map {
-        width: auto;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, auto);
-        margin-top: 40px;
-
-        ._BlockInf {
-            padding: 9px 29px 9px 29px;
-
-            span {
-                font-size: 16px;
-            }
-        }
-    }
-    .descriptionFastenings {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        .descriptionFastenings_InfWindow {
-            img {
-                height: 76.944vw;
-                width: 86.667vw;
-            }
-
-            .descriptionFastenings_img_inf {
-                border-radius: 0 0 10px 10px;
-                width: 86.667vw;
-                height: 59px;
-                padding: 4px 0 0 8px;
-
-                span {
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 107%;
-                }
-
-                .descriptionFastenings_img_inf_text {
-                    font-weight: 400;
-                }
-            }
-        }
-
-        .prof_var {
-            .container {
-                width: auto;
-                margin: 0;
-                padding: 0;
-            }
-
-            .prof_var_items {
-                padding: 0;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-
-                .prof_var_item img {
-                    width: 40vw;
-                    height: 27.222vw;
-                }
-
-                .prof_var_item {
-                    width: 40vw;
-                    height: 27.222vw;
-                    min-height: auto;
-
-                    .prof_var_item_content {
-                        border-radius: 0 0 10px 10px;
-                        width: 40vw;
-                        height: 35px;
-                        padding: 6px 0 0 10px;
-
-                        .prof_var_item_title {
-                            font-weight: 700;
-                            font-size: 14px;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-
-    .installmentPlan {
-        width: 95%;
-        .container6{
-            gap: 30px;
-            padding: 53px 0 50px 36px;
-            margin: 0 0 40px;
-        }
-        .installmentPlan_text {
-            font-size: 23px;
-        }
-        .installmentPlan_title {
-            font-size: 45px;
-        }
-        .installmentPlanImg {
-            display: none;
-        }
-    }
-    .history_lable {
-        height: 30px;
-        width: 47vw;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 250%;
-        right: 316px;
-        top: 53px;
-    }
-    .history_Text_description {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 122%;
-    }
-    .LUMFER_img_above {
-        display: none;
-    }
-    .root {
-        align-items: center;
-    }
-    .modal_back {
-
-        .modal_window {
-            width: 320px;
-            height: 384px;
-            min-height: 380px;
-        }
-
-        .modal_close {
-            position: relative;
-            width: 22px;
-            height: 22px;
-            top: -26px;
-            left: 239px;
-
-            .modal_close1 {
-                display: none;
-            }
-
-            .modal_close2 {
-                display: flex;
-            }
-        }
-
-        .modal_content_img {
-            display: none;
-        }
-
-        .modal_title {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 117%;
-        }
-
-        .modal_descr_mobile {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 137%;
-        }
-
-        .modal_form {
-            input {
-                padding: 12px 22px;
-                width: 272px;
-                height: 48px;
-                font-weight: 400;
-                font-size: 16px;
-            }
-
-            button {
-                border-radius: 5px;
-                padding: 12px 22px;
-                width: 272px;
-                height: 48px;
-                font-weight: 500;
-                font-size: 20px;
-            }
-        }
-
-        .modal_form_check {
-            .modal_bottom {
-                font-weight: 400;
-                font-size: 12px;
-            }
-
-        }
-    }
-    .imgTextEnd {
-        display: none;
-    }
-    .quiz {
-        width: auto;
-        margin: 0 10px;
-
-
-
-        .quizText {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 117%;
-            padding: 0 30px;
-        }
-
-        .quizText2 {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 137%;
-            padding: 0 30px;
-        }
-
-        .my-form {
-            width: 94vw;
-            padding: 0;
-
-            .my-div {
-                padding: 15px 0 20px 0;
-                margin-bottom: 40px;
-            }
-
-            .formSteps {
-                gap: 10px;
-            }
-
-            .formStep {
-                font-size: 14px;
-                border-radius: 100px;
-                padding: 12px 22px;
-                width: 120px;
-                height: 30px;
-
-            }
-
-            .formStepTextH {
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 110%;
-                text-align: center;
-            }
-
-            .formStepTextH2 {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 143%;
-                text-align: center;
-            }
-
-            .formCards {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-
-            ._ImgCheck {
-                width: 41vw;
-
-                img {
-                    width: 41vw;
-                }
-            }
-
-            ._agreement {
-                label {
-                    font-size: 16px;
-                    margin: 0;
-                }
-
-                .highload2 {
-                    height: 24px;
-                    width: 24px;
-                }
-            }
-
-            .next-q {
-                border-radius: 10px;
-                padding: 12px 22px;
-                width:40vw;
-                margin: 8px;
-            }
-
-            .btnPos {
-                left: 442px;
-                top: 15px;
-                border-radius: 10px;
-                padding: 9px 22px;
-                width: auto;
-                height: auto;
-                font-weight: 500;
-                font-size: 16px;
-            }
-
-            .slidecontainer_dop {
-                width: auto;
-
-                input {
-                    width: 100%;
-                }
-
-                img {
-                    width: 80vw;
-                    height: 50vw;
-                }
-            }
-
-            .btnPos1 {
-                left: 35px;
-                top: 10px;
-            }
-
-            .formSteps_dop {
-                width: auto;
-            }
-
-            .container_progress {
-                width: 100%;
-            }
-
-            .slidecontainer {
-                gap: 25px;
-                font-size: 20px;
-            }
-
-            .div-5_container {
-                margin: 20px 0 0 0;
-                padding: 5px;
-                gap: 25px;
-
-                .div-5_container_1 {
-                    display: grid;
-                    grid-template-columns: repeat(1, 1fr);
-                    justify-content: space-between;
-                    width: auto;
-
-                    align-items: center;
-                    justify-items: stretch;
-
-                    .div-5_container_text {
-                        font-size: 20px;
-
-                    }
-
-                    .slide {
-                        font-size: 20px;
-
-                        p {
-                            margin: 10px 0 0 0;
-                            padding: 0;
-                        }
-                    }
-                }
-            }
-
-            .div-7_container {
-                width: auto;
-                padding: 15px 15px 20px;
-
-                .div-7_container_text {
-                    gap: 9px;
-
-                    span {
-                        font-size: 20px;
-                        padding: 0;
-                        margin: 0;
-                        width: 100%;
-                    }
-
-                    .div-7_container_text1 {
-                        font-size: 24px;
-                    }
-
-                }
-
-                .div-7_container_check_dialog {
-                    width: 75vw;
-                }
-
-                .div-7_container_check_dialog_dialogNumber {
-                    width: 75vw;
-                }
-
-                .div-7_container_check_dialog_dialogBtn {
-                    width: 75vw;
-                    font-size: 20px;
-
-                }
-
-                input[type="tel"]::-webkit-input-placeholder {
-                    font-size: 16px;
-                }
-
-                .div-7_container_check_dialog {
-                    align-items: center;
-                    padding: 0;
-                    margin: 0;
-                }
-
-                .div-7_container_check {
-                    padding: 0;
-                }
-
-                .div-7_container_list {
-                    span {
-                        font-size: 16px;
-                    }
-
-                    gap: 10px;
-                    margin: 10px 0 0 0;
-                    padding: 0 0 0 0;
-
-                    img {
-                        width: 32px;
-                        height: 32px;
-                    }
-
-                }
-
-                .div-7_container_img {
-                    display: none;
-                }
-
-            }
-        }
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        height: auto;
-        gap: 10px;
-
-        .FGeoDatalogo {
-            display: none;
-        }
-
-        .FGeoData {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            align-items: flex-start;
-            justify-content: flex-start;;
-            padding: 10px 0 0 35px;
-
-            img {
-                width: auto;
-                height: auto;
-            }
-
-            .FGeoText .FNumImgLogo {
-                width: auto;
-                height: auto;
-                font-size: 16px;
-            }
-
-            .FGeoText {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                span {
-                    font-size: 16px;
-                }
-            }
-
-            .FNumber {
-                font-size: 16px;
-            }
-
-        }
-
-        .FLogo {
-            width: 122px;
-            height: 34px;
-            margin: 0;
-            padding: 0;
-        }
-    }
-    .rooms{
-        .rooms_item {
-            position: relative;
-            padding-top: 10px;
-        }
-        margin: 20px 0;
-        .rooms_item_title {
-            font-size: 17px;
-        }
-        .rooms_item_subtitles {
-            padding-left: 25px;
-            font-size: 17px;
-            margin-top: 25px;
-        }
-        .rooms_item_subtitle.active:after {
-            left: -175px;
-        }
-        .rooms_container {
-            margin: 0 ;
-            padding: 36px 17px 0 0;
-        }
-    }
-    .container13{
-        .history_card_text_title {
-            font-size: 17px;
-        }
-        .history_card_text_all {
-            font-size: 15px;
-        }
-
-        .history_card {
-            padding-top: 20px;
-            gap: 28px;
-        }
-    }
-    .discountBanner{
-        margin: 0 auto 40px auto;
-    }
 }
 @media (max-width: 775px) {
 
-    .banner{
-        h1 {
-            font-size: 37px;
-        }
-        .bannerText{
-            gap: 20px;
-        }
-        ._TextSale{
-            font-size: 35px;
-        }
-        ._TextNum {
-            font-size: 110px;
-            padding-left: 155px;
-            padding-top: 38px;
-        }
-        .bannerDialog{
-            height: 260px;
-        }
-        .bannerTextImg {
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-        .bannerDialog {
-            font-size: 23px;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
-        ._agreement {
-            font-size: 12px;
-        }
-        ._dialogNumber {
-            border-radius: 10px;
-            padding: 0 15px;
-            width: 210px;
-            height: 56px;
-        }
-        input[type="tel"]::-webkit-input-placeholder {
-            font-size: 15px;
-        }
-        ._dialogBtn{
-            width: 210px;
-            font-size: 15px;
-        }
-    }
-    .cardProduct{
-        .cardImgCalc {
-            width: 115px;
-        }
-    }
-    .quiz{
-        .my-form{
-            .btnPos {
-                left: 330px;
-                top: 15px;
-                border-radius: 10px;
-                padding: 9px 22px;
-                width: auto;
-                height: auto;
-                font-weight: 500;
-                font-size: 16px;
-            }
-        }
-    }
-    .installmentPlan {
-        .container6{
-            gap: 19px;
-            padding: 53px 0 50px 36px;
-            margin: 0 0 40px;
-            width: 100vw;
-        }
-
-        .installmentPlan_text {
-            font-size: 23px;
-        }
-        .installmentPlan_title {
-            font-size: 40px;
-        }
-        .installmentPlanImg {
-            display: none;
-        }
-    }
-    .rooms{
-        .rooms_item {
-            padding-top: 10px;
-            width: auto;
-        }
-            margin: 20px 0;
-        .rooms_item_title {
-            font-size: 19px;
-            line-height: 30px;
-        }
-        .rooms_item_subtitles {
-            font-size: 19px;
-        }
-        .rooms_item_subtitle.active:after {
-            left: -165px;
-        }
-    }
-    .history_lable {
-        height: 30px;
-        width: 33vw;
-        right: 281px;
-    }
-    .history{
-        .history_Imgs {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            img{
-                width: 22vw;
-            }
-        }
-        .history_Title {
-            font-size: 18px;
-        }
-        .history_Text1 {
-            font-size: 15px;
-        }
-    }
 
 }
 @media (max-width: 676px) {
-.banner{
-    h1 {
-        font-size: 32px;
-    }
-    .bannerText{
-        gap: 20px;
-    }
-    ._TextSale{
-        font-size: 33px;
-    }
-    ._TextNum {
-        font-size: 85px;
-    }
-    .bannerDialog{
-        height: 240px;
-    }
-    .bannerTextImg {
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-    .bannerDialog {
-        font-size: 16px;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    ._agreement {
-        display: flex;
-        font-size: 10px;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-    }
-    ._dialogNumber {
-        border-radius: 10px;
-        padding: 0 15px;
-        width: 165px;
-        height: 40px;
-    }
-    input[type="tel"]::-webkit-input-placeholder {
-        font-size: 12px;
-    }
-    ._dialogBtn{
-        width: 165px;
-        font-size: 11px;
-        height: 40px;
-    }
-}
-    .cardProduct{
-        margin: 0;
-        .cardProductTextHead{
-            font-size: 20px;
-            ._textHead2{
-                font-size: 16px;
-            }
-        }
-        ._CardsGroup{
-            gap: 12px;
-            ._Card{
-                ._CardTextImg{
-                    ._CardText{
-                        span{
-                            font-size: 18px;
-                            line-height: 90%;
-                        }
-                        gap: 7px;
-                        height: auto;
-                    }
-                    .cardImgCalc{
-                        width: 14.2vw;
-                    }
 
-                }
-            }
-        }
-    }
-.installmentPlan {
-    .container6{
-        gap: 19px;
-        padding: 53px 0 38px 36px;
-        margin: 0 0 40px;
-        width: 100vw;
-    }
-
-    .installmentPlan_text {
-        font-size: 20px;
-    }
-    .installmentPlan_title {
-        font-size: 38px;
-    }
-    .installmentPlanImg {
-        display: none;
-    }
-}
 .rooms{
     .rooms_item {
         padding-top: 10px;
@@ -3406,326 +2631,9 @@ footer{
     }
 
 }
-.history_lable {
-    right: 193px;
-}
-.history{
-    .container9{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .history_Imgs {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        img{
-            padding: 10px 0;
-            width: 40vw;
-        }
-    }
-    .history_Title {
-        font-size: 25px;
-    }
-    .history_Text {
-        gap: 10px;
-        padding-bottom: 20px;
-    }
-    .history_Text1 {
-        font-size: 15px;
-    }
-    .history_Text_description {
-        font-size: 18px;
-    }
-}
-.sale {
-    .container13 {
-        width: auto;
-        gap: 0;
-        margin: 0 ;
-        padding: 0 ;
-        .history_cards_title {
-            gap: 15px;
-            .history_title {
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 125%;
-                text-align: center;
-            }
-            .history_cards {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-
-                .history_card {
-                    width: 314px;
-                    height: 184px;
-                    margin: 0;
-                    padding: 19px 10px;
-                    gap: 10px;
-
-                    img {
-                        border-radius: 100px;
-                        width: 76px;
-                        height: 76px;
-                    }
-
-                    .history_card_text_title {
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 143%;
-                    }
-
-                    .history_card_text_all {
-                        font-weight: 400;
-                        font-size: 12px;
-
-                    }
-
-                    .history_card_text {
-                        gap: 7px;
-
-                        br {
-                            display: none;
-                        }
-                    }
-
-                }
-            }
-        }
-        .history_btn_for_order {
-            display: none;
-        }
-        .history_discountBanner_ImgMob {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(60px, auto));
-            grid-template-rows: repeat(1, 1fr);
-            align-items: center;
-            padding-top: 40px;
-            margin: 0 0 40px 0;
-            img{
-                display: flex;
-                grid-column-start: 1;
-                grid-column-end: 4;
-                grid-row-start: 1;
-                grid-row-end: 2;
-                height: 350px;
-            }
-        }
-
-        .history_text_image {
-            display: flex;
-            z-index: 11;
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            gap: 10px;
-            position: relative;
-            left: 0;
-            padding-top: 0;
-            flex-direction: column;
-            align-items: center;
-            span {
-                width: 77vw;
-                font-family: 'Geometria';
-                font-weight: 700;
-                font-size: 30px;
-                line-height: 94%;
-                text-align: center;
-                color: #000;
-            }
-            button {
-                width: 240px;
-                height: 48px;
-            }
-        }
-    }
-}
-
-.discountBanner {
-    right: 0;
-    margin-top: 40px;
-    .discountBanner_Img {
-        display: none;
-    }
-
-    .discountBanner_ImgMob {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 0;
-        width: 90%;
-        button {
-            position: relative;
-            z-index: 11;
-            top: -72px;
-            border-radius: 10px;
-            padding: 24px 22px;
-            width: 272px;
-            height: 48px;
-            font-family: 'Geometria';
-            font-weight: 500;
-            font-size: 20px;
-            color: #fff;
-        }
-    }
-}
 
 }
 @media (max-width: 598px) {
-.banner{
-    height: auto;
-    h1 {
-        font-size: 23px;
-    }
-    .bannerText{
-        gap: 10px;
-    }
-    ._TextSale{
-        font-size: 23px;
-    }
-    ._TextNum {
-        font-size: 68px;
-        padding-left: 122px;
-        padding-top: 19px;
-    }
-    .bannerDialog{
-        height: 200px;
-    }
-    .bannerTextImg {
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-    .bannerDialog {
-        font-size: 16px;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    ._agreement {
-        display: flex;
-        font-size: 8px;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-    }
-    ._dialogNumber {
-        border-radius: 10px;
-        padding: 0 15px;
-        width: 145px;
-        height: 40px;
-    }
-    input[type="tel"]::-webkit-input-placeholder {
-        font-size: 12px;
-    }
-    ._dialogBtn{
-        width: 145px;
-        font-size: 10px;
-        height: 40px;
-        padding: 0;
-    }
-    ._dialog{
-        gap: 10px;
-    }
-}
-    .cardProduct{
-        margin: 0;
-        .cardProductTextHead{
-            font-size: 20px;
-            ._textHead2{
-                font-size: 16px;
-            }
-        }
-        ._CardsGroup{
-            gap: 12px;
-            ._Card{
-                ._CardTextImg{
-                    ._CardText{
-                        span{
-                            font-size: 13px;
-                            line-height: 90%;
-                        }
-                        gap: 5px;
-                        height: auto;
-                    }
-                    .cardImgCalc{
-                        width: 14.2vw;
-                    }
-
-                }
-            }
-        }
-    }
-.LUMFER {
-    display: none;
-}
-.installmentPlan {
-    .container6 {
-        display: none;
-    }
-    .installmentPlanImg {
-        display: inline;
-        width: 83vw;
-        height: 60vw;
-    }
-}
-.rooms{
-    .rooms_container {
-        min-height: 297px;
-        padding: 0 10px 0 0;
-    }
-}
-.history_lable {
-    height: 35px;
-    width: 61vw;
-    right: 150px;
-    top: 45px;
-}
-.sale {
-    .container13 {
-        width: auto;
-        gap: 0;
-        margin: 0 ;
-        padding: 0 ;
-
-
-        .history_btn_for_order {
-            display: none;
-        }
-
-        .history_discountBanner_ImgMob {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(1, 1fr);
-            padding-top: 40px;
-            margin: 0 0 40px 0;
-            img{
-                display: flex;
-                grid-column-start: 1;
-                grid-column-end: 4;
-                grid-row-start: 1;
-                grid-row-end: 2;
-                height: 400px;
-            }
-        }
-
-        .history_text_image {
-            z-index: 11;
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            gap: 10px;
-            position: relative;
-            left: 0;
-            padding-top: 0;
-
-
-
-        }
-    }
-}
 }
 @media (max-width: 480px) {
 .rooms{
