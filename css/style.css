@@ -53,6 +53,8 @@ header{
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    font-family: 'Geometria';
+    font-weight: 700;
     font-size: 22px;
 }
 .headerBtn{
@@ -80,8 +82,8 @@ header{
 .circle{
     border-radius: 100%;
     background: #619e2d;
-    width: 0.4vw;
-    height: 0.4vw;
+    width: 8px;
+    height: 8px;
 }
 ._Block2Contact{
     display: flex;
@@ -371,7 +373,7 @@ h1{
 }
 .img_quiz{
     width: 100%;
-
+    height: 100%;
 }
 
 .quizText {
@@ -878,7 +880,10 @@ h1{
     line-height: 24px;
     color: #619e2d;
 }
+.descriptionFastenings_img_inf_dop{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
+}
 
 .LUMFER_img_inf {
     width: 100%;
@@ -1048,6 +1053,9 @@ h1{
     ._CardText24{
         gap: 0;
         padding: 0;
+    }
+    .shiagaOrder_CardText_imgStep{
+        width: 100%;
     }
 
     .shiagaOrder_CardText_title{
@@ -1461,8 +1469,8 @@ h1{
 .LUMFER_img_list {
     border-radius: 20px;
     background: rgba(243, 240, 240, 0.92);
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 40% 1fr;
     padding-bottom: 130px;
     span{
         font-family: 'Geometria';
@@ -1597,7 +1605,7 @@ h1{
 }
 .LUMFER_img{
     border-radius: 20px;
-    width: 584px;
+    width: 100%;
     padding: 30px 0 0 30px;
 }
 .LUMFER_list_text{
@@ -1858,11 +1866,13 @@ footer{
     animation-name: fade;
     animation-duration: 1.5s;
 }
+.discountBanner_Img{
+    padding: 0;
+    width: 100%;
+}
 
 @media (max-width: 1580px) {
-    .container{
-        max-width: 1320px;
-    }
+
     .banner{
         .bannerText{
             gap: 30px;
@@ -1909,24 +1919,25 @@ footer{
             height: auto;
             background: none;
             span{
-                font-size: 17px;
+                font-size: 15px;
             }
-
         }
         ._CardText{
             margin: 0;
-            padding: 11px;
+            padding: 8px;
         }
-        ._CardText1{
+        ._CardText21{
             padding: 0 0 11px 5px;
+            gap: 13px;
         }
-        ._CardText2{
-            padding: 2px 0px 1px 1px;
+        ._CardText22{
+            padding: 2px 0px 9px 1px;
+            gap: 13px;
         }
-        ._CardText3{
+        ._CardText23{
             padding: 2px 0px 50px 6px;
         }
-        ._CardText4{
+        ._CardText24{
             padding: 0;
         }
 
@@ -2060,10 +2071,21 @@ footer{
                 width: 100%;
             }
         }
+        .div-7_container_text {
+            gap: 14px;
+            margin: 0 0 0 40px;
+            width: 75%;
+        }
     }
 
 }
-@media (max-width: 1400px) {
+@media (max-width: 1400px)  {
+    .headerBtn {
+        font-size: 18px;
+    }
+    ._Block2ContactText {
+        font-size: 13px;
+    }
     ._Block2Contact {
         font-size: 20px;
     }
@@ -2124,7 +2146,9 @@ footer{
         }
     }
     .LUMFER{
-        margin: 60px auto 100px auto;
+        .LUMFER_img_list {
+            padding-bottom: 110px;
+        }
         .LUMFER_img_above{
             top: -65px;
             gap: 13px;
@@ -2159,7 +2183,7 @@ footer{
     }
     .rooms{
         .rooms_item_title {
-            font-size: 25px;
+            font-size: 24px;
         }
         .rooms_item_subtitles {
             padding-left: 35px;
@@ -2176,19 +2200,34 @@ footer{
         .shiagaOrder_cards {
             grid-template-columns: repeat(4, 1fr);
         }
+        ._CardText{
+            margin: 0;
+            padding: 8px;
+        }
+        ._CardText21{
+            padding: 0 0 11px 5px;
+            gap: 8px;
+        }
+        ._CardText22{
+            padding: 2px 0px 9px 1px;
+            gap: 8px;
+        }
+        ._CardText23{
+            padding: 2px 0px 40px 6px;
+        }
+        ._CardText24{
+            padding: 0;
+        }
         .shiagaOrder_CardText{
-            position: relative;
-            height: auto;
-            background: none;
-            padding: 0 0 3px 0;
-
             span{
-                font-size: 14px;
+                font-size: 13px;
             }
         }
-
-
-
+        ._CardTextImg {
+            grid-template-columns: 75% 1fr;
+            align-items: flex-end;
+            column-gap: 0;
+        }
 
     }
     .installmentPlan{
@@ -2199,7 +2238,11 @@ footer{
             font-size: 36px;
         }
     }
-
+    .history_lable {
+        width: 433px;
+        height: 53px;
+        font-size: 25px;
+    }
     .history{
         .history_Imgs {
             img{
@@ -2284,11 +2327,90 @@ footer{
     .FNumber{
         font-size: 20px;
     }
+    .quiz{
+        .btnPos {
+            position: relative;
+            left: 565px;
+            top: -52px;
+        }
+        .btnPos1 {
+            position: relative;
+            left: 376px;
+            top: -46px;
+
+        }
+        .next-q {
+            width: 190px;
+            height: auto;
+            font-size: 18px;
+        }
+        .formStepTextH {
+            font-size: 27px;
+        }
+        .formSteps {
+            gap: 10px;
+        }
+        .container_agreement {
+            font-size: 15px;
+        }
+        .formStepTextH_dop {
+            margin-top: 20px;
+        }
+        .slidecontainer {
+            gap: 20px;
+            font-size: 20px;
+        }
+        .slide {
+            font-size: 20px;
+        }
+        .div-5_container_text {
+            font-size: 20px;
+        }
+        .div-7_container_check_dialog_dialogNumber {
+            width: 80%;
+        }
+        ._dialogBtn {
+            font-size: 17px;
+        }
+        .div-7_container_check_dialog_dialogBtn {
+             width: 80%;
+        }
+        ._agreement {
+            font-size: 17px;
+        }
+        .div-7_container_list {
+            font-size: 20px;
+            gap: 18px;
+        }
+    }
 
 }
 @media (max-width: 1200px) {
     .container{
         max-width: 960px;
+    }
+    .logoOPenDor{
+        width: 20%;
+    }
+    ._Block2Contact {
+        font-size: 18px;
+    }
+    ._Block2ContactText {
+        font-size: 12px;
+    }
+    .headerBlock1 {
+        font-size: 12px;
+    }
+    ._Block1Contact {
+        font-size: 18px;
+        gap: 10px;
+    }
+    .headerBtn {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .headerBlock2 {
+        gap: 10px;
     }
     .banner{
             grid-template-rows: repeat(2, 1fr);
@@ -2296,7 +2418,7 @@ footer{
             font-size: 50px;
         }
         ._TextNum {
-            font-size: 150px;
+            font-size: 140px;
             padding-left: 195px;
         }
         .bannerDialog{
@@ -2319,6 +2441,66 @@ footer{
             font-size: 17px;
         }
     }
+    .FLogo {
+        margin-right: 10vw;
+    }
+    .FGeoData {
+        justify-content: space-evenly;
+        gap: 18px;
+    }
+    .quiz{
+        .quizText {
+            font-size: 30px;
+        }
+        .quizText2 {
+            font-size: 20px;
+        }
+        .formCards {
+            gap: 22px;
+            margin: 0 32px;
+        }
+        .formStep {
+            padding: 6px 20px;
+            height: auto;
+            width: auto;
+            font-size: 16px;
+        }
+        .formStepTextH {
+            font-size: 25px;
+        }
+        .formStepTextH2 {
+            font-size: 16px;
+        }
+        .container_agreement {
+            font-size: 13px;
+        }
+        .next-q {
+            width: 150px;
+            height: auto;
+            font-size: 17px;
+            padding: 10px 4px;
+        }
+        .imgTextEnd {
+            margin: 15px 32px 0;
+        }
+        .imgTextEnd{
+            font-size: 15px;
+        }
+        .btnPos {
+            left: 488px;
+            top: -43px;
+        }
+        .btnPos1 {
+            left: 333px;
+        }
+        .formStepTextH_dop {
+            margin-top: 16px;
+        }
+        .slidecontainer {
+            gap: 18px;
+            font-size: 18px;
+        }
+    }
     .cardProduct{
 
         ._CardsGroup {
@@ -2326,72 +2508,78 @@ footer{
 
         }
     }
-    .quiz{
-        .quizFromImg {
-            flex-direction: column;
-        }
-        .formCards {
-            gap: 20px;
-        }
-        ._ImgCheck {
-            width: 325px;
-        }
-        .btnPos {
-            left: 787px;
-        }
-        .div-7_container_img {
-            left: -8px;
-            top: -7px;
-        }
-        .container_progress {
-            width: 97%;
-        }
-        .slidecontainer_dop{
-            input {
-                width: 100%;
-            }
-        }
-        .formSteps_dop {
-            width: 100%;
-        }
-        .btnPos1 {
-            left: 675px;
-        }
-        .div-5_container_1 {
-            width: 100%;
-        }
-    }
     .descriptionFastenings{
         .descriptionFastenings_img_inf {
-            font-size: 1.7vw;
+            font-size: 17px;
         }
         .prof_var_item_content {
-            font-size: 1.7vw;
+            font-size: 15px;
+            border-radius: 0 0 13px 13px;
         }
         .prof_var_item:hover .prof_var_item_text {
-            display: none;
+            font-size: 11px;
         }
     }
     .LUMFER{
         .LUMFER_img_above{
-            top: -5px;
+            top: -80px;
         }
         .LUMFER_text_dop {
             width: 83%;
+            font-size: 14px;
+        }
+        .LUMFER_text {
+            font-size: 21px;
+            height: 60px;
+        }
+        .custom-counter {
+            font-size: 15px;
+        }
+        .LUMFER_img_list {
+            padding-bottom: 100px;
+        }
+        .LUMFER_img_inf {
+            font-size: 11px;
+        }
+        .LUMFER_img_inf_title {
+            font-size: 15px;
         }
     }
+    .container6 {
+        padding: 110px 0 61px 72px;
+    }
+    .installmentPlan{
+        .installmentPlan_title {
+            font-size: 65px;
+        }
+        .installmentPlan_text {
+            font-size: 31px;
+        }
+    }
+
     .rooms{
         .rooms_item_title {
-            font-size: 21px;
+            font-size: 20px;
         }
         .rooms_item_subtitles {
             padding-left: 25px;
-            font-size: 22px;
+            font-size: 20px;
             margin-top: 25px;
         }
         .rooms_item_subtitle.active:after {
             left: -139px;
         }
+    }
+    .shiaga{
+        .shiagaOrder_title {
+            font-size: 30px;
+        }
+        .shiagaOrder_CardText{
+            span {
+                font-size: 14px;
+            }
+        }
+
     }
     .history_lable {
         width: 364px;
@@ -2414,12 +2602,29 @@ footer{
             font-size: 25px;
         }
         .history_Text1 {
-            font-size: 19px;
+            font-size: 16px;
         }
+    }
+    .history_title {
+        font-size: 33px;
+    }
+    .history_card_text_title {
+        font-size: 18px;
+    }
+    .history_card_text_all {
+        font-size: 14px;
+    }
+    .history_btn {
+        padding: 9px 22px;
+        width: 282px;
+        height: auto;
+        font-size: 18px;
     }
     .sale{
         .history_btn_for_order_title{
             padding: 0 249px;
+            font-size: 25px;
+
         }
     }
     .shiaga{
@@ -2469,8 +2674,17 @@ footer{
         .departure_input {
             width: 250px;
         }
+        .btn_departure {
+            font-size: 18px;
+        }
     }
-
+    .map{
+        ._BlockInf{
+            ._TextImg {
+                font-size: 21px;
+            }
+        }
+    }
 }
 @media (max-width: 1060px) {
     .container{
@@ -2492,26 +2706,6 @@ footer{
             gap: 15px;
         }
 
-    }
-    .quiz{
-        .quizFromImg {
-            flex-direction: column;
-        }
-        .formCards {
-            gap: 20px;
-        }
-        ._ImgCheck {
-            width: 290px;
-            img{
-                width: 270px;
-            }
-        }
-        .btnPos {
-            left: 680px;
-        }
-        .container {
-            font-size: 18px;
-        }
     }
     .LUMFER{
         display: none;
@@ -2591,51 +2785,714 @@ footer{
         }
 
     }
+    .FNumber {
+        font-size: 18px;
+    }
+    .FGeoText {
+        font-size: 18px;
+    }
 }
-@media (max-width: 960px) {
 
+
+@media (max-width: 920px) {
+    .container{
+        max-width: 775px;
+    }
+    .logoOPenDor {
+        display: none;
+    }
+    .logoOPenDorImg {
+        display: none;
+    }
+    .headerBlock1 {
+        display: none;
+    }
+    .headerBlock2 {
+        display: none;
+    }
+    .mobhead {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        padding: 11px;
+    }
+    .mobheadImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .mobheadBtn {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 10px;
+        color: #fff;
+        font-family: 'Geometria';
+    }
+    .headerBtn {
+        font-family: 'Geometria';
+        border-radius: 10px;
+        padding: 12px 0;
+        width: 150px;
+        height: 32px;
+        margin: 4px 0 0 0;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerBtn1 {
+        display: none;
+    }
+    .banner {
+        margin: 14px 0 0 0;
+        height: 500px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+
+        .bannerTextImg {
+            border-radius: 15px;
+        }
+
+        .bannerText {
+            padding: 0;
+            position: relative;
+            top: -306px;
+            gap: 20px;
+            .bannerTextSale {
+                position: relative;
+                bottom: 180px;
+                left: 25px;
+                width: auto;
+
+                span {
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 286%;
+                    text-align: center;
+                }
+
+                ._TextNum {
+                    font-weight: 700;
+                    font-size: 90px;
+                    line-height: 83%;
+                    text-align: center;
+                    color: #619e2d;
+                    padding: 0;
+                    position: relative;
+                    left: 1px;
+                    top: 8px;
+                }
+
+                ._TextSale {
+                    position: relative;
+                }
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 45px;
+                position: relative;
+                top: -143px;
+                left: 23px;
+            }
+        }
+        .bannerDialog {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: 81vw;
+            backdrop-filter: blur(80px);
+            -webkit-backdrop-filter: blur(80px);
+            box-shadow: inset 4px 4px 26px 0 rgba(255, 255, 255, 0.05), inset 0 4px 2px 0 rgba(255, 255, 255, 0.05), inset 0 -4px 2px 0 rgba(0, 0, 0, 0.1);
+            gap: 10px;
+            padding: 23px 15px;
+            position: relative;
+            top: -357px;
+            left: 20px;
+            border-radius: 15px;
+
+            span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 143%;
+                text-align: left;
+            }
+
+            ._dialog {
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+
+                ._dialogNumber {
+                    font-weight: 400;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    padding: 12px 22px;
+                    width: 55vw;
+                    height: 38px;
+                    font-family: 'Geometria';
+                }
+
+                input[type="tel"]::-webkit-input-placeholder {
+                    font-size: 16px;
+                }
+
+                input[type="tel"]::-moz-placeholder {
+                    font-size: 16px;
+                }
+
+            }
+
+            ._dialogBtnMob {
+                padding: 12px 22px;
+                font-size: 16px;
+                width: 55vw;
+                height: auto;
+
+                span {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            ._agreement {
+                font-weight: 400;
+                font-size: 12px;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 5px;
+                gap: 10px;
+
+                label {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .cardProduct{
+        margin: 0 0 40px;
+        .cardProductTextHead{
+            margin-bottom: 15px;
+            font-size: 20px;
+            ._textHead2{
+                font-size: 16px;
+            }
+        }
+        ._CardsGroup{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+
+            ._Card{
+                ._CardTextImg{
+                    column-gap: 3px;
+                    ._CardText{
+                        border-radius: 0 0 10px 10px;
+                        line-height: 67%;
+                        span{
+                            font-size: 10px;
+                        }
+                        gap: 2px;
+                        height: auto;
+                    }
+
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+
+        .FGeoDatalogo {
+            display: none;
+        }
+
+        .FGeoData {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: flex-start;
+            justify-content: flex-start;;
+            padding: 10px 0 0 35px;
+
+            img {
+                width: auto;
+                height: auto;
+            }
+
+            .FGeoText .FNumImgLogo {
+                width: auto;
+                height: auto;
+                font-size: 16px;
+            }
+
+            .FGeoText {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .FNumber {
+                font-size: 16px;
+            }
+
+        }
+
+        .FLogo {
+            width: 122px;
+            height: 34px;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 @media (max-width: 775px) {
+    .container{
+        max-width: 676px;
+    }
+    .logoOPenDor {
+        display: none;
+    }
+    .logoOPenDorImg {
+        display: none;
+    }
+    .headerBlock1 {
+        display: none;
+    }
+    .headerBlock2 {
+        display: none;
+    }
+    .mobhead {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        padding: 11px;
+    }
+    .mobheadImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
 
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .mobheadBtn {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 10px;
+        color: #fff;
+        font-family: 'Geometria';
+    }
+    .headerBtn {
+        font-family: 'Geometria';
+        border-radius: 10px;
+        padding: 12px 0;
+        width: 150px;
+        height: 32px;
+        margin: 4px 0 0 0;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerBtn1 {
+        display: none;
+    }
+    .banner {
+        .bannerText {
+            top: -263px;
+            gap: 20px;
+            .bannerTextSale {
+                span {
+                    font-size: 21px;
+                }
+                ._TextNum {
+                    font-size: 85px;
+                    left: 1px;
+                    top: 8px;
+                }
+            }
+            h1 {
+                font-size: 40px;
+                top: -143px;
+                left: 23px;
+            }
+        }
+        .bannerDialog {
+            width: 84vw;gap: 10px;
+            padding: 23px;
+            top: -358px;
+            left: 20px;
+            span {
+                font-size: 15px;
+            }
+            ._dialog {
+                ._dialogNumber {
+                    font-size: 16px;
+                    width: 55vw;
+                    height: 38px;
+                }
+                input[type="tel"]::-webkit-input-placeholder {
+                    font-size: 16px;
+                }
+                input[type="tel"]::-moz-placeholder {
+                    font-size: 16px;
+                }
+            }
+            ._dialogBtnMob {
+                font-size: 16px;
+            }
+            ._agreement {
+                font-size: 12px;
+                left: 5px;
+            }
+        }
+    }
+    .cardProduct{
+        margin: 0 0 40px;
+        .cardProductTextHead{
+            margin-bottom: 15px;
+            font-size: 20px;
+            ._textHead2{
+                font-size: 16px;
+            }
+        }
+        ._CardsGroup{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
 
+            ._Card{
+                ._CardTextImg{
+                    column-gap: 3px;
+                    ._CardText{
+                        border-radius: 0 0 10px 10px;
+                        line-height: 67%;
+                        span{
+                            font-size: 10px;
+                        }
+                        gap: 2px;
+                        height: auto;
+                    }
+
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+
+        .FGeoDatalogo {
+            display: none;
+        }
+
+        .FGeoData {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: flex-start;
+            justify-content: flex-start;;
+            padding: 10px 0 0 35px;
+
+            img {
+                width: auto;
+                height: auto;
+            }
+
+            .FGeoText .FNumImgLogo {
+                width: auto;
+                height: auto;
+                font-size: 16px;
+            }
+
+            .FGeoText {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .FNumber {
+                font-size: 16px;
+            }
+
+        }
+
+        .FLogo {
+            width: 122px;
+            height: 34px;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
-@media (max-width: 676px) {
-
-.rooms{
-    .rooms_item {
-        padding-top: 10px;
-        width: 56vw;
-    }
-    .rooms_items {
-        gap: 17px 4px;
-    }
-    margin: 20px 0;
-    .rooms_item_title {
-        font-size: 15px;
-        line-height: 20px;
-        height: 60px;
-    }
-    .rooms_item_subtitles {
-        font-size: 15px;
-        gap: 7px;
-        margin-top: 14px;
-        padding-left: 15px;
-    }
-    .rooms_item_subtitle.active:after {
-        left: -190px;
-        bottom: -16px;
-    }
-    .rooms_container {
-        min-height: 340px;
-        padding: 0 10px 0 0;
+@media (max-width: 676px)   {
+    .container{
+        max-width: 480px;
     }
 
+    .logoOPenDor {
+        display: none;
+    }
+    .logoOPenDorImg {
+        display: none;
+    }
+    .headerBlock1 {
+        display: none;
+    }
+    .headerBlock2 {
+        display: none;
+    }
+    .mobhead {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        padding: 11px;
+    }
+    .mobheadImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .mobheadBtn {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 10px;
+        color: #fff;
+        font-family: 'Geometria';
+    }
+    .headerBtn {
+        font-family: 'Geometria';
+        border-radius: 10px;
+        padding: 12px 0;
+        width: 150px;
+        height: 32px;
+        margin: 4px 0 0 0;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headerBtn1 {
+        display: none;
+    }
+    .banner {
+        .bannerText {
+            top: -144px;
+            gap: 20px;
+            .bannerTextSale {
+                span {
+                    font-size: 18px;
+                }
+                ._TextNum {
+                    font-size: 65px;
+                    left: 1px;
+                    top: 8px;
+                }
+            }
+            h1 {
+                font-size: 25px;
+                top: -143px;
+                left: 23px;
+            }
+        }
+        .bannerDialog {
+            width: 77vw;
+            gap: 10px;
+            padding: 23px;
+            top: -217px;
+            left: 20px;
+            align-items: flex-start;
+        }
+            span {
+                font-size: 15px;
+            }
+            ._dialog {
+                ._dialogNumber {
+                    font-size: 16px;
+                    width: 55vw;
+                    height: 38px;
+                }
+                input[type="tel"]::-webkit-input-placeholder {
+                    font-size: 16px;
+                }
+                input[type="tel"]::-moz-placeholder {
+                    font-size: 16px;
+                }
+            }
+            ._dialogBtnMob {
+                font-size: 16px;
+            }
+            ._agreement {
+                font-size: 12px;
+                left: 5px;
+            }
+        }
+    .cardProduct{
+        margin: 0 0 40px;
+        .cardProductTextHead{
+            margin-bottom: 15px;
+            font-size: 20px;
+            ._textHead2{
+                font-size: 16px;
+            }
+        }
+        ._CardsGroup{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+
+            ._Card{
+                ._CardTextImg{
+                    column-gap: 3px;
+                    ._CardText{
+                        border-radius: 0 0 10px 10px;
+                        line-height: 67%;
+                        span{
+                            font-size: 10px;
+                        }
+                        gap: 2px;
+                        height: auto;
+                    }
+
+                }
+            }
+        }
+    }
+    .rooms{
+        .rooms_item {
+            padding-top: 10px;
+            width: 56vw;
+        }
+        .rooms_items {
+            gap: 17px 4px;
+        }
+        margin: 20px 0;
+        .rooms_item_title {
+            font-size: 15px;
+            line-height: 20px;
+            height: 60px;
+        }
+        .rooms_item_subtitles {
+            font-size: 15px;
+            gap: 7px;
+            margin-top: 14px;
+            padding-left: 15px;
+        }
+        .rooms_item_subtitle.active:after {
+            left: -190px;
+            bottom: -16px;
+        }
+        .rooms_container {
+            min-height: 340px;
+            padding: 0 10px 0 0;
+        }
+
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        gap: 10px;
+
+        .FGeoDatalogo {
+            display: none;
+        }
+
+        .FGeoData {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: flex-start;
+            justify-content: flex-start;;
+            padding: 10px 0 0 35px;
+
+            img {
+                width: auto;
+                height: auto;
+            }
+
+            .FGeoText .FNumImgLogo {
+                width: auto;
+                height: auto;
+                font-size: 16px;
+            }
+
+            .FGeoText {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .FNumber {
+                font-size: 16px;
+            }
+
+        }
+
+        .FLogo {
+            width: 122px;
+            height: 34px;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
-}
-@media (max-width: 598px) {
-}
 @media (max-width: 480px) {
+    .container{
+        max-width: 350px;
+    }
+    .bannerBig {
+        margin: 0 0 0px 0;
+    }
 .rooms{
     .rooms_item {
         padding-top: 10px;
@@ -2669,19 +3526,15 @@ footer{
 .logoOPenDor {
     display: none;
 }
-
 .logoOPenDorImg {
     display: none;
 }
-
 .headerBlock1 {
     display: none;
 }
-
 .headerBlock2 {
     display: none;
 }
-
 .mobhead {
     display: flex;
     flex-direction: row;
@@ -2689,7 +3542,6 @@ footer{
     align-items: center;
     padding: 11px;
 }
-
 .mobheadImg {
     display: flex;
     flex-direction: row;
@@ -2701,7 +3553,6 @@ footer{
         height: 24px;
     }
 }
-
 .mobheadBtn {
     display: flex;
     flex-direction: column;
@@ -2710,7 +3561,6 @@ footer{
     color: #fff;
     font-family: 'Geometria';
 }
-
 .headerBtn {
     font-family: 'Geometria';
     border-radius: 10px;
@@ -2724,52 +3574,45 @@ footer{
     align-items: center;
     justify-content: center;
 }
-
 .headerBtn1 {
     display: none;
 }
-
-
-
-
-
 ._Card_btn {
     display: none;
 }
-
 ._Card_dop {
     display: inline-flex;
 }
 .cardProduct{
-    margin: 0;
+    margin: 0 0 40px;
     .cardProductTextHead{
+        margin-bottom: 15px;
         font-size: 20px;
         ._textHead2{
             font-size: 16px;
         }
     }
     ._CardsGroup{
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
+
         ._Card{
             ._CardTextImg{
+                column-gap: 3px;
                 ._CardText{
+                    border-radius: 0 0 10px 10px;
+                    line-height: 67%;
                     span{
                         font-size: 10px;
                     }
                     gap: 2px;
                     height: auto;
                 }
-                .cardImgCalc{
-                    width: 14.2vw;
-                }
 
             }
         }
     }
 }
-
-
-
 .map {
     width: auto;
     grid-template-columns: repeat(3, minmax(60px, auto));
@@ -2784,7 +3627,6 @@ footer{
         }
     }
 }
-
 .banner {
     margin: 14px 0 0 0;
     height: 440px;
@@ -2839,7 +3681,6 @@ footer{
             left: 23px;
         }
     }
-
     .bannerDialog {
         display: flex;
         flex-direction: column;
@@ -2889,17 +3730,10 @@ footer{
         }
 
         ._dialogBtnMob {
-            border-radius: 10px;
             padding: 12px 22px;
-            font-weight: 500;
             font-size: 16px;
-            color: #fff;
             width: 55vw;
-            border: none;
-            background: #619e2d;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: auto;
 
             span {
                 display: flex;
@@ -2921,8 +3755,6 @@ footer{
             }
         }
     }
-
-
 }
 .descriptionFastenings {
     width: auto;
@@ -2993,7 +3825,6 @@ footer{
         }
     }
 }
-
 .discountBanner {
     width: auto;
     margin: 40px auto 0 auto;
@@ -3202,11 +4033,9 @@ footer{
 .LUMFER_img_above {
     display: none;
 }
-
 .root {
     align-items: center;
 }
-
 .modal_back {
 
     .modal_window {
@@ -3274,11 +4103,9 @@ footer{
 
     }
 }
-
 .imgTextEnd {
     display: none;
 }
-
 .quiz {
     width: auto;
     margin: 0 10px;
@@ -3515,7 +4342,6 @@ footer{
         }
     }
 }
-
 footer {
     display: flex;
     flex-direction: column;
@@ -3569,11 +4395,8 @@ footer {
         margin: 0;
         padding: 0;
     }
+    }
+    .LUMFER {
+        display: none;
+        }
 }
-
-.LUMFER {
-
-    display: none;
-}
-}
-
