@@ -602,6 +602,7 @@ progress {
   margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -612,7 +613,7 @@ progress {
     max-width: 720px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
@@ -622,11 +623,20 @@ progress {
     max-width: 1140px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1401px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
 }
+
+@media (min-width: 1581px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1568px;
+  }
+}
+
+
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;

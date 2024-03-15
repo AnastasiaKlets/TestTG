@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Натяжные потолки за 1 день</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/Geometria/stylesheet.css">
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script defer src="js/script.js"></script>
+
 </head>
-<body>
-    <header id="navbar">
+<body >
+    <header id="navbar" >
         <div class="container">
             <div class="wrapper headerContainer">
-                <img class="logoOPenDor" src="icon/logoOPenDor.svg" alt="" />
-                <div class="headerBlock1">
-                    <span>
-                        Есть вопрос? Задайте онлайн
-                    </span>
-                    <div class="_Block1Contact">
-                        <a href="https://t.me/+375336260500"><img src="icon/Telegram.png" alt="tg"></a>
-                        <a href="viber://chat?number=+375336260500"> <img src="icon/Viber.png" alt=""></a>
-                        <a href=tel:+375336140614″><span>+375 (33) 614-06-14</span></a>
+                <a  class="a_logo" href="#root">
+                    <img class="logoOPenDor" src="icon/logoOPenDor.svg" alt="" />
+                </a>
+                <div class="headerBlock1Btn">
+                    <div class="headerBlock1">
+                        <span>
+                            Есть вопрос? Задайте онлайн
+                        </span>
+                        <div class="_Block1Contact">
+                            <a href="https://t.me/+375336260500"><img src="icon/Telegram.png" alt="tg"></a>
+                            <a href="viber://chat?number=+375336260500"> <img src="icon/Viber.png" alt=""></a>
+                            <a class="a_tel" href=tel:+375336140614″><span>+375 (33) 614-06-14</span></a>
+                        </div>
                     </div>
+                    <button data-modal="consultation" class="button headerBtn headerBtn1 glare-button">
+                        Вызвать замерщика
+                    </button>
                 </div>
-                <button data-modal="consultation" class="headerBtn headerBtn1 glare-button">
-                    Вызвать замерщика
-                </button>
                 <div class="headerBlock2">
                     <img src="icon/icon.png" alt="">
                     <div class="_Block2Contact">
@@ -41,18 +44,16 @@
                     </div>
                 </div>
                 <div class="mobhead">
-            
                     <div class="mobheadImg">
                         <img src="icon/icon.png" alt="">
                         <a href="https://t.me/+375336260500"><img src="icon/Telegram.png" alt="tg"></a>
                         <a href="viber://chat?number=+375336260500"> <img src="icon/Viber.png" alt=""></a>
-            
                     </div>
                     <div class="mobheadBtn">
                         <span>
                             Есть вопрос? Задайте онлайн
                         </span>
-                        <button data-modal="consultation" class="btn btn-secondary open-modal headerBtn glare-button">Вызвать
+                        <button data-modal="consultation" class="button btn btn-secondary open-modal headerBtn glare-button">Вызвать
                             замерщика</button>
                     </div>
             
@@ -60,8 +61,9 @@
             </div>
         </div>
     </header>
-    <main class="root">
-        <section>
+    <div id="root"></div>
+    <main class="root" >
+        <section >
             <div class="container">
                 <div class="bannerBig">
                     <div id="banner" class="banner">
@@ -79,7 +81,7 @@
                             <span>Под ключ без суеты и вашего участия</span>
                             <form class="_dialog from">
                                 <input class="_dialogNumber" type="tel" name="phone_number" placeholder="+375 __ ___ __ __" pattern="\+375\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
-                                <button class="_dialogBtn _dialogBtnMob glare-button">
+                                <button class="button _dialogBtn _dialogBtnMob glare-button">
                                     <span>Рассчитать стоимость</span>
                                 </button>
                             </form>
@@ -92,10 +94,10 @@
                 </div>
             </div>
         </section>
-        <section class="cardProduct ">
+        <section class="cardProduct marginTop">
             <div class="container">
                 <div class="cardProductTextHead">
-                    <span>Натяжные потолки любых типов, размеров и сложности</span>
+                    <span class="titleAll">Натяжные потолки любых типов, размеров и сложности</span>
                     <span class="_textHead2">Цена за 1 м² с установкой</span>
                 </div>
                 <div class="_CardsGroup">
@@ -109,7 +111,7 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                         <div class="_Card">
                             <img data-modal="consultation" class="_CardImg" src="icon/Rectangle%203557.png" alt="">
@@ -121,7 +123,7 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                         <div class="_Card">
                             <img data-modal="consultation" class="_CardImg" src="icon/Rectangle%203558.png" alt="">
@@ -133,7 +135,7 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                         <div class="_Card">
                             <img data-modal="consultation" class="_CardImg" src="icon/Rectangle%203559.png" alt="">
@@ -145,7 +147,7 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                         <div class="_Card">
                             <img data-modal="consultation" class="_CardImg" src="icon/Rectangle%203560.png" alt="">
@@ -157,7 +159,7 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                         <div class="_Card">
                             <img data-modal="consultation" class="_CardImg" src="icon/Rectangle%203561.png" alt="">
@@ -169,7 +171,7 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                         <div class="_Card ">
                             <img data-modal="consultation" class="_CardImg" src="icon/Rectangle%203562.png" alt="">
@@ -181,7 +183,7 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                         <div class="_Card">
                             <img data-modal="consultation" class="_CardImg" src="icon/Rectangle%203563.png" alt="">
@@ -193,15 +195,15 @@
                                 </div>
                                 <a href="#calc"><img class="cardImgCalc" src="icon/BtnCalc.png" alt=""></a>
                             </div>
-                            <button data-modal="consultation" class="_Card_btn">Заказать</button>
+                            <button data-modal="consultation" class="button _Card_btn">Заказать</button>
                         </div>
                     </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="container">
                 <div class="quiz">
-                    <div class="quizText">
+                    <div  class="quizText titleAll">
                         Рассчитайте стоимость натяжного потолка <br>
                         по вашим параметрам за 1 минуту и получите <span style="color: #619e2d;">скидку 10%</span>
                     </div>
@@ -212,7 +214,7 @@
                     <div id="calc"></div>
                     <div class="quizFromImg">
                         <img class="img_quiz" src="icon/Group%206057.png" alt="">
-                        <form  class="my-form form">
+                        <form class="my-form form">
                             <div id="div-1" class="my-div">
                                 <div class="formSteps">
                                     <div class="progress">
@@ -221,7 +223,7 @@
                                             <div class="done-progress-persent"></div>
                                         </div>
                                     </div>
-                                    <div class="formStep"> Шаг 1 <span >из 6</span></div>
+                                    <div class="formStep"> Шаг 1 <span>из 6</span></div>
                                     <span class="formStepTextH">Где требуется установить потолок?</span>
                                     <span class="formStepTextH2">(можно выбрать несколько вариантов)</span>
                                     <div class="formCards">
@@ -284,14 +286,14 @@
                                 <div class="imgTextEnd">
                                     <img src="icon/Group%205900.png" alt="">
                                     <span>
-                                <b>Выберите вариант ответа и</b>
-                                <br>
-                                нажмите кнопку «Далее»
-                            </span>
+                                        <b>Выберите вариант ответа и</b>
+                                        <br>
+                                        нажмите кнопку «Далее»
+                                    </span>
                                 </div>
                                 <button class="next-q btnPos" data-show="div-2" type="button">Дальше</button>
                             </div>
-                            <div id="div-2" class="my-div"  >
+                            <div id="div-2" class="my-div">
                                 <div class="formSteps formSteps_dop">
                                     <div class="container_progress">
                                         <div class="progress">
@@ -300,7 +302,7 @@
                                                 <div class="done-progress-persent"></div>
                                             </div>
                                         </div>
-                                        <div class="formStep formStep_dop"> Шаг 2 <span >из 6</span></div>
+                                        <div class="formStep formStep_dop"> Шаг 2 <span>из 6</span></div>
                                         <span class="formStepTextH formStepTextH_dop">Укажите примерную площадь монтажа</span>
                                     </div>
                                     <div class="div-2content">
@@ -318,14 +320,14 @@
                                 <div class="imgTextEnd">
                                     <img src="icon/Group%205900.png" alt="">
                                     <span>
-                                <b>Выберите вариант ответаи</b>
-                                <br>
-                                нажмите кнопку «Далее»
-                            </span>
+                                        <b>Выберите вариант ответаи</b>
+                                        <br>
+                                        нажмите кнопку «Далее»
+                                    </span>
                                 </div>
                                 <button class="next-q btnPos1 btn1" data-show="div-1" type="button">Назад</button>
                                 <button class="next-q btnPos1 next-q_dop" data-show="div-3" type="button">Дальше</button>
-
+                        
                             </div>
                             <div id="div-3" class="my-div">
                                 <div class="formSteps">
@@ -335,7 +337,7 @@
                                             <div class="done-progress-persent"></div>
                                         </div>
                                     </div>
-                                    <div class="formStep"> Шаг 3 <span >из 6</span></div>
+                                    <div class="formStep"> Шаг 3 <span>из 6</span></div>
                                     <span class="formStepTextH">Из какого материала будет потолок?</span>
                                     <div class="formCards">
                                         <div class="_ImgCheck">
@@ -397,10 +399,10 @@
                                 <div class="imgTextEnd">
                                     <img src="icon/Group%205900.png" alt="">
                                     <span>
-                                <b>Выберите вариант ответа и</b>
-                                <br>
-                                нажмите кнопку «Далее»
-                            </span>
+                                        <b>Выберите вариант ответа и</b>
+                                        <br>
+                                        нажмите кнопку «Далее»
+                                    </span>
                                 </div>
                                 <button class="next-q btnPos1 btn1" data-show="div-2" type="button">Назад</button>
                                 <button class="next-q btnPos1" data-show="div-4" type="button">Дальше</button>
@@ -413,7 +415,7 @@
                                             <div class="done-progress-persent"></div>
                                         </div>
                                     </div>
-                                    <div class="formStep"> Шаг 4 <span >из 6</span></div>
+                                    <div class="formStep"> Шаг 4 <span>из 6</span></div>
                                     <span class="formStepTextH">Какой вид потолка вы хотите установить?</span>
                                     <div class="formCards">
                                         <div class="_ImgCheck">
@@ -475,10 +477,10 @@
                                 <div class="imgTextEnd">
                                     <img src="icon/Group%205900.png" alt="">
                                     <span>
-                                <b>Выберите вариант ответа и</b>
-                                <br>
-                                нажмите кнопку «Далее»
-                            </span>
+                                        <b>Выберите вариант ответа и</b>
+                                        <br>
+                                        нажмите кнопку «Далее»
+                                    </span>
                                 </div>
                                 <button class="next-q btn1 btnPos1" data-show="div-3" type="button">Назад</button>
                                 <button class="next-q btnPos1" data-show="div-5" type="button">Дальше</button>
@@ -491,10 +493,10 @@
                                             <div class="done-progress-persent"></div>
                                         </div>
                                     </div>
-                                    <div class="formStep"> Шаг 5 <span >из 6</span></div>
+                                    <div class="formStep"> Шаг 5 <span>из 6</span></div>
                                     <span class="formStepTextH">Укажите количество элементов на потолке</span>
                                 </div>
-
+                        
                                 <div class="div-5_container">
                                     <div class="div-5_container_1">
                                         <span class="div-5_container_text">Количество люстр, шт </span>
@@ -540,15 +542,15 @@
                                             </div>
                                         </div>
                                     </div>
-
+                        
                                 </div>
                                 <div class="imgTextEnd">
                                     <img src="icon/Group%205900.png" alt="">
                                     <span>
-                                <b>Выберите вариант ответа и</b>
-                                <br>
-                                нажмите кнопку «Далее»
-                            </span>
+                                        <b>Выберите вариант ответа и</b>
+                                        <br>
+                                        нажмите кнопку «Далее»
+                                    </span>
                                 </div>
                                 <button class="next-q btn1 btnPos1" data-show="div-4" type="button">Назад</button>
                                 <button class="next-q btnPos btnPos1" data-show="div-6" type="button">Дальше</button>
@@ -561,7 +563,7 @@
                                             <div class="done-progress-persent"></div>
                                         </div>
                                     </div>
-                                    <div class="formStep"> Шаг 6 <span >из 6</span></div>
+                                    <div class="formStep"> Шаг 6 <span>из 6</span></div>
                                     <span class="formStepTextH">Выберите дополнительные элементы</span>
                                     <span class="formStepTextH2">(можно выбрать несколько вариантов)</span>
                                     <div class="formCards">
@@ -624,10 +626,10 @@
                                 <div class="imgTextEnd">
                                     <img src="icon/Group%205900.png" alt="">
                                     <span>
-                                <b>Выберите вариант ответа и</b>
-                                <br>
-                                нажмите кнопку «Далее»
-                            </span>
+                                        <b>Выберите вариант ответа и</b>
+                                        <br>
+                                        нажмите кнопку «Далее»
+                                    </span>
                                 </div>
                                 <button class="next-q btn1 btnPos1" data-show="div-4" type="button">Назад</button>
                                 <button class="next-q btnPos1" data-show="div-7" type="button">Дальше</button>
@@ -636,15 +638,18 @@
                                 <div class="div-7_container">
                                     <div class="div-7_container_text">
                                         <span class="div-7_container_text1">Отлично!</span>
-                                        <span class="div-7_container_text2">Мы уже приступили к расчёту стоимости, в ближайшее время с вами свяжется наш менеджер.</span>
+                                        <span class="div-7_container_text2">Мы уже приступили к расчёту стоимости, в ближайшее время с вами
+                                            свяжется наш менеджер.</span>
                                         <form class="_dialog div-7_container_check_dialog from">
-                                            <input class="_dialogNumber div-7_container_check_dialog_dialogNumber" type="tel" name="phone_number" placeholder="+375 __ ___ __ __" pattern="\+375\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
-                                            <button class="_dialogBtn div-7_container_check_dialog_dialogBtn glare-button">
+                                            <input class="_dialogNumber div-7_container_check_dialog_dialogNumber" type="tel"
+                                                name="phone_number" placeholder="+375 __ ___ __ __"
+                                                pattern="\+375\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                                            <button class="button _dialogBtn div-7_container_check_dialog_dialogBtn glare-button">
                                                 Получить результат + скидку -15%
                                             </button>
                                         </form>
                                         <div class="_agreement div-7_container_check">
-                                            <input class="div-7_check" type="checkbox" id="music" name="interest" value="text"  checked/>
+                                            <input class="div-7_check" type="checkbox" id="music" name="interest" value="text" checked />
                                             <label for="music">Вы соглашаетесь с условиями обработки <br> персональных данных</label>
                                         </div>
                                         <div class="div-7_container_list">
@@ -669,7 +674,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="container">
                 <div class="descriptionFastenings">
                     <div class="descriptionFastenings_InfWindow descriptionFastenings_InfWindow_dop">
@@ -728,7 +733,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="LUMFER container">
                 <div class="container">
                     <div class="LUMFER_img_list">
@@ -814,7 +819,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="container">
                 <div class="installmentPlan">
                     <div class="container6">
@@ -829,7 +834,7 @@
                 </div>
             </div>
         </section>
-        <section class="rooms">
+        <section class="rooms marginTop">
             <div class="rooms_container container">
                 <div class="rooms_items">
                     <div class="rooms_item">
@@ -857,17 +862,17 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="container">
                 <div class="shiaga">
-                    <span class="shiagaOrder_title">Как заказать натяжной потолок в нашей компании?</span>
+                    <span class="shiagaOrder_title titleAll">Как заказать натяжной потолок в нашей компании?</span>
                     <div class="shiagaOrder_cards container-fluid">
                         <div class="_Card shiaga_Card">
                             <img class="_CardImg shiaga_CardImg" src="img/shiagaOrder_cards4.png" alt="">
                             <div class="_CardTextImg _CardTextImgStep">
                                 <div class="_CardText shiagaOrder_CardText _CardText21">
                                     <span class="shiagaOrder_CardText_title">Заявка на сайте</span>
-                                    <span class="_CardText2">
+                                    <span class="_CardText2 ">
                                     Вы звоните по телефону
                                     <br>
                                         <b>
@@ -886,7 +891,7 @@
                             <div class="_CardTextImg _CardTextImgStep">
                                 <div class="_CardText shiagaOrder_CardText _CardText22">
                                     <span class="shiagaOrder_CardText_title shiagaOrder_CardText_title_dop2">Замер и расчет стоимости</span>
-                                    <span class="_CardText2">
+                                    <span class="_CardText2 ">
                                         Замерщик приедет к вам на замер в оговорённое время с полным каталогом фактур и оттенков и сделает расчёт стоимости бесплатно прямо при вас
                                     </span>
                                 </div>
@@ -898,7 +903,7 @@
                             <div class="_CardTextImg _CardTextImgStep">
                                 <div class="_CardText shiagaOrder_CardText _CardText23">
                                     <span class="shiagaOrder_CardText_title shiagaOrder_CardText_title_dop3">Заключение договора</span>
-                                    <span class="_CardText2">
+                                    <span class="_CardText2 ">
                                     Заключаем с вами договор, чтобы вы были уверенны в качестве нашей работы
                                 </span>
                                 </div>
@@ -910,8 +915,8 @@
                             <div class="_CardTextImg _CardTextImgStep">
                                 <div class="_CardText shiagaOrder_CardText _CardText24">
                                     <span class="shiagaOrder_CardText_title shiagaOrder_CardText_title_dop4">Профессиональный монтаж</span>
-                                    <span class="_CardText2 ">
-                                    Выполним быстрый монтаж, установим встроенные светильники и шумоизоляцию,скроем  кабели, провода и другую коммуникацию,оставим  после себя чистоту
+                                    <span class="_CardText2 _CardText2_dop">
+                                    Выполним быстрый монтаж, установим встроенные светильники и шумоизоляцию, скроем кабели, провода и другую коммуникацию, оставим после себя чистоту
                                 </span>
                                 </div>
                                 <img class="cardImgCalc shiagaOrder_CardText_imgStep shiagaOrder_imgStep_dop4" src="icon/num_Card4.png" alt="">
@@ -927,7 +932,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="history_lable">
                 О компании
             </div>
@@ -977,12 +982,12 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop" >
             <div class="container">
                 <div class="sale ">
                     <div class="container13 ">
                         <div class="history_cards_title container-fluid">
-                            <span class="history_title">На любой натяжной потолок даем гарантии</span>
+                            <span class="history_title titleAll">На любой натяжной потолок даем гарантии</span>
                             <div class="history_cards container-fluid">
                                 <div class="history_card">
                                     <img src="icon/Frame%2042.png" alt="">
@@ -1038,24 +1043,24 @@
                             </div>
                         </div>
                         <div class="history_btn_for_order container-fluid">
-                    <span class="history_btn_for_order_title">
+                    <span class="history_btn_for_order_title titleAll">
                         Скидка 10% на глянцевые потолки
                     </span>
-                            <button data-modal="consultation" class="history_btn glare-button">
+                            <button data-modal="consultation" class="button history_btn glare-button">
                                 Заказать
                             </button>
                         </div>
                         <div class="history_discountBanner_ImgMob container-fluid">
                             <div class="history_text_image">
                                 <span>Скидка 10% на глянцевые потолки</span>
-                                <button data-modal="consultation" class="headerBtn glare-button">
+                                <button data-modal="consultation" class="button headerBtn glare-button">
                                     Заказать
                                 </button>
                             </div>
                             <img class="container-fluid" src="icon/history_discountBanner_ImgMob.png" alt="">
                         </div>
                         <div class="history_cards_title container-fluid">
-                            <span class="history_title">Самое главное — Ваша безопасность!</span>
+                            <span class="history_title titleAll">Самое главное — Ваша безопасность!</span>
                             <div class="history_cards container-fluid history_cards_gap">
                                 <div class="history_card">
                                     <img src="icon/Frame%2044.png" alt="">
@@ -1122,27 +1127,27 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="container">
                 <div class="discountBanner container-fluid">
                     <img class="discountBanner_Img" src="icon/Group%206027.png" alt="">
                     <div class="discountBanner_ImgMob container-fluid">
                         <img class="container-fluid"  src="icon/discountBannerMob.png" alt="">
-                        <button data-modal="consultation" class="headerBtn glare-button">
+                        <button data-modal="consultation" class="button headerBtn glare-button">
                             Заказать
                         </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="container">
                 <div class="departure">
                     <div class="shapes_wrapper">
                         <img class="departure_bg" src="img/men.png" alt="departure">
                     </div>
                     <div class="departure_content">
-                        <div class="departure_content_title">Оставьте заявку на бесплатный выезд замерщика с образцами</div>
+                        <div class="titleAll departure_content_title ">Оставьте заявку на бесплатный выезд замерщика с образцами</div>
                         <div class="departure_content_text">Что будет на замере?</div>
                         <div class="departure_items">
                             <div class="departure_item">
@@ -1165,7 +1170,7 @@
                         <form action="#" class="departure_form form">
                             <div class="departure_submit">
                                 <input class="departure_input" name="number" id="number" type="text" placeholder="+375 __ ___ __ __" required>
-                                <button  type="submit" class="btn_departure glare-button">Вызвать замерщика</button>
+                                <button  type="submit" class="button  btn_departure glare-button">Вызвать замерщика</button>
                             </div>
                             <div class="departure_policy">
                                 <label for="checkbox" class="checkbox-label">
@@ -1181,7 +1186,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="marginTop">
             <div class="container">
                 <div class="map container-fluid">
                     <div class="_BlockInf">
@@ -1292,7 +1297,7 @@
             </div>
             <div class="modal_content">
                 <div class="modal_content_text">
-                    <div class="title title_30 modal_title">Оставить заявку</div>
+                    <div class="title title_30 modal_title titleAll">Оставить заявку</div>
                     <div class="descr modal_descr_mobile">
                         Введите ваш номер телефона
                         <br>
@@ -1300,17 +1305,18 @@
                         <br>
                         в течение 10 минут
                     </div>
-                    <form class="modal_form form" action="#">
+                    <form class="modal_form form modal_form_style" action="#">
                         <input type="hidden" name="theme" value="Клиент оставил заявку">
                         <input class="modal_form_num" name="phone" type="text" placeholder="+375 __ ___ __ __" required>
-                        <button type="submit" class="btn btn_form btn_form_modal glare-button">Отправить</button>
+                        <button type="submit" class="button btn_form btn_form_modal glare-button">Отправить</button>
                     </form>
                     <div class="modal_form_check">
                         <input class="modal_check" type="checkbox" id="music" name="interest" value="text"  checked/>
-                        <div class="modal_bottom">Вы соглашаетесь с условиями обработки персональных данных</div>
+                        <div class="modal_bottom_dopStyle modal_bottom">Вы соглашаетесь с условиями обработки персональных данных</div>
                     </div>
                 </div>
-                <img class="modal_content_img" src="icon/modal.png" alt="">
+                <div class="modal_content_img">
+                </div>
             </div>
         </div>
     </div>
